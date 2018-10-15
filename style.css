@@ -1,11 +1,21 @@
-/*
-#Menu > nav > a {
-	text-decoration: underline;
+body {
+	padding-top: 17px;
+	padding-bottom: 17px;
+	font-family: 'Exo', fantasy;
+	font-weight: 900;
 }
-*/
-
 
 #navbarNav > ul > li {
 	display: flex;
 	justify-content: center;
+}
+
+/*Special Brand Elements*/
+
+.card-header-colour {
+	background-color: #2db72d !important;
+}
+
+.input-group-text-colour {
+	background-color: #2db72d !important;
 }
