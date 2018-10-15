@@ -1,8 +1,32 @@
 body {
 	padding-top: 17px;
-	padding-bottom: 17px;
 	font-family: 'Exo', fantasy;
-	font-weight: 900;
+	/*	font-weight: 900;*/
+}
+
+/*Special Brand Elements*/
+
+.card-header-colour,
+.btn-success,
+.input-group-text-colour {
+	background-color: #2db72d !important;
+	color: white;
+}
+
+.fa {
+	color: #2db72d;
+}
+
+/*Special Brand Elements*/
+
+#HeaderSocial > div > a {
+	color: #2db72d;
+	text-decoration: none;
+}
+
+#HeaderSocial > div > a > i:hover {
+	color: #000;
+	text-decoration: none;
 }
 
 #navbarNav > ul > li {
@@ -10,12 +34,34 @@ body {
 	justify-content: center;
 }
 
-/*Special Brand Elements*/
-
-.card-header-colour {
-	background-color: #2db72d !important;
+#navbarNav > ul > li:hover {
+	background: white;
+	color: black;
 }
 
-.input-group-text-colour {
-	background-color: #2db72d !important;
+#navbarNav > ul > li > a:hover {
+	color: black;
+	background: white
+}
+
+#FooterSocial > div > a > i {
+	color: white;
+}
+
+#FooterSocial > div > a {
+	color: white;
+	text-decoration: none;
+}
+
+#FooterSocial > div > a > i:hover {
+	color: black;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+	#navbarNav {
+		margin-top: 10px;
+	}
+
+
 }
