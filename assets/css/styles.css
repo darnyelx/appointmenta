@@ -1,94 +1,36 @@
-/*Header*/
-@media (max-width: 575.98px) {
-	.navbar-expand-sm > .container {
-		padding: 0 15px;
-	}
+/*Brand Consistency Styles*/
+.oghas-font {
+	font-family: Exo, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	background-color: #fff;
 }
 
+.oghas-input {
+	background-color: #2c7030;
+	color: white !important;
+}
 
-#oghas-logo.navbar-brand {
+.oghas-input::placeholder {
+	color: white !important;
+}
+
+.oghas-input:focus {
+	background-color: #2c7030;
+}
+/*Brand Consistency Styles*/
+
+
+/*Header*/
+@media (max-width: 575.98px) {}
+
+
+#oghas-logo {
 	background-image: url("../../assets/img/Oagric_Transparent.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 50px;
-	padding: 30px;
 	background-position: center;
-}
-
-.newsletter-subscribe {
-	color: #313437;
-	background-color: #fff;
-	padding: 50px 0;
-}
-
-.newsletter-subscribe p {
-	color: #7d8285;
-	line-height: 1.5;
-}
-
-.newsletter-subscribe h2 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 25px;
-	line-height: 1.5;
-	padding-top: 0;
-	margin-top: 0;
-	color: inherit;
-}
-
-.newsletter-subscribe .intro {
-	font-size: 16px;
-	max-width: 500px;
-	margin: 0 auto 25px;
-}
-
-.newsletter-subscribe .intro p {
-	margin-bottom: 35px;
-}
-
-.newsletter-subscribe form {
-	justify-content: center;
-}
-
-.newsletter-subscribe form .form-control {
-	background: #eff1f4;
-	border: none;
-	border-radius: 3px;
-	box-shadow: none;
-	outline: none;
-	color: inherit;
-	text-indent: 9px;
-	height: 45px;
-	margin-right: 10px;
-	min-width: 250px;
-}
-
-.newsletter-subscribe form .btn {
-	padding: 16px 32px;
-	border: none;
-	background: none;
-	box-shadow: none;
-	text-shadow: none;
-	opacity: 0.9;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 13px;
-	letter-spacing: 0.4px;
-	line-height: 1;
-}
-
-.newsletter-subscribe form .btn:hover {
-	opacity: 1;
-}
-
-.newsletter-subscribe form .btn:active {
-	transform: translateY(1px);
-}
-
-.newsletter-subscribe form .btn-primary {
-	background-color: #055ada !important;
-	color: #fff;
-	outline: none !important;
+	padding: 35px;
 }
 
 .oghas-nav {
@@ -103,23 +45,10 @@
 	margin-top: 7px;
 }
 
-.oghas-font {
-	font-family: Exo, sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-
-.oghas-input {
-	background-color: #2c7030;
-	color: white !important;
-}
-
-.oghas-input::placeholder {
-	color: white !important;
-}
-
-.oghas-input:focus {
-	background-color: #2c7030;
+button.navbar-toggler {
+  color: white;
+  border: white solid 1px !important;
+  background-image:
 }
 
 #header-subscribe .btn {
@@ -148,7 +77,7 @@ input#header-search:focus {
 
 nav#inner-nav {
 	width: 100%;
-	/*flex-wrap:nowrap;*/
+/*	flex-wrap:nowrap;*/
 }
 
 @media (max-width: 575.98px) {
@@ -285,11 +214,9 @@ nav#inner-nav {
 }
 
 .navbar-dark .navbar-toggler-icon {}
-
 /*Header*/
 
 /*Menu Links*/
-
 .navigation-clean {
 	background: #fff;
 	padding-top: .75rem;
@@ -377,14 +304,10 @@ nav#inner-nav {
 	background: #eee;
 	color: inherit;
 }
-
-
-
 /*Menu Links*/
 
 
 /*Card*/
-
 #card-deck {
 	margin-top: 50px;
 }
@@ -395,7 +318,6 @@ nav#inner-nav {
 	background-color: #4caf50 !important;
 	color: white;
 }
-
 /*Card*/
 
 
@@ -407,7 +329,6 @@ nav#inner-nav {
 
 
 /*Footer*/
-
 .footer-social {
 	margin-top: 20px;
 	font-size: 30px;
