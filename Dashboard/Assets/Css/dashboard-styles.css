@@ -16,6 +16,7 @@ div.displayed-title {
 }
 
 .cash-crops-desc {
+
 }
 
 .cash-crops-desc .crop,.figure,.rate {
@@ -46,4 +47,16 @@ div.displayed-title {
 
 .card-footer.oghas-card .fa {
 	color: black;
+}
+
+.staple-crops {
+	margin-top: 20px
+}
+
+.staple-crops .oghas-card{
+	padding-top: 20px;
+}
+
+.first-charts {
+	margin-top: 20px;
 }
