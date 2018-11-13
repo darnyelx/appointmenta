@@ -11,18 +11,25 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,800,900">
 	<link rel="stylesheet" href="../assets/css/styles.css">
 	<link rel="stylesheet" href="../Dashboard/Assets/Css/dashboard-styles.css">
-	<script src="../Dashboard/Assets/Js/Data/GDP-data.js"></script>
+	<script src="//www.amcharts.com/lib/4/core.js"></script>
+	<script src="//www.amcharts.com/lib/4/charts.js"></script>
+	<!--	<script src="../Dashboard/Assets/Js/Plugins/amcharts4/core.js"></script>-->
+	<!--	<script src="../Dashboard/Assets/Js/Plugins/amcharts4/charts.js"></script>-->
+	<script src="../Dashboard/Assets/Js/Data/GDP-chart-data.js"></script>
+	<script src="../Dashboard/Assets/Js/Data/NBS-alc-bev-chart-data.js"></script>
+	<script src="../Dashboard/Assets/Js/Data/NBS-food-chart-data.js"></script>
+	<script src="../Dashboard/Assets/Js/Data/NBS-imp-food-chart-data.js"></script>
+	<script src="../Dashboard/Assets/Js/Data/NBS-tob-chart-data.js"></script>
 </head>
 
 <body class="oghas-font bg-light">
-
 
 	<!--	Full Nav	-->
 	<div>
 		<!--	Nav	-->
 		<nav class="navbar navbar-dark navbar-expand-sm oghas-nav">
 			<div class="container">
-				<a class="navbar-brand" href="#" id="oghas-logo"></a>
+				<a class="navbar-brand" href="http://oghas.com" target="_blank" id="oghas-logo"></a>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
 					<span class="sr-only">
 						Toggle navigation
@@ -72,11 +79,22 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navcol-1">
 						<ul class="nav navbar-nav m-auto">
-							<li class="nav-item" role="presentation"><a class="nav-link active" href="#">Media</a></li>
-							<li class="nav-item" role="presentation"><a class="nav-link" href="#">Events</a></li>
-							<li class="nav-item" role="presentation"><a class="nav-link" href="#">Project</a></li>
-							<li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
-								<div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" href="#">Media</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" href="#">Events</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" href="#">Project</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="dropdownMenuLink">More</a>
+								<div class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" role="presentation" href="#">First Item</a>
+									<a class="dropdown-item" role="presentation" href="#">Second Item</a>
+									<a class="dropdown-item" role="presentation" href="#">Third Item</a>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -304,28 +322,68 @@
 			<div class="col-4 text-center">
 				<div class="card oghas-material">
 					<div class="card-body oghas-card">
-						<h4>Basic Prices of Food Production</h4>
+						<h6>Basic Prices of Food Production</h6>
 					</div>
 				</div>
 			</div>
 			<div class="col-4 text-center">
 				<div class="card oghas-material">
 					<div class="card-body oghas-card">
-						<h4>Line Chart</h4>
+						<h6>Line Chart</h6>
 					</div>
 				</div>
 			</div>
 			<div class="col-4 text-center">
 				<div class="card oghas-material">
 					<div class="card-body oghas-card">
-						<h4>% of Agric GDP to Total GDP</h4>
-						<div id="GDP-chart" style="height: 300px;" class="img-fluid"></div>
+						<h6>% of Agric GDP to Total GDP</h6>
+						<div id="GPD-chart" style="height: 300px; width: 100%; font-size: 10px" class="img-flui"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--	Basic Price of Food Production, Line Chart and % of Agric GDP to Total GDP	-->
+
+	<!--	Food Price - NBS	-->
+	<div class="container nbs-food-charts">
+		<h4>Food Price - NBS</h4>
+		<div class="row">
+			<div class="col">
+				<div class="card oghas-material">
+					<div class="card-body oghas-card">
+						<nav>
+							<div class="nav nav-pills justify-content-around food-price-nbs" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active" id="nav-food-tab" data-toggle="tab" href="#nav-food" role="tab" aria-controls="nav-food" aria-selected="true">Food</a>
+								<a class="nav-item nav-link" id="nav-imported-tab" data-toggle="tab" href="#nav-imported" role="tab" aria-controls="nav-imported" aria-selected="false">Imported Food</a>
+								<a class="nav-item nav-link" id="nav-alcoholic-tab" data-toggle="tab" href="#nav-alcoholic" role="tab" aria-controls="nav-alcoholic" aria-selected="false">Alcoholic Beverages</a>
+								<a class="nav-item nav-link" id="nav-tobacco-tab" data-toggle="tab" href="#nav-tobacco" role="tab" aria-controls="nav-tobacco" aria-selected="false">Tobacco</a>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-food" role="tabpanel" aria-labelledby="nav-food-tab">
+								<div id="NBS-food-chart" style="height: 300px;" class="img-fluid"></div>
+								1
+							</div>
+							<div class="tab-pane fade" id="nav-imported" role="tabpanel" aria-labelledby="nav-imported-tab">
+								<div id="NBS-imp-food-chart" style="height: 300px;" class="img-fluid"></div>
+								2
+							</div>
+							<div class="tab-pane fade" id="nav-alcoholic" role="tabpanel" aria-labelledby="nav-alcoholic-tab">
+								<div id="NBS-alc-bev-chart" style="height: 300px;" class="img-fluid"></div>
+								3
+							</div>
+							<div class="tab-pane fade" id="nav-tobacco" role="tabpanel" aria-labelledby="nav-tobacco-tab">
+								<div id="NBS-tob-chart" style="height: 300px;" class="img-fluid"></div>
+								4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--	Food Price - NBS	-->
 
 	<!--	Sign Up to Newsletter	-->
 	<div class="container newsletter-signup text-center" id="newsletter-signup">
@@ -386,11 +444,13 @@
 	</footer>
 	<!--	Footer	-->
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../Dashboard/Assets/Js/Plugins/amcharts/amcharts.js"></script>
-	<script src="../Dashboard/Assets/Js/Plugins/amcharts/serial.js"></script>
 	<script src="../Dashboard/Assets/Js/Charts/GDP-chart.js"></script>
+	<script src="../Dashboard/Assets/Js/Charts/NBS-food-chart.js"></script>
+	<script src="../Dashboard/Assets/Js/Charts/NBS-imp-food-chart.js"></script>
+	<script src="../Dashboard/Assets/Js/Charts/NBS-alc-bev-chart.js"></script>
+	<script src="../Dashboard/Assets/Js/Charts/NBS-tob-chart.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

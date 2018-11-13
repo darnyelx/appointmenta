@@ -60,3 +60,21 @@ div.displayed-title {
 .first-charts {
 	margin-top: 20px;
 }
+
+.nbs-food-charts {
+	margin-top: 20px;
+}
+
+.nbs-food-charts .nav > a {
+	color: black;
+}
+
+.food-price-nbs > .nav-link {
+	color: white !important;
+	background-color: #4caf50;
+}
+
+.food-price-nbs > .nav-link.active {
+	color: white;
+	background-color: darkseagreen;
+}
