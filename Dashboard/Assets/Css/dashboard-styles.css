@@ -128,3 +128,7 @@ div.displayed-title {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+.th-sources {
+	border-right: solid 2px black;
+}
