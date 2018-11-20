@@ -78,3 +78,53 @@ div.displayed-title {
 	color: white;
 	background-color: darkseagreen;
 }
+
+.insights {
+	margin-top: 20px;
+}
+
+.insights .card-body {
+	padding: 0px;
+}
+
+.insights .ins-row {
+	padding-top: 15px;
+}
+
+.ins-date {
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.ins-title {
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+.ins-author {
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.ins-snippet {
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+.ins-footer-link {
+	margin: 0px;
+	color: #4caf50;
+}
+
+.news {
+	margin-top: 20px;
+}
+
+.news .card-body {
+	padding: 0px;
+}
+
+.news .news-row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
