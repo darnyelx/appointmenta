@@ -11,30 +11,38 @@ div.displayed-title {
 	margin-top: 20px;
 }
 
-.cash-crops-icon {
-
+.cash-crops .card {
+	margin-bottom: 20px;
 }
 
-.cash-crops-desc {
-
+@media (min-width: 576px) {
+	.container {
+		max-width: 100%;
+	}
 }
 
-.cash-crops-desc .crop,.figure,.rate {
+.cash-crops-icon {}
+
+.cash-crops-desc {}
+
+.cash-crops-desc .crop,
+.figure,
+.rate {
 	margin-bottom: 0px;
 	text-align: right
 }
 
-.cash-crops-desc .crop{
+.cash-crops-desc .crop {
 	color: rgba(44, 112, 48, 0.53);
 	font-size: 12px;
 }
 
-.cash-crops-desc .figure{
+.cash-crops-desc .figure {
 	color: black;
 	font-size: 15px;
 }
 
-.cash-crops-desc .rate{
+.cash-crops-desc .rate {
 	color: gray;
 	font-size: 10px;
 }
@@ -53,12 +61,16 @@ div.displayed-title {
 	margin-top: 20px
 }
 
-.staple-crops .oghas-card{
+.staple-crops .oghas-card {
 	padding-top: 20px;
 }
 
 .first-charts {
 	margin-top: 20px;
+}
+
+.first-charts .card {
+	margin-bottom: 20px
 }
 
 .nbs-food-charts {
@@ -72,6 +84,7 @@ div.displayed-title {
 .food-price-nbs > .nav-link {
 	color: white !important;
 	background-color: #4caf50;
+	margin-bottom: 7px
 }
 
 .food-price-nbs > .nav-link.active {
