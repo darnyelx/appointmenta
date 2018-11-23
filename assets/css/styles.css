@@ -57,9 +57,9 @@
 }
 
 button.navbar-toggler {
-  color: white;
-  border: white solid 1px !important;
-  background-image:
+	color: white;
+	border: white solid 1px !important;
+	background-image:
 }
 
 #header-subscribe .btn {
@@ -95,6 +95,7 @@ nav#inner-nav {
 		padding: 0 15px;
 	}
 }
+
 /*Menu Links*/
 
 
@@ -109,6 +110,7 @@ nav#inner-nav {
 	background-color: #4caf50 !important;
 	color: white;
 }
+
 /*Card*/
 
 
@@ -140,7 +142,7 @@ footer {
 	text-align: left;
 	padding: 20px 20px;
 	margin: 0 auto;
-/*	margin-top: 50px;*/
+	/*	margin-top: 50px;*/
 	margin-bottom: 20px;
 	bottom: 0;
 	color: #fff;
@@ -244,7 +246,195 @@ div.social-links {
 	margin-right: 5px;
 	margin-bottom: 5px;
 }
+
 /*Header*/
 
 
 
+/*Invest Page*/
+.left-pane > h4 {
+	text-decoration: underline;
+	color: green;
+}
+
+.time-stamp {
+	font-size: 12px;
+}
+
+.advert-space .col {
+	margin-bottom: 20px;
+}
+
+.read-more > a {
+	font-size: 30px;
+	color: green;
+}
+
+/*Invest Page*/
+
+
+/*Advisory Page*/
+.special-reports > .row {
+	margin-bottom: 20px;
+}
+
+/*Advisory Page*/
+
+
+/*Columnist Page*/
+.main-title {
+	margin-bottom: 0px;
+}
+
+.subtitle {
+	font-size: 18px;
+	color: green;
+}
+
+/*Columnist Page*/
+
+/*Events Page*/
+.sort {
+	display: inline-block;
+	border: solid rgba(145, 145, 145, 0.38) 1px;
+	border-radius: 4px;
+	padding: 2px 0px;
+}
+
+.sort a {
+	text-decoration: none;
+}
+
+.sort .active {
+	border-bottom: solid rgba(25, 25, 188, 0.72);
+	/*	padding-bottom: px*/
+}
+
+.relevance {
+	padding: 5px 20px;
+}
+
+
+.date {
+	padding: 5px 20px;
+	border-left: solid 1px grey;
+}
+
+.category-main {
+	padding: 20px 10px 15px 10px;
+}
+
+.category {
+	color: #1b4cba
+}
+
+.category a {
+	color: #1b4cba
+}
+
+.event-item {
+	margin-bottom: 20px;
+}
+
+/*
+.event-item-hover :hover {
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
+}
+*/
+
+.event-time-date {
+	margin-bottom: 0px;
+	margin-top: 10px;
+	font-weight: 100;
+}
+
+.event-location {
+	font-weight: 100;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+
+.event-type {
+	margin-bottom: 0px;
+	font-size: 13px;
+	color: black;
+	background: rgba(128, 128, 128, 0.17);
+	padding: 10px
+}
+
+.event-tags {
+	margin-bottom: 0px;
+	padding: 5px;
+}
+
+.event-tags-more {
+	padding: 5px;
+	margin-bottom: 0px;
+}
+
+.news-section {
+	margin-top: 20px;
+}
+
+.news-section-item {
+	margin-left: 10px
+}
+
+.agric-news {
+	text-decoration: underline;
+	color: green;
+}
+
+.agric-directory {
+	background: rgba(0, 128, 0, 0.67);
+	color: white;
+	height: 300px;
+}
+
+div.agric-directory button {
+	background: white;
+	color: #3ca03c;
+	font-weight: 700;
+}
+
+.special-reports-2 {
+	margin-bottom: 10px;
+}
+
+.special-reports-2 .title {
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+
+.special-report-btn {
+	font-size: 9.5px;
+}
+
+.footer-adv {
+	margin-top: 80px;
+}
+/*Events Page*/
+
+/*Media Page*/
+.news-item {
+	font-size: 13px;
+}
+
+.news {
+
+}
+/*Media Page*/
+
+/*Oagric TV*/
+.oagric-tv {
+	background: #3ca03c;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.oagric-tv h4 {
+	color: white;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+/*Oagric TV*/

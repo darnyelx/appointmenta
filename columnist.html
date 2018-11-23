@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OghasTech | Invest With Us</title>
+	<title>OghasTech | Become a columnist</title>
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
@@ -87,9 +87,11 @@
 	<!--	Main Content 	-->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 text-center">
+			<!--	Left Pane	- Main Content -->
+			<div class="col-md-8">
 				<br><br>
-				<h1 style="color: green;">Let Us Help You Invest!</h1>
+				<h1 class="main-title" style="color: green;">Become a Columnist</h1>
+				<em><h4 class="subtitle">Share Your views with the world</h4></em>
 				<form action="" method="post">
 					<br>
 					<h4>Full Name</h4>
@@ -98,17 +100,81 @@
 					<h4>Email Address</h4>
 					<input type="text" name="email" class="form-control form-control-lg oghas-input oghas-material" placeholder="Email Address">
 					<br>
-					<h4>Area Of Interest</h4>
-					<select class="custom-select form-control form-control-lg oghas-input oghas-material">
-						<option selected>Investor</option>
-						<option value="1">Advisory</option>
-						<option value="2">None</option>
-						<option value="3">Awesomeness</option>
-					</select>
+					<h4>Your Profile</h4>
+					<textarea type="text" name="profile" class="form-control form-control-lg oghas-input oghas-material" placeholder="Tell Us About Yourself"></textarea>
 					<br><br>
-					<button class="btn oghas-btn" type="submit">Submit</button>
+					<h4>Upload Your Image</h4>
+					<div class="custom-file form-control form-control-lg oghas-input oghas-material">
+						<input type="file" class="custom-file-input" id="customFile">
+						<label class="custom-file-label" for="customFile">Choose file</label>
+					</div>
+					<br><br><br>
+					<button class="btn btn-lg oghas-btn float-right btn-block" type="submit">Submit</button>
 				</form>
+				<br><br><br><br>
+				<div class="text-center" id="advert-one">
+					<a href="#move">
+						<img class="img-fluid" src="http://via.placeholder.com/600x100" alt="">
+					</a>
+				</div>
 				<br><br><br>
+
+				<div class="special-reports">
+					<h3 style="color: green; text-decoration: underline">Speacial Reports</h3>
+					<hr>
+					<div class="row">
+						<div class="col-sm col-lg">
+							<div class="news-row">
+								<div class="row">
+									<div class="col-sm-6 col-lg-5 align-self-center d-flex justify-content-center">
+										<img src="http://via.placeholder.com/150x100" class="special-report-img" alt="special report img">
+									</div>
+									<div class="col-sm-6 col-lg-7 align-self-center text-center">
+										<a href="#news">
+											<p class="ins-title">Organic Agriculture: Retrieving the Principles of the Old in Contemporary Practice</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm col-lg">
+							<div class="news-row">
+								<div class="row">
+									<div class="col-sm-6 col-lg-5 align-self-center d-flex justify-content-center">
+										<img src="http://via.placeholder.com/150x100" class="special-report-img" alt="special report img">
+									</div>
+									<div class="col-sm-6 col-lg-7 align-self-center text-center">
+										<a href="#news">
+											<p class="ins-title">Why One Island Grows 80% of the World's Vanilla</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm col-lg">
+							<div class="news-row">
+								<div class="row">
+									<div class="col-sm-6 col-lg-5 align-self-center d-flex justify-content-center">
+										<img src="http://via.placeholder.com/150x100" class="special-report-img" alt="special report img">
+									</div>
+									<div class="col-sm-6 col-lg-7 align-self-center text-center">
+										<a href="#news">
+											<p class="ins-title">Organic Agriculture: Retrieving the Principles of the Old in Contemporary Practice</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<br>
+				<br>
 				<div class="" id="advert-one">
 					<a href="#move">
 						<img class="img-fluid" src="http://via.placeholder.com/600x100" alt="">
@@ -116,7 +182,7 @@
 				</div>
 			</div>
 
-			<!--	Left Pane	- for latest news and adverts	-->
+			<!--	Right Pane	- for latest news and adverts	-->
 			<div class="col-md-4 left-pane">
 				<br><br>
 				<h4>Latest News</h4>
@@ -124,41 +190,41 @@
 				<div class="row latest-news">
 					<div class="col">
 						<h5><a href="#move">Amazon Berkshire, JP Morgan to Form Health Care Company</a></h5>
-							<div class="time-stamp d-flex justify-content-between text-muted">
-								<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
-								<p class="category">Business</p>
-							</div>
-							<hr>
+						<div class="time-stamp d-flex justify-content-between text-muted">
+							<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
+							<p class="category">Business</p>
+						</div>
+						<hr>
 					</div>
 				</div>
 				<div class="row latest-news">
 					<div class="col">
 						<h5><a href="#move">Cannes boosts beach with borrowed sand</a></h5>
-							<div class="time-stamp d-flex justify-content-between text-muted">
-								<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
-								<p class="category">World</p>
-							</div>
-							<hr>
+						<div class="time-stamp d-flex justify-content-between text-muted">
+							<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
+							<p class="category">World</p>
+						</div>
+						<hr>
 					</div>
 				</div>
 				<div class="row latest-news">
 					<div class="col">
 						<h5><a href="#move">Starts at 'Black Panther' premiere express high hopes for film</a></h5>
-							<div class="time-stamp d-flex justify-content-between text-muted">
-								<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
-								<p class="category">World</p>
-							</div>
-							<hr>
+						<div class="time-stamp d-flex justify-content-between text-muted">
+							<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
+							<p class="category">World</p>
+						</div>
+						<hr>
 					</div>
 				</div>
 				<div class="row latest-news">
 					<div class="col">
 						<h5><a href="#move">Leaked report says the UK will suffer after Brexit</a></h5>
-							<div class="time-stamp d-flex justify-content-between text-muted">
-								<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
-								<p class="category">World</p>
-							</div>
-							<p class="read-more d-flex justify-content-end"><a href="#more">...read more</a></p>
+						<div class="time-stamp d-flex justify-content-between text-muted">
+							<span class=""><i class="fa fa-clock-o"></i> 5 hours ago</span>
+							<p class="category">World</p>
+						</div>
+						<p class="read-more d-flex justify-content-end"><a href="#more">...read more</a></p>
 					</div>
 				</div>
 
