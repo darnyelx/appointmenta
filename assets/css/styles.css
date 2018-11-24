@@ -124,15 +124,6 @@ nav#inner-nav {
 
 
 /*Footer*/
-.footer-social {
-	margin-top: 20px;
-	font-size: 30px;
-}
-
-.footer-social i {
-	color: rgba(0, 0, 0, 0.5);
-	margin-right: 10px;
-}
 
 footer {
 	background-color: #4caf50;
@@ -144,7 +135,10 @@ footer {
 	margin: 0 auto;
 	/*	margin-top: 50px;*/
 	margin-bottom: 20px;
-	bottom: 0;
+	position: static;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 	color: #fff;
 }
 
@@ -247,9 +241,24 @@ div.social-links {
 	margin-bottom: 5px;
 }
 
+.footer-social {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.footer-social i {
+	color: rgba(0, 0, 0, 0.5);
+	margin-right: 10px;
+}
+
 /*Header*/
 
-
+marquee {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #60ba60;
+	color: white;
+}
 
 /*Invest Page*/
 .left-pane > h4 {
@@ -266,7 +275,7 @@ div.social-links {
 }
 
 .read-more > a {
-	font-size: 30px;
+	font-size: 20px;
 	color: green;
 }
 
@@ -413,6 +422,7 @@ div.agric-directory button {
 .footer-adv {
 	margin-top: 80px;
 }
+
 /*Events Page*/
 
 /*Media Page*/
@@ -420,9 +430,8 @@ div.agric-directory button {
 	font-size: 13px;
 }
 
-.news {
+.news {}
 
-}
 /*Media Page*/
 
 /*Oagric TV*/
@@ -436,5 +445,48 @@ div.agric-directory button {
 	color: white;
 	padding: 10px;
 	margin-bottom: 0px;
+}
+
+.main-video {
+	margin-bottom: 20px;
+}
+
+.main-video-sub {
+	margin-bottom: 20px;
+}
+
+.other-videos h4 {
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.other-videos hr {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.last-vid {
+	margin-bottom: 30px;
+}
+
+.col-md-4.latest-news {
+	margin-top: 20px;
+}
+
+.latest-news h4 {
+	margin-bottom: 0px;
+}
+
+.latest-news hr {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.latest-news p {
+	margin-bottom: 5px;
+}
+
+.advert-space {
+	margin-top: 20px;
 }
 /*Oagric TV*/
