@@ -311,6 +311,13 @@ marquee {
 /*Columnist Page*/
 
 /*Events Page*/
+
+@media (max-width: 768px) {
+	.events-main-content {
+		text-align: center;
+	}
+}
+
 .sort {
 	display: inline-block;
 	border: solid rgba(145, 145, 145, 0.38) 1px;
@@ -323,8 +330,7 @@ marquee {
 }
 
 .sort .active {
-	border-bottom: solid rgba(25, 25, 188, 0.72);
-	/*	padding-bottom: px*/
+	border-bottom: solid 1.2px rgba(25, 25, 188, 0.72);
 }
 
 .relevance {
@@ -333,12 +339,16 @@ marquee {
 
 
 .date {
-	padding: 5px 20px;
+	padding: 0px 20px;
 	border-left: solid 1px grey;
 }
 
 .category-main {
-	padding: 20px 10px 15px 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+.category-main hr {
+	margin: 5px 5px !important;
 }
 
 .category {
@@ -355,8 +365,12 @@ marquee {
 
 .event-time-date {
 	margin-bottom: 0px;
-	margin-top: 10px;
 	font-weight: 100;
+	color: green;
+}
+
+.event-title {
+	margin-bottom: 0px;
 }
 
 .event-location {
@@ -368,7 +382,7 @@ marquee {
 .event-type {
 	margin-bottom: 0px;
 	font-size: 13px;
-	color: black;
+	color: green;
 	background: rgba(128, 128, 128, 0.17);
 	padding: 10px
 }
@@ -376,6 +390,7 @@ marquee {
 .event-tags {
 	margin-bottom: 0px;
 	padding: 5px;
+	color: green;
 }
 
 .event-tags-more {
@@ -441,8 +456,6 @@ div.agric-directory button {
 		display: none;
 	}
 }
-
-
 
 .index-latest-news {
 	background: rgba(128, 128, 128, 0.14);
@@ -621,3 +634,20 @@ div.agric-directory button {
 }
 
 /*Oagric TV*/
+
+/*Post*/
+
+.post-recommended-link {
+	font-size: 12px;
+}
+
+.post-recommended-link > img {
+	margin-bottom: 5px;
+}
+
+.writer {
+	padding: 20px;
+	border: 1px solid rgba(128, 128, 128, 0.19);
+}
+
+/*Post*/
