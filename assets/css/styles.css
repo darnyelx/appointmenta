@@ -12,16 +12,16 @@
 }
 
 .oghas-input {
-	background-color: #4caf50;
+	background-color: #fff;
 	color: white !important;
 }
 
 .oghas-input::placeholder {
-	color: white !important;
+	color: green !important;
 }
 
 .oghas-input:focus {
-	background-color: #4caf50;
+	border: rgba(0, 128, 0, 0.38) 2px solid;
 }
 
 .oghas-btn {
@@ -295,6 +295,25 @@ marquee {
 	margin-bottom: 20px;
 }
 
+.ins-title {
+	margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+	.advisory-main-header {
+		text-align: center;
+	}
+
+	.advisory-special-report-header {
+		text-align: center;
+	}
+
+	.advisory-latest-news-header {
+		text-align: center;
+	}
+
+}
+
 /*Advisory Page*/
 
 
@@ -351,9 +370,7 @@ marquee {
 	margin: 5px 5px !important;
 }
 
-.category {
-	color: #1b4cba
-}
+.category {}
 
 .category a {
 	color: #1b4cba
@@ -651,3 +668,11 @@ div.agric-directory button {
 }
 
 /*Post*/
+
+/*Onews*/
+
+.news-recommended-news-item {
+	margin-top: 5px;
+}
+
+/*Onews*/
