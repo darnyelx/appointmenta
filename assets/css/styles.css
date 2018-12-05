@@ -30,6 +30,10 @@
 }
 
 a {
+	color: black !important;
+}
+
+a:hover {
 	color: rgb(7, 136, 61) !important;
 }
 
@@ -425,20 +429,137 @@ div.agric-directory button {
 /*Events Page*/
 
 /*Index Page*/
+
+@media (max-width: 768px) {
+	.menu-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.menu-mobile-more {
+		display: none;
+	}
+}
+
+
+
+.index-latest-news {
+	background: rgba(128, 128, 128, 0.14);
+}
+
 .news-item {
 	font-size: 13px;
 }
 
-.news {}
+.featured-news-item {
+	color: rgba(0, 0, 0, 0.73);
+	font-size: 12px;
+}
 
-.category-main {
-	background: #f4f1f1;
+.text-justify {
+	text-align: justify !important
+}
+
+.text-nowrap {
+	white-space: nowrap !important
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.text-left {
+	text-align: left !important
+}
+
+.text-right {
+	text-align: right !important
+}
+
+.text-center {
+	text-align: center !important
+}
+
+@media (max-width: 768px) {
+	.main-content {
+		text-align: center;
+	}
+}
+
+@media (min-width:576px) {
+	.text-sm-left {
+		text-align: left !important
+	}
+
+	.text-sm-right {
+		text-align: right !important
+	}
+
+	.text-sm-center {
+		text-align: center !important
+	}
+}
+
+@media (min-width:768px) {
+	.text-md-left {
+		text-align: left !important
+	}
+
+	.text-md-right {
+		text-align: right !important
+	}
+
+	.text-md-center {
+		text-align: center !important
+	}
+}
+
+@media (min-width:992px) {
+	.text-lg-left {
+		text-align: left !important
+	}
+
+	.text-lg-right {
+		text-align: right !important
+	}
+
+	.text-lg-center {
+		text-align: center !important
+	}
+}
+
+@media (min-width:1200px) {
+	.text-xl-left {
+		text-align: left !important
+	}
+
+	.text-xl-right {
+		text-align: right !important
+	}
+
+	.text-xl-center {
+		text-align: center !important
+	}
+}
+
+.text-lowercase {
+	text-transform: lowercase !important
+}
+
+.text-uppercase {
+	text-transform: uppercase !important
+}
+
+.text-capitalize {
+	text-transform: capitalize !important
 }
 
 .news-section-item {
 	margin-top: 20px;
 	padding-top: 10px;
-	text-align: center !important
 }
 
 /*Index Page*/
