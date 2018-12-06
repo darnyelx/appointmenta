@@ -596,15 +596,32 @@ div.agric-directory button {
 
 /*Oagric TV*/
 .oagric-tv {
-	background: #3ca03c;
+	background: rgba(211, 211, 211, 0.46);
 	color: white;
 	margin-bottom: 30px;
 }
 
+.main-video .oagric-tvs {
+	margin-right: 5px;
+}
+
+.oagric-tvs {
+	background: rgba(211, 211, 211, 0.46);
+	margin-bottom: 5px;
+}
+
 .oagric-tv h4 {
-	color: white;
 	padding: 10px;
 	margin-bottom: 0px;
+}
+
+.oagric-video-title {
+
+}
+
+.oagric-video-text {
+	color: rgba(0, 0, 0, 0.65);
+	font-size: 14px;
 }
 
 .main-video {
