@@ -1,4 +1,4 @@
-/*Brand Consistency Styles*/
+/*Brand Consistency Rules Start*/
 
 .oghas-material {
 	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
@@ -37,12 +37,10 @@ a:hover {
 	color: rgb(7, 136, 61) !important;
 }
 
-/*Brand Consistency Styles*/
+/*Brand Consistency Rules End*/
 
 
-/*Header*/
-@media (max-width: 575.98px) {}
-
+/*Header Start*/
 
 #oghas-logo {
 	background-image: url("../../assets/img/Oagric_Transparent.png");
@@ -72,6 +70,15 @@ button.navbar-toggler {
 
 #header-subscribe .btn {
 	border: solid 1px white;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	color: green !important;
+	border-left: 1px green solid;
+}
+
+#header-subscribe .btn:hover {
+	background: white !important;
 }
 
 .header-social {
@@ -92,6 +99,35 @@ input#header-search {
 input#header-search:focus {
 	width: 90%;
 	background-color: #2c7030;
+	color: white;
+}
+
+@media (max-width: 768px) {
+
+	input#header-search {
+		width: 65px;
+		-webkit-transition: width 0s ease-in-out;
+		transition: width 0s ease-in-out;
+	}
+
+	input#header-search:focus {
+		width: 65px;
+		background-color: #2c7030;
+	}
+}
+
+@media (max-width: 575px) {
+
+	input#header-search {
+		width: 50%;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+
+	input#header-search:focus {
+		width: 100%;
+		background-color: #2c7030;
+	}
 }
 
 nav#inner-nav {
@@ -104,7 +140,14 @@ nav#inner-nav {
 	}
 }
 
-/*Menu Links*/
+marquee {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #60ba60;
+	color: white;
+}
+
+/*Header End*/
 
 
 /*Card*/
@@ -122,16 +165,16 @@ nav#inner-nav {
 /*Card*/
 
 
-/*Newsletter Subscribe*/
+/*Newsletter Subscribe Start*/
 #newsletter-signup {
 	margin-top: 20px;
 }
 
 
-/*Newsletter Subscribe*/
+/*Newsletter Subscribe End*/
 
 
-/*Footer*/
+/*Footer Start*/
 
 footer {
 	background-color: #4caf50;
@@ -259,16 +302,12 @@ div.social-links {
 	margin-right: 10px;
 }
 
-/*Header*/
+/*Footer End*/
 
-marquee {
-	margin-bottom: 20px;
-	padding: 10px;
-	background-color: #60ba60;
-	color: white;
-}
 
-/*Invest Page*/
+
+
+/*Invest Page Start*/
 .left-pane > h4 {
 	text-decoration: underline;
 	color: green;
@@ -287,10 +326,12 @@ marquee {
 	color: green;
 }
 
-/*Invest Page*/
+/*Invest Page End*/
 
 
-/*Advisory Page*/
+
+
+/*Advisory Page Start*/
 .special-reports > .row {
 	margin-bottom: 20px;
 }
@@ -314,10 +355,12 @@ marquee {
 
 }
 
-/*Advisory Page*/
+/*Advisory Page End*/
 
 
-/*Columnist Page*/
+
+
+/*Columnist Page Start*/
 .main-title {
 	margin-bottom: 0px;
 }
@@ -327,9 +370,12 @@ marquee {
 	color: green;
 }
 
-/*Columnist Page*/
+/*Columnist Page End*/
 
-/*Events Page*/
+
+
+
+/*Events Page Start*/
 
 @media (max-width: 768px) {
 	.events-main-content {
@@ -458,9 +504,12 @@ div.agric-directory button {
 	margin-top: 80px;
 }
 
-/*Events Page*/
+/*Events Page End*/
 
-/*Index Page*/
+
+
+
+/*Media Page Start*/
 
 @media (max-width: 768px) {
 	.menu-mobile {
@@ -592,9 +641,15 @@ div.agric-directory button {
 	padding-top: 10px;
 }
 
-/*Index Page*/
 
-/*Oagric TV*/
+
+/*Media Page End*/
+
+
+
+
+/*Oagric TV Start*/
+
 .oagric-tv {
 	background: rgba(211, 211, 211, 0.46);
 	color: white;
@@ -615,9 +670,7 @@ div.agric-directory button {
 	margin-bottom: 0px;
 }
 
-.oagric-video-title {
-
-}
+.oagric-video-title {}
 
 .oagric-video-text {
 	color: rgba(0, 0, 0, 0.65);
@@ -669,6 +722,9 @@ div.agric-directory button {
 
 /*Oagric TV*/
 
+
+
+
 /*Post*/
 
 .post-recommended-link {
@@ -685,6 +741,9 @@ div.agric-directory button {
 }
 
 /*Post*/
+
+
+
 
 /*Onews*/
 
