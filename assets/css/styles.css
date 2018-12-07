@@ -17,7 +17,7 @@
 }
 
 .oghas-input::placeholder {
-	color: green !important;
+	color: grey !important;
 }
 
 .oghas-input:focus {
@@ -36,6 +36,24 @@ a {
 a:hover {
 	color: rgb(7, 136, 61) !important;
 }
+
+img,
+nav,
+footer,
+input,
+marquee,
+.newsletter-sub,
+.media-latest-news,
+.writer {
+	border-radius: 5px;
+}
+
+/*
+#advert-three {
+	position: sticky;
+	z-index: 999;
+}
+*/
 
 /*Brand Consistency Rules End*/
 
@@ -92,8 +110,8 @@ button.navbar-toggler {
 
 input#header-search {
 	width: 65px;
-	-webkit-transition: width 0.4s ease-in-out;
-	transition: width 0.4s ease-in-out;
+	/*	-webkit-transition: width 0.4s ease-in-out;*/
+	transition: width 0.4s ease-in;
 }
 
 input#header-search:focus {
@@ -132,6 +150,11 @@ input#header-search:focus {
 
 nav#inner-nav {
 	width: 100%;
+}
+
+.nav-link.active {
+	color: green !important;
+	border-bottom: solid 1px green;
 }
 
 @media (max-width: 575.98px) {
@@ -362,7 +385,7 @@ div.social-links {
 
 /*Columnist Page Start*/
 .main-title {
-	margin-bottom: 0px;
+	/*	margin-bottom: 0px;*/
 }
 
 .subtitle {
@@ -424,6 +447,7 @@ div.social-links {
 
 .event-item {
 	margin-bottom: 20px;
+	padding: 10px 0px;
 }
 
 .event-time-date {
@@ -523,7 +547,7 @@ div.agric-directory button {
 	}
 }
 
-.index-latest-news {
+.media-latest-news {
 	background: rgba(128, 128, 128, 0.14);
 }
 
