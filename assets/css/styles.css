@@ -1,5 +1,4 @@
 /*Brand Consistency Rules Start*/
-
 .oghas-material {
 	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 /*	box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);*/
@@ -46,7 +45,7 @@ marquee,
 .newsletter-sub,
 .media-latest-news,
 .writer {
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 /*
@@ -55,12 +54,10 @@ marquee,
 	z-index: 999;
 }
 */
-
 /*Brand Consistency Rules End*/
 
 
 /*Header Start*/
-
 #oghas-logo {
 	background-image: url("../../assets/img/Oagric_Transparent.png");
 	background-size: contain;
@@ -155,7 +152,7 @@ nav#inner-nav {
 
 .nav-link.active {
 	color: green !important;
-	border-bottom: solid 1px green;
+	border-bottom: solid 3px rgba(0, 128, 0, 0.54);
 }
 
 @media (max-width: 575.98px) {
@@ -170,7 +167,6 @@ marquee {
 	background-color: #60ba60;
 	color: white;
 }
-
 /*Header End*/
 
 
@@ -185,7 +181,6 @@ marquee {
 	background-color: #4caf50 !important;
 	color: white;
 }
-
 /*Card*/
 
 
@@ -193,13 +188,10 @@ marquee {
 #newsletter-signup {
 	margin-top: 20px;
 }
-
-
 /*Newsletter Subscribe End*/
 
 
 /*Footer Start*/
-
 footer {
 	background-color: #4caf50;
 	box-shadow: -1px 5px 20px 7px rgb(154, 154, 154);
@@ -325,10 +317,7 @@ div.social-links {
 	color: rgba(0, 0, 0, 0.5);
 	margin-right: 10px;
 }
-
 /*Footer End*/
-
-
 
 
 /*Invest Page Start*/
@@ -349,10 +338,7 @@ div.social-links {
 	font-size: 20px;
 	color: green;
 }
-
 /*Invest Page End*/
-
-
 
 
 /*Advisory Page Start*/
@@ -378,10 +364,7 @@ div.social-links {
 	}
 
 }
-
 /*Advisory Page End*/
-
-
 
 
 /*Columnist Page Start*/
@@ -393,14 +376,12 @@ div.social-links {
 	font-size: 18px;
 	color: green;
 }
-
 /*Columnist Page End*/
 
 
 
 
 /*Events Page Start*/
-
 @media (max-width: 768px) {
 	.events-main-content {
 		text-align: center;
@@ -425,7 +406,6 @@ div.social-links {
 .relevance {
 	padding: 5px 20px;
 }
-
 
 .date {
 	padding: 0px 20px;
@@ -528,14 +508,12 @@ div.agric-directory button {
 .footer-adv {
 	margin-top: 80px;
 }
-
 /*Events Page End*/
 
 
 
 
 /*Media Page Start*/
-
 @media (max-width: 768px) {
 	.menu-mobile {
 		display: none;
@@ -665,16 +643,12 @@ div.agric-directory button {
 	margin-top: 20px;
 	padding-top: 10px;
 }
-
-
-
 /*Media Page End*/
 
 
 
 
 /*Oagric TV Start*/
-
 .oagric-tv {
 	background: rgba(211, 211, 211, 0.46);
 	color: white;
@@ -744,14 +718,10 @@ div.agric-directory button {
 .advert-space {
 	margin-top: 20px;
 }
-
 /*Oagric TV*/
 
 
-
-
 /*Post*/
-
 .post-recommended-link {
 	font-size: 12px;
 }
@@ -765,15 +735,14 @@ div.agric-directory button {
 	border: 1px solid rgba(128, 128, 128, 0.19);
 }
 
+.post-image {
+	margin-bottom: 10px;
+}
 /*Post*/
 
 
-
-
 /*Onews*/
-
 .news-recommended-news-item {
 	margin-top: 5px;
 }
-
 /*Onews*/
