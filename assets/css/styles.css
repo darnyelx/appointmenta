@@ -1,7 +1,7 @@
 /*Brand Consistency Rules Start*/
 .oghas-material {
 	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
-/*	box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);*/
+	/*	box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);*/
 }
 
 .oghas-font {
@@ -320,6 +320,102 @@ div.social-links {
 /*Footer End*/
 
 
+/*Index Page Starts*/
+.index-slider {
+	margin-bottom: 25px !important;
+	border: 0px;
+}
+
+.index-slider .ws_images {
+	border: solid 0px white !important;
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 0%;
+	left: 60%;
+	height: 100%;
+	bottom: 0px;
+	padding: 7% 20px 0 20px;
+	z-index: 10;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.62);
+	color: #fff;
+}
+
+.carousel-news-title {
+	color: green;
+}
+
+.carousel-news-item {
+	color: black;
+}
+
+.carousel-control-prev-1,
+.carousel-control-next-1 {
+	position: absolute;
+	/*  top: 0;*/
+	bottom: 0;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 5%;
+	color: #fff;
+	text-align: center;
+	/*  opacity: 0.5;*/
+	transition: opacity 0.15s ease;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	.carousel-control-prev-1,
+	.carousel-control-next-1 {
+		transition: none;
+	}
+}
+
+.carousel-control-prev-1:hover,
+.carousel-control-prev-1:focus,
+.carousel-control-next-1:hover,
+.carousel-control-next-1:focus {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	opacity: 0.9;
+}
+
+.carousel-control-prev-1 {
+	left: 0;
+}
+
+.carousel-control-next-1 {
+	right: 0;
+}
+
+.carousel-control-prev-1-icon,
+.carousel-control-next-1-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.carousel-control-prev-1-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-1-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+/*Index Page Starts*/
+
+
 /*Invest Page Start*/
 .left-pane > h4 {
 	text-decoration: underline;
@@ -338,6 +434,7 @@ div.social-links {
 	font-size: 20px;
 	color: green;
 }
+
 /*Invest Page End*/
 
 
@@ -364,6 +461,7 @@ div.social-links {
 	}
 
 }
+
 /*Advisory Page End*/
 
 
@@ -376,9 +474,8 @@ div.social-links {
 	font-size: 18px;
 	color: green;
 }
+
 /*Columnist Page End*/
-
-
 
 
 /*Events Page Start*/
@@ -451,7 +548,7 @@ div.social-links {
 	margin-bottom: 0px;
 	font-size: 13px;
 	color: green;
-/*	background: rgba(128, 128, 128, 0.17);*/
+	/*	background: rgba(128, 128, 128, 0.17);*/
 	padding: 10px
 }
 
@@ -508,9 +605,8 @@ div.agric-directory button {
 .footer-adv {
 	margin-top: 80px;
 }
+
 /*Events Page End*/
-
-
 
 
 /*Media Page Start*/
@@ -643,15 +739,15 @@ div.agric-directory button {
 	margin-top: 20px;
 	padding-top: 10px;
 }
+
 /*Media Page End*/
-
-
 
 
 /*Oagric TV Start*/
 .oagric-tv {
 	background: rgba(211, 211, 211, 0.46);
 	color: white;
+	padding-bottom: 10px;
 	margin-bottom: 30px;
 }
 
@@ -718,6 +814,7 @@ div.agric-directory button {
 .advert-space {
 	margin-top: 20px;
 }
+
 /*Oagric TV*/
 
 
@@ -738,6 +835,7 @@ div.agric-directory button {
 .post-image {
 	margin-bottom: 10px;
 }
+
 /*Post*/
 
 
@@ -745,4 +843,5 @@ div.agric-directory button {
 .news-recommended-news-item {
 	margin-top: 5px;
 }
+
 /*Onews*/
