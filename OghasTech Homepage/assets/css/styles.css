@@ -1,6 +1,6 @@
 /*Brand Consistency Rules Start*/
 body {
-	background-color: rgba(211, 211, 211, 0.12) !important;
+	/*		background-color: rgb(250, 250, 250) !important;*/
 }
 
 .oghas-material {
@@ -33,14 +33,11 @@ body {
 	color: white;
 }
 
-a {
-	color: black !important;
-}
+a {}
 
-a:hover {
-	color: rgb(7, 136, 61) !important;
-}
+a:hover {}
 
+/*
 img,
 nav,
 footer,
@@ -51,18 +48,20 @@ marquee,
 .writer {
 	border-radius: 3px;
 }
+*/
 
 #middle-adverts {
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
 #side-adverts {
-/*
+	/*
 	margin-bottom: 20px; 
 	margin-top: 20px;
 */
 }
+
 /*Brand Consistency Rules End*/
 
 
@@ -76,15 +75,15 @@ marquee,
 }
 
 .oghas-nav {
-	background-color: #4caf50;
+	background-color: #000;
 	top: 0;
 	position: sticky;
 	z-index: 999;
 	box-shadow: 0px 0px 20px 8px rgba(80, 96, 80, 0.31);
 	padding: 0px;
-	width: 97%;
+	/*	width: 97%;*/
 	margin: 0 auto;
-	margin-top: 7px;
+	/*	margin-top: 7px;*/
 }
 
 button.navbar-toggler {
@@ -98,7 +97,7 @@ button.navbar-toggler {
 	border-radius: 5px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
-	color: green !important;
+	color: grey !important;
 	border-left: 1px green solid;
 }
 
@@ -106,8 +105,7 @@ button.navbar-toggler {
 	background: white !important;
 }
 
-.header-social {
-	font-size: 30px;
+font-size: 30px;
 }
 
 .header-social i {
@@ -159,11 +157,6 @@ nav#inner-nav {
 	width: 100%;
 }
 
-.nav-link.active {
-	color: green !important;
-	border-bottom: solid 3px rgba(0, 128, 0, 0.54);
-}
-
 @media (max-width: 575.98px) {
 	.navbar-expand-sm > .container {
 		padding: 0 15px;
@@ -176,41 +169,28 @@ marquee {
 	background-color: #60ba60;
 	color: white;
 }
+
 /*Header End*/
-
-
-/*Card*/
-#card-deck {
-	margin-top: 50px;
-}
-
-.card-header-colour,
-.btn-success,
-.input-group-text-colour {
-	background-color: #4caf50 !important;
-	color: white;
-}
-/*Card*/
-
 
 /*Newsletter Subscribe Start*/
 #newsletter-signup {
 	margin-top: 20px;
 }
+
 /*Newsletter Subscribe End*/
 
 
 /*Footer Start*/
 footer {
-	background-color: #4caf50;
+	background-color: #000;
 	box-shadow: -1px 5px 20px 7px rgb(154, 154, 154);
 	box-sizing: border-box;
-	width: 96%;
 	text-align: left;
 	padding: 20px 20px;
-	margin: 0 auto;
+	/*	width: 96%;*/
+	/*	margin: 0 auto;*/
 	/*	margin-top: 50px;*/
-	margin-bottom: 20px;
+	/*	margin-bottom: 20px;*/
 	position: static;
 	bottom: 0px;
 	left: 0px;
@@ -235,7 +215,7 @@ footer {
 }
 
 .footer-navigation p.links a {
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 }
 
@@ -264,7 +244,7 @@ footer {
 }
 
 .fa.footer-contacts-icon {
-	color: #163818;
+	color: #fff !important;
 	font-size: 18px;
 	width: 38px;
 	height: 38px;
@@ -323,534 +303,189 @@ div.social-links {
 }
 
 .footer-social i {
-	color: rgba(0, 0, 0, 0.5);
+	color: white;
 	margin-right: 10px;
 }
+
 /*Footer End*/
 
-
-/*Index Page Starts*/
-.index-slider {
-	margin-bottom: 25px !important;
-	border: 0px;
+/*OghasTech Homepage*/
+.oghas-nav .nav-link {
+	color: white !important;
 }
 
-.index-slider .ws_images {
-	border: solid 0px white !important;
+.section {
+	height: 500px;
+	width: 100%;
 }
 
-.carousel-caption {
+.section-overlay {
+	height: 500px;
+	width: 100%;
 	position: absolute;
-	right: 0%;
-	left: 60%;
-	height: 100%;
-	bottom: 0px;
-	padding: 7% 20px 0 20px;
-	z-index: 10;
-	text-align: left;
-	background: rgba(255, 255, 255, 0.62);
-	color: #fff;
+	z-index: 2;
 }
 
-.carousel-news-title {
-	color: green;
+.section-content {
+	background-repeat: no-repeat;
+	background-position: top;
+	text-align: center;
+	height: 500px;
+	padding-top: 100px;
+	z-index: 7;
 }
 
-.carousel-news-item {
+.section-content-header {
+	color: white;
+	position: relative;
+	z-index: 3;
+}
+
+.oghastech-btn-1 {
+	margin-top: 20%;
+	border-radius: 50px;
+	color: white;
+	padding: 6px 40px;
+	position: relative;
+	z-index: 3;
+	border: solid hotpink;
+}
+
+.oghastech-btn-1:hover {
+	border: solid white;
+}
+
+.oghastech-btn-2 {
+	background-color: transparent;
+	color: white;
+	margin-top: 20%;
+	padding: 6px 40px;
+	border-radius: 50px;
+	position: relative;
+	z-index: 3;
+}
+
+.oghastech-btn-2:hover {
+	background: rgba(255, 255, 255, 0.31) !important;
+}
+
+.section-1-overlay {
+	background: rgba(255, 105, 180, 0.43);
+}
+
+.section-1-content {
+	background-image: url(../img/bag-1.jpg);
+}
+
+.oghastech-btn-1-secton-1 {
+	background-color: hotpink;
+}
+
+.oghastech-btn-2-secton-1 {
+	background-color: transparent;
+	color: white;
+	border: solid hotpink;
+}
+
+.section-2-overlay {
+	background: rgba(0, 128, 0, 0.65);
+}
+
+.section-2-content {
+	background-image: url(../img/oagric-1.jpg);
+	background-size: cover;
+}
+
+.oghastech-btn-1-secton-2 {
+	background-color: #09ba09;
+	border: solid #09ba09;
+}
+
+.oghastech-btn-2-secton-2 {
+	background-color: transparent;
+	color: white;
+	border: solid #09ba09;
+}
+
+.section-3-overlay {
+	background: rgba(0, 20, 128, 0.65);
+}
+
+.section-3-content {
+	background-image: url(../img/oacademy-3.jpg);
+	background-size: cover;
+	background-position: contain;
+}
+
+.oghastech-btn-1-secton-3 {
+	background-color: rgb(8, 160, 255);
+	border: solid rgb(8, 160, 255);
+}
+
+.oghastech-btn-2-secton-3 {
+	border: solid rgb(8, 160, 255);
+}
+
+#about-sections {
+	padding: 50px 20px !important;
+}
+
+#about-sections .col {
+	padding: 20px 20px 30px 20px !important;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#about-sections p {
+	margin-bottom: 50px;
+}
+
+.about-links {
+	text-align: right !important;
+	float: right !important;
+}
+
+#news-updates {
+	padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+	#about-sections .col {
+		margin-bottom: 20px;
+	}
+
+	#news-updates {
+		text-align: center;
+	}
+
+	#news-updates h4 {
+		/*		text-align: left;*/
+	}
+
+	#news-updates p {
+		padding: 10px 0 0 0 !important;
+		margin-bottom: 5px
+	}
+
+	#news-updates span {
+		padding: 0 !important;
+	}
+
+	#news-updates .news-item {
+		margin-bottom: 20px;
+	}
+}
+
+#news-updates p {
+	padding: 10px 15px 0px 15px;
+}
+
+#news-updates span {
+	padding: 0px 15px 0px 15px;
+}
+
+#news-updates p > a {
 	color: black;
 }
 
-.carousel-control-prev-1,
-.carousel-control-next-1 {
-	position: absolute;
-	/*  top: 0;*/
-	bottom: 0;
-	z-index: 1;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 5%;
-	color: #fff;
-	text-align: center;
-	/*  opacity: 0.5;*/
-	transition: opacity 0.15s ease;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-
-	.carousel-control-prev-1,
-	.carousel-control-next-1 {
-		transition: none;
-	}
-}
-
-.carousel-control-prev-1:hover,
-.carousel-control-prev-1:focus,
-.carousel-control-next-1:hover,
-.carousel-control-next-1:focus {
-	color: #fff;
-	text-decoration: none;
-	outline: 0;
-	opacity: 0.9;
-}
-
-.carousel-control-prev-1 {
-	left: 0;
-}
-
-.carousel-control-next-1 {
-	right: 0;
-}
-
-.carousel-control-prev-1-icon,
-.carousel-control-next-1-icon {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: transparent no-repeat center center;
-	background-size: 100% 100%;
-}
-
-.carousel-control-prev-1-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-next-1-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-}
-
-/*Index Page Starts*/
-
-
-/*Invest Page Start*/
-.left-pane > h4 {
-	text-decoration: underline;
-	color: green;
-}
-
-.time-stamp {
-	font-size: 12px;
-}
-
-.advert-space .col {
-	margin-bottom: 20px;
-}
-
-.read-more > a {
-	font-size: 20px;
-	color: green;
-}
-
-/*Invest Page End*/
-
-
-/*Advisory Page Start*/
-.special-reports > .row {
-	margin-bottom: 20px;
-}
-
-.ins-title {
-	margin-bottom: 0px;
-}
-
-@media (max-width: 768px) {
-	.advisory-main-header {
-		text-align: center;
-	}
-
-	.advisory-special-report-header {
-		text-align: center;
-	}
-
-	.advisory-latest-news-header {
-		text-align: center;
-	}
-
-}
-
-/*Advisory Page End*/
-
-
-/*Columnist Page Start*/
-.main-title {
-	/*	margin-bottom: 0px;*/
-}
-
-.subtitle {
-	font-size: 18px;
-	color: green;
-}
-
-/*Columnist Page End*/
-
-
-/*Events Page Start*/
-@media (max-width: 768px) {
-	.events-main-content {
-		text-align: center;
-	}
-}
-
-.sort {
-	display: inline-block;
-	border: solid rgba(145, 145, 145, 0.38) 1px;
-	border-radius: 4px;
-	padding: 2px 0px;
-}
-
-.sort a {
-	text-decoration: none;
-}
-
-.sort .active {
-	border-bottom: solid 1.2px rgba(25, 25, 188, 0.72);
-}
-
-.relevance {
-	padding: 5px 20px;
-}
-
-.date {
-	padding: 0px 20px;
-	border-left: solid 1px grey;
-}
-
-.category-main {
-	padding: 10px 10px 10px 10px;
-}
-
-.category-main hr {
-	margin: 5px 5px !important;
-}
-
-.category {}
-
-.category a {
-	color: #1b4cba
-}
-
-.event-item {
-	margin-bottom: 20px;
-	padding: 10px 0px;
-}
-
-.event-time-date {
-	margin-bottom: 0px;
-	font-weight: 100;
-	color: green;
-}
-
-.event-title {
-	margin-bottom: 0px;
-}
-
-.event-location {
-	font-weight: 100;
-	font-size: 15px;
-	margin-bottom: 0px;
-}
-
-.event-type {
-	margin-bottom: 0px;
-	font-size: 13px;
-	color: green;
-	/*	background: rgba(128, 128, 128, 0.17);*/
-	padding: 10px
-}
-
-.event-tags {
-	margin-bottom: 0px;
-	padding: 5px;
-	color: green;
-}
-
-.event-tags-more {
-	padding: 5px;
-	margin-bottom: 0px;
-}
-
-.news-section {
-	margin-top: 20px;
-}
-
-.news-section-item {
-	margin-left: 10px
-}
-
-.agric-news {
-	text-decoration: underline;
-	color: green;
-}
-
-.agric-directory {
-	background: rgba(0, 128, 0, 0.67);
-	color: white;
-	height: 300px;
-}
-
-div.agric-directory button {
-	background: white;
-	color: #3ca03c;
-	font-weight: 700;
-}
-
-.special-reports-2 {
-	margin-bottom: 10px;
-}
-
-.special-reports-2 .title {
-	font-size: 13px;
-	margin-bottom: 0px;
-}
-
-.special-report-btn {
-	font-size: 9.5px;
-	margin-bottom: 5px;
-}
-
-.footer-adv {
-	margin-top: 80px;
-}
-
-/*Events Page End*/
-
-
-/*Media Page Start*/
-@media (max-width: 768px) {
-	.menu-mobile {
-		display: none;
-	}
-}
-
-@media (min-width: 768px) {
-	.menu-mobile-more {
-		display: none;
-	}
-}
-
-.media-latest-news {
-	background: rgba(128, 128, 128, 0.14);
-}
-
-.news-item {
-	font-size: 13px;
-}
-
-.featured-news-item {
-	color: rgba(0, 0, 0, 0.73);
-	font-size: 12px;
-}
-
-.text-justify {
-	text-align: justify !important
-}
-
-.text-nowrap {
-	white-space: nowrap !important
-}
-
-.text-truncate {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap
-}
-
-.text-left {
-	text-align: left !important
-}
-
-.text-right {
-	text-align: right !important
-}
-
-.text-center {
-	text-align: center !important
-}
-
-@media (max-width: 768px) {
-	.main-content {
-		text-align: center;
-	}
-}
-
-@media (min-width:576px) {
-	.text-sm-left {
-		text-align: left !important
-	}
-
-	.text-sm-right {
-		text-align: right !important
-	}
-
-	.text-sm-center {
-		text-align: center !important
-	}
-}
-
-@media (min-width:768px) {
-	.text-md-left {
-		text-align: left !important
-	}
-
-	.text-md-right {
-		text-align: right !important
-	}
-
-	.text-md-center {
-		text-align: center !important
-	}
-}
-
-@media (min-width:992px) {
-	.text-lg-left {
-		text-align: left !important
-	}
-
-	.text-lg-right {
-		text-align: right !important
-	}
-
-	.text-lg-center {
-		text-align: center !important
-	}
-}
-
-@media (min-width:1200px) {
-	.text-xl-left {
-		text-align: left !important
-	}
-
-	.text-xl-right {
-		text-align: right !important
-	}
-
-	.text-xl-center {
-		text-align: center !important
-	}
-}
-
-.text-lowercase {
-	text-transform: lowercase !important
-}
-
-.text-uppercase {
-	text-transform: uppercase !important
-}
-
-.text-capitalize {
-	text-transform: capitalize !important
-}
-
-.news-section-item {
-	margin-top: 20px;
-	padding-top: 10px;
-}
-
-/*Media Page End*/
-
-
-/*Oagric TV Start*/
-.oagric-tv {
-	background: rgba(211, 211, 211, 0.46);
-	color: white;
-	padding-bottom: 10px;
-	margin-bottom: 30px;
-}
-
-.main-video .oagric-tvs {
-	margin-right: 5px;
-}
-
-.oagric-tvs {
-	background: rgba(211, 211, 211, 0.46);
-	margin-bottom: 5px;
-}
-
-.oagric-tv h4 {
-	padding: 10px;
-	margin-bottom: 0px;
-}
-
-.oagric-video-title {}
-
-.oagric-video-text {
-	color: rgba(0, 0, 0, 0.65);
-	font-size: 14px;
-}
-
-.main-video {
-	margin-bottom: 20px;
-}
-
-.main-video-sub {
-	margin-bottom: 20px;
-}
-
-.other-videos h4 {
-	margin-bottom: 0px;
-	margin-top: 20px;
-}
-
-.other-videos hr {
-	margin-bottom: 5px;
-	margin-top: 5px;
-}
-
-.last-vid {
-	margin-bottom: 30px;
-}
-
-.col-md-4.latest-news {
-	margin-top: 20px;
-}
-
-.latest-news h4 {
-	margin-bottom: 0px;
-}
-
-.latest-news hr {
-	margin-bottom: 5px;
-	margin-top: 5px;
-}
-
-.latest-news p {
-	margin-bottom: 5px;
-}
-
-.advert-space {
-	margin-top: 20px;
-}
-
-/*Oagric TV*/
-
-
-/*Post*/
-.post-recommended-link {
-	font-size: 12px;
-}
-
-.post-recommended-link > img {
-	margin-bottom: 5px;
-}
-
-.writer {
-	padding: 20px;
-	border: 1px solid rgba(128, 128, 128, 0.19);
-}
-
-.post-image {
-	margin-bottom: 10px;
-}
-
-/*Post*/
-
-
-/*Onews*/
-.news-recommended-news-item {
-	margin-top: 5px;
-}
-
-/*Onews*/
+/*OghasTech Homepage*/
