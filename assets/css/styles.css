@@ -164,6 +164,18 @@ nav#inner-nav {
 	border-bottom: solid 3px rgba(0, 128, 0, 0.54);
 }
 
+@media (max-width: 768px) {
+	.menu-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.menu-mobile-more {
+		display: none;
+	}
+}
+
 @media (max-width: 575.98px) {
 	.navbar-expand-sm > .container {
 		padding: 0 15px;
@@ -619,18 +631,6 @@ div.agric-directory button {
 
 
 /*Media Page Start*/
-@media (max-width: 768px) {
-	.menu-mobile {
-		display: none;
-	}
-}
-
-@media (min-width: 768px) {
-	.menu-mobile-more {
-		display: none;
-	}
-}
-
 .media-latest-news {
 	background: rgba(128, 128, 128, 0.14);
 }

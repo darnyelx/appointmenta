@@ -108,6 +108,7 @@ button.navbar-toggler {
 	background: white !important;
 }
 
+.header-social {
 font-size: 30px;
 }
 
@@ -160,19 +161,23 @@ nav#inner-nav {
 	width: 100%;
 }
 
+@media (max-width: 768px) {
+	.menu-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.menu-mobile-more {
+		display: none;
+	}
+}
+
 @media (max-width: 575.98px) {
 	.navbar-expand-sm > .container {
 		padding: 0 15px;
 	}
 }
-
-marquee {
-	margin-bottom: 20px;
-	padding: 10px;
-	background-color: #60ba60;
-	color: white;
-}
-
 /*Header End*/
 
 /*Newsletter Subscribe Start*/
@@ -330,101 +335,45 @@ div.social-links {
 .section-content {
 	background-repeat: no-repeat;
 	background-position: top;
-	text-align: center;
 	height: 500px;
 	padding-top: 100px;
 	z-index: 7;
 }
 
-.section-content-header {
+.section-content p {
 	color: white;
+}
+
+
+.section-content-header {
+	color: black;
 	position: relative;
 	z-index: 3;
 }
 
 .oghastech-btn-1 {
-	margin-top: 20%;
-	border-radius: 50px;
+	margin-top: 50px;
 	color: white;
 	padding: 6px 40px;
 	position: relative;
 	z-index: 3;
-	border: solid hotpink;
+	border: solid blue;
+	background-color: #0000ff;
 }
 
 .oghastech-btn-1:hover {
-	border: solid white;
-}
-
-.oghastech-btn-2 {
-	background-color: transparent;
-	color: white;
-	margin-top: 20%;
-	padding: 6px 40px;
-	border-radius: 50px;
-	position: relative;
-	z-index: 3;
-}
-
-.oghastech-btn-2:hover {
-	background: rgba(255, 255, 255, 0.31) !important;
+	background-color: rgba(0, 0, 255, 0.46);;
 }
 
 .section-1-overlay {
-	background: rgba(255, 105, 180, 0.43);
+	background: rgba(255, 255, 255, 0.43);
 }
 
 .section-1-content {
-	background-image: url(../img/bag-1.jpg);
-}
-
-.oghastech-btn-1-secton-1 {
-	background-color: hotpink;
-}
-
-.oghastech-btn-2-secton-1 {
-	background-color: transparent;
-	color: white;
-	border: solid hotpink;
-}
-
-.section-2-overlay {
-	background: rgba(0, 128, 0, 0.65);
-}
-
-.section-2-content {
-	background-image: url(../img/oagric-1.jpg);
+	background-image: url(../img/oacademy-4.png);
 	background-size: cover;
-}
-
-.oghastech-btn-1-secton-2 {
-	background-color: #09ba09;
-	border: solid #09ba09;
-}
-
-.oghastech-btn-2-secton-2 {
-	background-color: transparent;
-	color: white;
-	border: solid #09ba09;
-}
-
-.section-3-overlay {
-	background: rgba(0, 20, 128, 0.65);
-}
-
-.section-3-content {
-	background-image: url(../img/oacademy-3.jpg);
-	background-size: cover;
-	background-position: contain;
-}
-
-.oghastech-btn-1-secton-3 {
-	background-color: rgb(8, 160, 255);
-	border: solid rgb(8, 160, 255);
-}
-
-.oghastech-btn-2-secton-3 {
-	border: solid rgb(8, 160, 255);
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 #about-sections {
