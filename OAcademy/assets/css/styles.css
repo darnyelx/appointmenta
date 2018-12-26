@@ -1,6 +1,6 @@
 /*Brand Consistency Rules Start*/
 body {
-/*		background-color: rgb(250, 250, 250) !important;*/
+	/*		background-color: rgb(250, 250, 250) !important;*/
 }
 
 .oghas-material {
@@ -33,12 +33,7 @@ body {
 	color: white;
 }
 
-a {
-}
-
-a:hover {
-
-}
+a:hover {}
 
 /*
 img,
@@ -78,7 +73,7 @@ marquee,
 }
 
 .oghas-nav {
-	background-color: #000;
+	background-color: rgb(103, 167, 255);
 	top: 0;
 	position: sticky;
 	z-index: 999;
@@ -108,13 +103,10 @@ button.navbar-toggler {
 	background: white !important;
 }
 
-.header-social {
-font-size: 30px;
-}
-
 .header-social i {
-	color: #ffffff;
-	margin-right: 10px;
+	font-size: 30px;
+	color: #fff !important;
+	margin-right: 10px !important;
 }
 
 input#header-search {
@@ -178,18 +170,20 @@ nav#inner-nav {
 		padding: 0 15px;
 	}
 }
+
 /*Header End*/
 
 /*Newsletter Subscribe Start*/
 #newsletter-signup {
 	margin-top: 20px;
 }
+
 /*Newsletter Subscribe End*/
 
 
 /*Footer Start*/
 footer {
-	background-color: #000;
+	background-color: rgb(103, 167, 255);
 	box-shadow: -1px 5px 20px 7px rgb(154, 154, 154);
 	box-sizing: border-box;
 	text-align: left;
@@ -313,6 +307,7 @@ div.social-links {
 	color: white;
 	margin-right: 10px;
 }
+
 /*Footer End*/
 
 /*OghasTech Homepage*/
@@ -326,7 +321,7 @@ div.social-links {
 }
 
 .section-overlay {
-	height: 500px;
+	height: 450px;
 	width: 100%;
 	position: absolute;
 	z-index: 2;
@@ -335,15 +330,10 @@ div.social-links {
 .section-content {
 	background-repeat: no-repeat;
 	background-position: top;
-	height: 500px;
+	height: 450px;
 	padding-top: 100px;
 	z-index: 7;
 }
-
-.section-content p {
-	color: white;
-}
-
 
 .section-content-header {
 	color: black;
@@ -351,18 +341,28 @@ div.social-links {
 	z-index: 3;
 }
 
+.sub-header {
+	font-size: 28px;
+	color: #605f5f;
+}
+
+.section-content p {
+	color: white;
+}
+
 .oghastech-btn-1 {
-	margin-top: 50px;
+	margin-top: 30px;
 	color: white;
 	padding: 6px 40px;
 	position: relative;
 	z-index: 3;
-	border: solid blue;
-	background-color: #0000ff;
+	border: solid rgb(103, 167, 255);
+	background-color: rgb(103, 167, 255);
 }
 
 .oghastech-btn-1:hover {
-	background-color: rgba(0, 0, 255, 0.46);;
+	background-color: rgba(103, 167, 255, 0.46);
+	;
 }
 
 .section-1-overlay {
@@ -409,7 +409,7 @@ div.social-links {
 	}
 
 	#news-updates h4 {
-/*		text-align: left;*/
+		/*		text-align: left;*/
 	}
 
 	#news-updates p {
@@ -437,4 +437,5 @@ div.social-links {
 #news-updates p > a {
 	color: black;
 }
+
 /*OghasTech Homepage*/

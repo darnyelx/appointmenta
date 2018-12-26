@@ -17,7 +17,7 @@ body {
 
 .oghas-input {
 	background-color: #fff;
-	color: white !important;
+	color: grey !important;
 }
 
 .oghas-input::placeholder {
@@ -26,6 +26,8 @@ body {
 
 .oghas-input:focus {
 	border: rgba(0, 128, 0, 0.38) 2px solid;
+	background-color: #2c7030 !important;
+	color: white !important;
 }
 
 .oghas-btn {
@@ -87,6 +89,51 @@ marquee,
 	margin-top: 7px;
 }
 
+@media (max-width: 991px) {
+	.oghas-nav .container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 892px) {
+	#header-subscribe {
+		width: 19%;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 960px;
+	}
+
+	.navbar-nav {
+		font-size: 12px;
+	}
+
+	.navbar-nav a:hover {
+		color: grey !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#header-subscribe {
+		width: 30%;
+		padding: 0px;
+	}
+
+	.navbar-nav {
+		font-size: 12px;
+	}
+
+	.navbar-nav a:hover {
+		color: grey !important;
+	}
+
+	#header-search {
+		width: 30% !important;
+	}
+}
+
 button.navbar-toggler {
 	color: white;
 	border: white solid 1px !important;
@@ -106,13 +153,10 @@ button.navbar-toggler {
 	background: white !important;
 }
 
-.header-social {
-	font-size: 30px;
-}
-
 .header-social i {
 	color: #ffffff;
 	margin-right: 10px;
+	font-size: 30px;
 }
 
 input#header-search {
@@ -180,6 +224,10 @@ nav#inner-nav {
 	.navbar-expand-sm > .container {
 		padding: 0 15px;
 	}
+}
+
+nav#inner-nav {
+	width: 100%;
 }
 
 marquee {
