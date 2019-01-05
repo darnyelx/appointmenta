@@ -362,15 +362,16 @@ div.social-links {
 
 .section-content {
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
 	text-align: center;
-	/*	height: 700px;*/
+	/*		height: 700px;*/
 	/*	padding-top: 100px;*/
 	z-index: 7;
 	justify-content: space-around;
 	display: -ms-flexbox !important;
 	display: flex !important;
 	height: 100% !important;
+	flex-direction: column;
 }
 
 .section-child {
@@ -386,7 +387,6 @@ div.social-links {
 
 .oghastech-btn {
 	background-color: transparent;
-	margin-top: 20%;
 	border-radius: 50px;
 	color: white;
 	padding: 6px 40px;
@@ -400,14 +400,42 @@ div.social-links {
 	background-color: rgba(211, 211, 211, 0.33);
 }
 
-.next-section {
+.next-sectionn {
 	font-size: 50px;
 	color: white;
 	position: absolute;
 	z-index: 7;
+/*	top: 0px;*/
+/*	bottom: 25px;*/
+	left: 50%;
+/*	width: 20px;*/
+/*	height: 12px;*/
+/*	margin-left: -10px;*/
+/*	background-repeat: no-repeat;*/
+/*	background-size: 100% auto;*/
+	    background-image: url(https://www.tesla.com/roadster/tesla_theme/assets/img/_vehicle_redesign/roadster_and_semi/common/arrow-down.svg)/;
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	cursor: pointer;
 }
 
+.section-content-buttons {
+	margin-top: 70px;
+}
 
+.section-content-buttons > .col {
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+	.section-content-buttons > .col {
+		margin-right: 30px auto;
+		margin-left: 30px auto;
+	}
+}
 
 /*
 .ogt-btn-1 {
@@ -423,10 +451,6 @@ div.social-links {
 	background-image: url(../img/bag-1.jpg);
 }
 
-.section-1-content .my-auto {
-	padding-top: auto !important;
-	margin-bottom: auto !important;
-}
 
 /*
 .ogt-btn-2 {
