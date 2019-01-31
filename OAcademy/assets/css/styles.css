@@ -53,7 +53,6 @@ marquee,
 	margin-top: 20px;
 }
 
-
 /*Brand Consistency Rules End*/
 
 
@@ -76,6 +75,51 @@ marquee,
 	/*	width: 100%;*/
 	margin: 0 auto !important;
 	/*	margin-top: 7px;*/
+}
+
+@media (max-width: 991px) {
+	.oghas-nav .container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 892px) {
+	#header-subscribe {
+		width: 19%;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 960px;
+	}
+
+	.navbar-nav {
+		font-size: 12px;
+	}
+
+	.navbar-nav a:hover {
+		color: grey !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#header-subscribe {
+		width: 30%;
+		padding: 0px;
+	}
+
+	.navbar-nav {
+		font-size: 12px;
+	}
+
+	.navbar-nav a:hover {
+		color: grey !important;
+	}
+
+	#header-search {
+		width: 30% !important;
+	}
 }
 
 button.navbar-toggler {
@@ -110,12 +154,11 @@ button.navbar-toggler {
 input#header-search {
 	width: 65px;
 	/*	-webkit-transition: width 0.4s ease-in-out;*/
-	transition: width 0.4s ease-in;
+/*	transition: width 0.4s ease-in;*/
 }
 
 input#header-search:focus {
-	width: 90%;
-	/*	background-color: #2c7030;*/
+	width: 65px;
 	color: white;
 }
 
@@ -129,21 +172,19 @@ input#header-search:focus {
 
 	input#header-search:focus {
 		width: 65px;
-		background-color: #2c7030;
 	}
 }
 
 @media (max-width: 575px) {
 
 	input#header-search {
-		width: 50%;
+		width: 65px;
 		-webkit-transition: width 0.4s ease-in-out;
 		transition: width 0.4s ease-in-out;
 	}
 
 	input#header-search:focus {
-		width: 100%;
-		background-color: #2c7030;
+		width: 65px;
 	}
 }
 
@@ -306,38 +347,37 @@ div.social-links {
 }
 
 .section {
-	height: 450px;
 	width: 100%;
+	height: 450px;
 }
 
 .section-overlay {
 	height: 450px;
 	width: 100%;
 	position: absolute;
-	z-index: 2;
 }
 
 .section-content {
 	background-repeat: no-repeat;
 	background-position: top;
 	height: 450px;
-	padding-top: 150px;
-	z-index: 7;
 }
 
 .section-content-header {
-	color: black;
+	color: ghostwhite;
 	position: relative;
 	z-index: 3;
 }
 
 .sub-header {
-	font-size: 28px;
+/*	font-size: 28px;*/
 	color: #605f5f;
 }
 
 .section-content p {
 	color: white;
+/*	position: relative;*/
+	z-index: 3;
 }
 
 .oghastech-btn-1 {
@@ -346,17 +386,18 @@ div.social-links {
 	padding: 6px 40px;
 	position: relative;
 	z-index: 3;
-	border: solid rgb(103, 167, 255);
+/*	border: solid rgb(103, 167, 255);*/
 	background-color: rgb(103, 167, 255);
 }
 
 .oghastech-btn-1:hover {
-	background-color: rgba(103, 167, 255, 0.46);
-	;
+	background-color: white;
+	color: rgb(103, 167, 255);
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 .section-1-overlay {
-	background: rgba(0, 0, 0, 0.21);
+	background: rgba(0, 0, 0, 0.08);
 }
 
 .section-1-content {
@@ -364,26 +405,18 @@ div.social-links {
 	background-size: cover;
 	padding-left: 7%;
 	padding-right: 7%;
-	position: relative;
 	z-index: 3;
 }
 
 #discover {
-	margin-top: 15px;
-	margin-bottom: 50px;
-}
-
-.discover-header {}
-
-.section-3 {
-	height: 370px;
-	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .section-3-overlay {
 	background: rgba(103, 167, 255, 0.43);
-	height: 370px;
-	width: 100%;
+/*	height: 370px;*/
+/*	width: 100%;*/
 }
 
 .section-3-content {
@@ -392,9 +425,8 @@ div.social-links {
 	background-position: center;
 	padding-left: 7%;
 	padding-right: 7%;
-	height: 370px;
+	padding-top: 40px;
 	width: 100%;
-	padding-top: 50px;
 }
 
 .section-3-content-header {
@@ -404,25 +436,25 @@ div.social-links {
 
 .section-3-content-text {
 	color: rgba(255, 255, 255, 0.95) !important;
-	/*	text-shadow: black 2px 2px 8px;*/
+/*		text-shadow: black 2px 2px 8px;*/
 }
 
 .section-3-btn {
 	margin-top: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
-	background: rgba(255, 255, 255, 0.37);
-	border: solid rgb(103, 167, 255) 2px;
+	background: rgba(103, 167, 255);
 	color: white;
 }
 
 .section-3-btn:hover {
-	background: rgba(255, 255, 255, 0.24);
-	;
+	background-color: white;
+	color: rgb(103, 167, 255);
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 .section-content .col-8 {
-	z-index: 2;
+/*	z-index: 2;*/
 }
 
 #discover .nav-link.active {
@@ -457,6 +489,12 @@ div.social-links {
 .get-started .btn {
 	background-color: rgba(103, 167, 255);
 	color: white;
+}
+
+.get-started .btn:hover {
+	background-color: white;
+	color: rgb(103, 167, 255);
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 /*OAcademy Index*/

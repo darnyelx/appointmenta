@@ -21,108 +21,8 @@
 
 	<!--	Full Nav	-->
 	<div>
-		<!--	Nav	-->
-		<!--
-		<nav class="navbar navbar-dark navbar-expand-sm oghas-nav">
-			<div class="container">
-				<a class="navbar-brand" href="#" id="oghas-logo"></a>
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-					<span class="sr-only">
-						Toggle navigation
-					</span>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
-					<form class="form-inline" method="post" id="header-subscribe">
-						<div class="input-group">
-							<input type="email" name="email" class="form-control form-control-sm oghas-input" placeholder="Subscribe for newsletter" aria-describedby="basic-addon">
-							<div class="input-group-append">
-								<button class="btn btn-primary btn-sm oghas-input" type="submit" style="">
-									<i class="fa fa-envelope-o"></i>
-								</button>
-							</div>
-						</div>
-					</form>
-					<span class="navbar-text">
-						<a class="text-monospace text-dark header-social" href="#facebook.com/oghastech" target="_blank">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-						<a class="text-monospace text-dark header-social" href="#twitter.com/oghastech" target="_blank">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a class="text-monospace text-dark header-social" href="#youtube.com/oghastech" target="_blank">
-							<i class="fa fa-youtube"></i>
-						</a>
-					</span>
-					<form class="form-inline">
-						<input class="form-control form-control-sm oghas-input" type="text" name="search" placeholder="Search" id="header-search">
-					</form>
-				</div>
-			</div>
-		</nav>
--->
-		<!--	Nav	-->
-
-		<!--	Inner Nav	-->
-		<!--
-		<div>
-			<nav class="navbar navbar-light navbar-expand bg-light d-flex" id="inner-nav">
-				<div class="container">
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-						<span class="sr-only">
-							Toggle navigation
-						</span>
-						<span class="navbar-toggler-icon">
-						</span>
-					</button>
-					<div class="collapse navbar-collapse" id="navcol-1">
-						<ul class="nav navbar-nav m-auto">
-							<li class="nav-item" role="presentation">
-								<a class="nav-link active" href="index.html">Home</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" href="media.html" target="_blank">Media</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" href="events.html" target="_blank">Events</a>
-							</li>
-							<li class="dropdown menu-mobile-more">
-								<a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
-								<div class="dropdown-menu" role="menu">
-									<a class="dropdown-item" role="presentation" href="invest.html" target="_blank">Investments</a>
-									<a class="dropdown-item" role="presentation" href="agrictv.html" target="_blank">Television</a>
-									<a class="dropdown-item" role="presentation" href="farm-management.html" target="_blank">Farm Management</a>
-									<a class="dropdown-item" role="presentation" href="../WIA/index.html" target="_blank">Women In Agric</a>
-									<a class="dropdown-item" role="presentation" href="advisory.html" target="_blank">Advisory</a>
-									<a class="dropdown-item" role="presentation" href="columnist.html" target="_blank">Columnist</a>
-								</div>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" href="invest.html" target="_blank">Investments</a>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" href="agrictv.html" target="_blank">Television</a>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" href="farm-management.html" target="_blank">Farm Management</a>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" role="presentation" href="advisory.html" target="_blank">Advisory</a>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" role="presentation" href="columnist.html" target="_blank">Columnist</a>
-							</li>
-							<li class="nav-item menu-mobile" role="presentation">
-								<a class="nav-link" role="presentation" href="../WIA/index.html" target="_blank">Women In Agric</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
--->
-		<!--	Inner Nav	-->
 		<?php include 'includes/header.php';?>
+		<?php include 'includes/menu.php';?>
 	</div>
 	<!--	Full Nav	-->
 
@@ -145,94 +45,9 @@
 			Agric Market: Farmland About 30 acres At Onogun Village Oderemo Via Imota Ikorodu
 		</marquee>
 -->
-		<?php include 'includes/marquee.php';?>
 
 		<!--	Slider	-->
-		<div class="index-slider oghas-material">
-			<!-- Start WOWSlider.com BODY section -->
-			<!--
-			<div id="wowslider-container1">
-				<div class="ws_images">
-					<ul>
-						<li>
-							<a href="http://oghas.com" target="_blank">
-								<img src="http://via.placeholder.com/600x300" alt="" title="Agriculture to get more funds, says Buhari." id="wows1_0" class="img-fluid" />
-							</a>
-						</li>
-						<li>
-							<img src="http://via.placeholder.com/600x300" alt="" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit." id="wows1_1" class="img-fluid" />
-						</li>
-						<li>
-							<img src="http://via.placeholder.com/600x300" alt="" title="Cum molestiae porro architecto, doloribus ducimus." id="wows1_2" class="img-fluid" />
-						</li>
-						<li>
-							<img src="http://via.placeholder.com/600x300" alt="" title="Aliquam aliquid placeat tempore eos cumque onsectetur." id="wows1_3" class="img-fluid" />
-						</li>
-					</ul>
-				</div>
-				<div class="ws_bullets">
-					<div>
-						<a href="#" title=""><span><img src="http://via.placeholder.com/120x50" alt="" class="img-fluid" />1</span></a>
-						<a href="#" title=""><span><img src="http://via.placeholder.com/120x50" alt="" />2</span></a>
-						<a href="#" title=""><span><img src="http://via.placeholder.com/120x50" alt="" />3</span></a>
-						<a href="#" title=""><span><img src="http://via.placeholder.com/120x50" alt="" />4</span></a>
-					</div>
-				</div>
-				<div class="ws_script" style="position:absolut;left:-9%"><a href=""></a></div>
-				<div class="ws_shadow"></div>
-			</div>
-			<script type="text/javascript" src="assets/wowslider/engine1/wowslider.js"></script>
-			<script type="text/javascript" src="assets/wowslider/engine1/script.js"></script>
--->
-			<!-- End WOWSlider.com BODY section -->
-
-			<!--	Start Bootstrap Slider	-->
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="http://via.placeholder.com/600x200" alt="First slide" class="img-fluid">
-						<div class="carousel-caption d-none d-md-block">
-							<a href="#">
-								<h4 class="carousel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-							</a>
-							<p class="carousel-news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati. Tenetur fugit similique quas repudiandae saepe obcaecati, error!</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="http://via.placeholder.com/600x200" alt="Second slide" class="img-fluid">
-						<div class="carousel-caption d-none d-md-block">
-							<a href="#">
-								<h4 class="carousel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-							</a>
-							<p class="carousel-news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati. Tenetur fugit similique quas repudiandae saepe obcaecati, error!</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="http://via.placeholder.com/600x200" alt="Third slide" class="img-fluid">
-						<div class="carousel-caption d-none d-md-block">
-							<a href="#">
-								<h4 class="carousel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-							</a>
-							<p class="carousel-news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati. Tenetur fugit similique quas repudiandae saepe obcaecati, error!</p>
-						</div>
-					</div>
-				</div>
-				<a class="carousel-control-prev-1" href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next-1" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-			<!--	End Bootstrap Slider	-->
-		</div>
+	 	<?php include 'includes/slider.php';?>
 		<!--	Slider	-->
 
 		<!--	Oagric TV	-->
@@ -489,14 +304,14 @@
 					</div>
 				</div>
 -->
-				<?php include 'includes/special-reports.php';?>
 
+				<?php include 'includes/special-reports.php';?>
 				<!--
 				<a href="#move">
 					<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" id="side-adverts">
 				</a>
 -->
-				<?php include 'includes/side-adv-one.php';?>
+
 			</div>
 		</div>
 
