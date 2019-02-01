@@ -1,0 +1,147 @@
+div.displayed-title {
+	margin: 0px 20px;
+	padding: 5px 0px 5px 0px;
+}
+
+.oghas-card {
+	padding: 8px;
+}
+
+.cash-crops {
+	margin-top: 20px;
+}
+
+.cash-crops .card {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+.cash-crops-icon {}
+
+.cash-crops-desc {}
+
+.cash-crops-desc .crop,
+.figure,
+.rate {
+	margin-bottom: 0px;
+	text-align: right
+}
+
+.cash-crops-desc .crop {
+	color: rgba(44, 112, 48, 0.53);
+	font-size: 12px;
+}
+
+.cash-crops-desc .figure {
+	color: black;
+	font-size: 15px;
+}
+
+.cash-crops-desc .rate {
+	color: gray;
+	font-size: 10px;
+}
+
+.card-footer.oghas-card {
+	background-color: white;
+	font-size: 13px;
+	color: rgba(128, 128, 128, 0.72);
+}
+
+.card-footer.oghas-card .fa {
+	color: black;
+}
+
+.staple-crops {
+	margin-top: 20px
+}
+
+.staple-crops .oghas-card {
+	padding-top: 20px;
+}
+
+.first-charts {
+	margin-top: 20px;
+}
+
+.first-charts .card {
+	margin-bottom: 20px
+}
+
+.nbs-food-charts {
+	margin-top: 20px;
+}
+
+.nbs-food-charts .nav > a {
+	color: black;
+}
+
+.food-price-nbs > .nav-link {
+	color: white !important;
+	background-color: #4caf50;
+	margin-bottom: 7px
+}
+
+.food-price-nbs > .nav-link.active {
+	color: white;
+	background-color: darkseagreen;
+}
+
+.insights {
+	margin-top: 20px;
+}
+
+.insights .card-body {
+	padding: 0px;
+}
+
+.insights .ins-row {
+	padding-top: 15px;
+}
+
+.ins-date {
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.ins-title {
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+.ins-author {
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.ins-snippet {
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+.ins-footer-link {
+	margin: 0px;
+	color: #4caf50;
+}
+
+.news {
+	margin-top: 20px;
+}
+
+.news .card-body {
+	padding: 0px;
+}
+
+.news .news-row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.th-sources {
+	border-right: solid 2px black;
+}

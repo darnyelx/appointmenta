@@ -1,0 +1,159 @@
+/* simple reset using the universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper-container {
+    padding: 1rem;
+    position: relative;
+}
+
+.profile-container {
+    padding: 1rem;
+}
+
+.designer-name {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+.shops-name {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.designer-profile-section {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    width: 100%;
+}
+.designer-picture {
+    padding-right: 1rem;
+    width: 400px;
+    background: #fff;
+    height: 270px;
+    padding: 2rem 4rem;
+    border: 1px solid #e87ab2;
+}
+.designer-profile {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.rating {
+    display: flex;
+    /* width: 300px; */
+}
+
+.fa-star {
+    font-size: 25px;
+
+}
+.profile-image {
+    width: 250px;
+    height: 190px;
+    margin: .5rem;
+}
+/* btn cloth styling */
+.btn-cloth {
+    padding: .5rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    background: #e87ab2;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.btn-cloth:hover {
+    background: #fff;
+    color: #e87ab2;
+}
+.btn-cloth:focus {
+    outline: none;
+}
+label {
+    color: #000;
+}
+.post-heading {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.recent-event {
+    margin-top: 2rem;
+}
+.recent-post-event {
+    margin-top: 1.5rem;
+}
+.recent-post-heading {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+.label-style {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+}
+.post-title {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+/* share your page heading */
+.share-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.share-page {
+    text-transform: capitalize;
+    margin-right: .5rem;
+}
+.share-page-online {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+}
+.social-media-share {
+    display: flex;
+    flex-direction: row;
+}
+
+.share-social i {
+    margin-right: .5rem;
+}
+
+.btn-facebook,
+.btn-twitter,
+.btn-google,
+.btn-instagram {
+    padding: .5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.btn-facebook {
+    background: #3B5998;
+}
+.btn-twitter {
+    background: #55ACEE;
+}
+.btn-google {
+    background: #DD4B39;
+}
+.btn-instagram {
+    background: #3F729B;
+}

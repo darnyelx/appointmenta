@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OghasTech | Fashion</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="assets/css/wia-styles.css">
+    <link rel="stylesheet" href="assets/css/market.css">
+    <link rel="stylesheet" href="assets/css/media-section.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    	<!--	Nav	-->
+	<nav class="navbar navbar-dark navbar-expand-sm oghas-nav">
+        <div class="container">
+            <a class="navbar-brand" href="landing-page.html" id="oghas-logo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">
+                    Toggle navigation
+                </span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
+                <form class="form-inline" method="post" id="header-subscribe">
+                    <div class="input-group">
+                        <input type="email" name="email" class="form-control form-control-sm oghas-input" placeholder="Subscribe for newsletter" aria-describedby="basic-addon">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary btn-sm oghas-input" type="submit" style=""";border-radius: 5px; border-top-left-radius: 0px; border-bottom-left-radius: 0px">
+                                <i class="fa fa-envelope-o"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <span class="navbar-text">
+                    <a class="text-monospace text-dark header-social" href="#facebook.com/oghastech" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a class="text-monospace text-dark header-social" href="#twitter.com/oghastech" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="text-monospace text-dark header-social" href="#youtube.com/oghastech" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </span>
+                <form class="form-inline">
+                    <input class="form-control form-control-sm oghas-input" type="text" name="search" placeholder="Search" id="header-search">
+                </form>
+            </div>
+        </div>
+    </nav>
+        <!--	Nav	-->
+    <!-- market section of Ofashion heading -->
+    <main class="market-container">
+        <!-- Menu title heading -->
+        <div class="menu-title">
+            <a href="signup.html"><div class="btn-title">create a shop</div></a>
+            <a href="market.html"><div class="btn-title active">enter market</div></a>
+            <a href="media.html"><div class="btn-title">view media</div></a>
+        </div>
+            <!-- Ends of menu title -->
+        <div class="market-heading">
+            <a href="#"><div class="home default">home</div></a>
+            <a href="#"><div class="men default">men</div></a>
+            <a href="#"><div class="women default">women</div></a>
+            <a href="#"><div class="children default">children</div></a>
+        </div>
+    <!-- slideshow-container heading -->
+        <div class="slideshow-container">
+            <div class="market-advert">
+                <div class="numbertext">1 / 3</div>
+                <div class="market-advert-content">
+                    <div class="market-heading-1">
+                        <h3 class="market-head">
+                            spend a little,<br>choose from<br>millions
+                        </h3>
+                        <div class="market-text-paragraph">
+                            <p class="market-text">that's millions of deals with free <br> delivery to your door</p>
+                        </div>
+                        <div class="shop-main">
+                            <a href="#" class="shop-btn">shop now</a>
+                        </div>
+                    </div>
+                    <div class="market-heading-2">
+                        <div class="market-descri">under</div>
+                        <div class="market-price"><span id="market-value">$10</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="market-advert">
+                <div class="numbertext">2 / 3</div>
+                <div class="market-advert-content">
+                    <div class="market-heading-1">
+                        <h3 class="market-head">
+                            spend a little,<br> choose from <br> millions
+                        </h3>
+                        <div class="market-text-paragraph">
+                            <p class="market-text">that's millions of deals with free <br> delivery to your door</p>
+                        </div>
+                        <div class="shop-main">
+                            <a href="" class="shop-btn">shop now</a>
+                        </div>
+                    </div>
+                    <div class="market-heading-2">
+                        <div class="market-descri">under</div>
+                        <div class="market-price"><span id="market-value">$10</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- try it  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    <!-- Ends of slideshow-container -->
+
+    <!-- advert section heading-->
+    <section class="advert">
+        <!-- grid-section heading -->
+        <div class="row-grid">
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/boutique.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;600</p>
+                    </div>
+                </div>
+                <div class="sales-section">
+                    <div class="btn-buy">
+                        <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                    </div>
+                    <div class="btn-sow">
+                        <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                    </div>
+                    <!-- add to cart -->
+                    <div class="btn-sew">
+                        <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/classic.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;2000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;1000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;500</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/boutique.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;600</p>
+                    </div>
+                </div>
+                <div class="sales-section">
+                    <div class="btn-buy">
+                        <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                    </div>
+                    <div class="btn-sow">
+                        <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                    </div>
+                    <!-- add to cart -->
+                    <div class="btn-sew">
+                        <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/classic.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;2000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;1000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;500</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/boutique.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;600</p>
+                    </div>
+                </div>
+                <div class="sales-section">
+                    <div class="btn-buy">
+                        <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                    </div>
+                    <div class="btn-sow">
+                        <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                    </div>
+                    <!-- add to cart -->
+                    <div class="btn-sew">
+                        <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/classic.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;2000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;1000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;500</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/boutique.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;600</p>
+                    </div>
+                </div>
+                <div class="sales-section">
+                    <div class="btn-buy">
+                        <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                    </div>
+                    <div class="btn-sow">
+                        <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                    </div>
+                    <!-- add to cart -->
+                    <div class="btn-sew">
+                        <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/classic.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;2000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;1000</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4 advert-col-4">
+                <div class="advert-section">
+                    <div class="advert-image">
+                        <figure class="gallery">
+                            <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                        </figure>
+                    </div>
+                    <div class="paragraph">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h6 class="design-brand">designer:OXL</h6>
+                    </div>
+                    <div class="price">
+                        <p>Price:&#8358;500</p>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ends grid-section -->
+    </section>
+    <!-- Ends advert section -->
+
+    <!-- pagination section heading -->
+    <div class="pagination-section">
+        <div class="pagination">
+            <ul class="oghas-pagination">
+                <li class="item-pagination">
+                    <a href="#">&laquo;</a>
+                </li>
+                <li class="item-pagination">
+                    <a href="#">1</a>
+                </li>
+                <li class="item-pagination">
+                    <a class="active" href="#">2</a>
+                </li>
+                <li class="item-pagination">
+                    <a href="#">3</a>
+                </li>
+                <li class="item-pagination">
+                    <a href="#">4</a>
+                </li>
+                <li class="item-pagination">
+                    <a href="#">5</a>
+                </li>
+                <li class="separator-pagination">...</li>
+                <li class="item-pagination">
+                    <a href="#">30</a>
+                </li>
+                <li class="item-pagination">
+                    <a href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pagination-page">
+            <label for="pagi-input" class="pagination-label">go to page</label>
+            <input type="text" class="pagination-input" id="pagi-input">
+            <button type="submit" class="pagination-go-btn">go</button>
+        </div>
+    </div>
+    <!-- ends of pagination section heading -->
+
+    <!-- select by designer section -->
+    <div class="select-designer-section">
+        <div class="designer-select">
+            <label for="select-designer" class="designer-label">select by designer:</label>
+            <input type="text" class="designer-input" id="select-designer">
+            <div id="notes"></div>
+        </div>
+        <!-- select designer search result -->
+        <section class="advert">
+            <div class="row-grid">
+                <div class="col-1-of-4 advert-col-4">
+                    <div class="advert-section">
+                        <div class="advert-image">
+                            <figure class="gallery">
+                                <img src="image/boutique.jpg" alt="advert image" class="gallery-image-1">
+                            </figure>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h6 class="design-brand">designer:OXL</h6>
+                        </div>
+                        <div class="price">
+                            <p>Price:&#8358;600</p>
+                        </div>
+                    </div>
+                    <div class="sales-section">
+                        <div class="btn-buy">
+                            <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                        </div>
+                        <div class="btn-sow">
+                            <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                        </div>
+                        <!-- add to cart -->
+                        <div class="btn-sew">
+                            <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 advert-col-4">
+                    <div class="advert-section">
+                        <div class="advert-image">
+                            <figure class="gallery">
+                                <img src="image/classic.jpg" alt="advert image" class="gallery-image-1">
+                            </figure>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h6 class="design-brand">designer:OXL</h6>
+                        </div>
+                        <div class="price">
+                            <p>Price:&#8358;2000</p>
+                        </div>
+                        <div class="sales-section">
+                            <div class="btn-buy">
+                                <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                            </div>
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                            </div>
+                            <!-- add to cart -->
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 advert-col-4">
+                    <div class="advert-section">
+                        <div class="advert-image">
+                            <figure class="gallery">
+                                <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                            </figure>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h6 class="design-brand">designer:OXL</h6>
+                        </div>
+                        <div class="price">
+                            <p>Price:&#8358;1000</p>
+                        </div>
+                        <div class="sales-section">
+                            <div class="btn-buy">
+                                <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                            </div>
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                            </div>
+                            <!-- add to cart -->
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4 advert-col-4">
+                    <div class="advert-section">
+                        <div class="advert-image">
+                            <figure class="gallery">
+                                <img src="image/accessories.jpg" alt="advert image" class="gallery-image-1">
+                            </figure>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h6 class="design-brand">designer:OXL</h6>
+                        </div>
+                        <div class="price">
+                            <p>Price:&#8358;500</p>
+                        </div>
+                        <div class="sales-section">
+                            <div class="btn-buy">
+                                <a href=""><button class="btn-cart btn-padding">buy</button></a>
+                            </div>
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">sew</button></a>
+                            </div>
+                            <!-- add to cart -->
+                            <div class="btn-sew">
+                                <a href=""><button class="btn-cart btn-padding">add to cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ends select designer search result -->
+    </div>
+
+    </main>
+    <!-- Ends of market section of Ofashion  -->
+    <!--	Footer	-->
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 footer-navigation text-center"><a href="#"><img src="assets/img/Oagric_Transparent.png"></a>
+                    <h3>...just technology</h3>
+                    <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                    <p class="company-name">Oghas Technology © 2015 </p>
+                </div>
+                <div class="col-sm-6 col-md-4 offset-0 d-flex flex-column justify-content-around align-self-center footer-contacts text-center">
+                    <h4>Reach Us</h4>
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +1 555 123456</p>
+                    </div>
+                    <div><i class="fa fa-envelope-o footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> support<span class="new-line-span">@company.com</span></p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 d-flex flex-column justify-content-around footer-about text-center">
+                    <h4>Who Are we?</h4>
+                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+                    <div class="footer-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--	Footer	-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

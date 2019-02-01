@@ -1,0 +1,420 @@
+/* simple reset using the universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #777;
+    /* padding: .5rem; */
+    /* 1rem = 10px 10px/16px = 62.5% */
+    font-size: 62.5%;
+}
+/* styling of the main part  */
+.container-main {
+    max-width: 120rem;
+    background-image: linear-gradient(to left,
+    rgba(5, 5, 3, .2),
+    rgba(5, 5, 3, .2)),
+     url(../../image/classic.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 50rem;
+    position: relative;
+}
+
+/* styling of the text-section */
+.text-section{
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+@keyframes type{
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 25ch;
+    }
+}
+
+@keyframes type1{
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 38ch;
+    }
+}
+/* styling of the text-section-1 */
+.text-section-1{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    animation: type 5s steps(25);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text-section-2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    animation: type1 15s steps(38);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* styliny of the link and visited state of the button */
+.btn:link,
+.btn:visited{
+    text-transform: capitalize;
+}
+
+.link-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem;
+    cursor: pointer;
+}
+
+.btn-white{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .7rem 1rem;
+    border: .5rem;
+    margin: 1rem;
+    border-radius: .7rem;
+    background-image: linear-gradient(to right, rgba(228, 118, 175, 1), #e87ab2);
+}
+
+/* btn hover styling  */
+.btn:hover{
+    /* background: #777; */
+    color: #e87ab2;
+    /* background-image: linear-gradient(to left, #fff, #e87ab2); */
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+
+.btn:focus {
+    outline: none;
+    animation: pulsate 1s;
+}
+
+@keyframes pulsate {
+
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+/* feedback form styling */
+.feedback_link{
+    position: absolute;
+    bottom: -.2rem;
+    right: 1rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+
+}
+.feedback{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1px;
+    margin-right: -.8rem;
+    background-image: linear-gradient(to right, rgba(228, 118, 175, .4), #e87ab2);
+    letter-spacing: .1rem;
+}
+
+.feedback-btn:hover{
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(228, 118, 175, .3), #e87ab2);
+}
+.feedback-btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+}
+
+/* form styling */
+.form-section{
+    padding: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+}
+.image-form {
+    background-image:linear-gradient(
+     rgba(0, 0, 0, .2) 0%,
+     rgba(0,0, 0, .2) 70%),
+     url(../../image/boutique.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+    position: relative;
+    /* background-image: url(../../image/boutique.jpg); */
+}
+.form::-webkit-input-placeholder{
+    color: red;
+}
+.book-form {
+    width: 50%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+.form-group:not(:last-child) {
+    margin-bottom: .1rem;
+}
+.hide-label {
+    opacity: 0;
+}
+/* specilization label heading */
+.label-special {
+    color: #fff;
+    font-size: 1.5rem;
+    height: 40px;
+    text-transform: capitalize;
+    /* margin: .5rem; */
+    margin-right: .3rem;
+}
+.form-input {
+    font-size: 1.2rem;
+    color: #777;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    border: none;
+    height: 60px;
+    border-bottom: .4rem solid transparent;
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    display: block;
+    transition: all .3s;
+}
+
+.submit-cloth {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+#measurement {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.form-input::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* upload styling  */
+.form-input-1 {
+    font-size: 1rem;
+    /* margin-bottom: 2rem; */
+}
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(rgba(0, 0, 0, .2), .2);
+    border-bottom: 4px solid rgb(40, 180, 131);
+}
+
+.form-input:focus:invalid {
+    border-bottom: 4px solid #ff7734;
+}
+.form-lable {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+    transform: translateY(-6.8rem);
+}
+.dob-label {
+    opacity: 0;
+}
+
+/* upload styling */
+.label-upload{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.form-input:placeholder-shown ~ .form-lable {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+.radio-group {
+    width: 12%;
+    display: inline-block;
+}
+
+.radio-label-1 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: -.5rem;
+    text-transform: capitalize;
+}
+
+.radio-group-gender {
+    display: flex;
+    /* margin-bottom: 1rem; */
+}
+
+/* radio group for clothing section styling */
+.radio-group-1 {
+    display: inline;
+    padding: 0;
+}
+
+.form-radio {
+    display: none;
+}
+
+.form-radio-label {
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.4rem;
+    color: #fff;
+    width: 15%;
+    margin-bottom: 2.5rem;
+}
+
+/* radio label heading */
+.radio-label {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+/* input specilization */
+.specilization {
+    display: flex;
+}
+.margin-btw {
+    margin-bottom: 0;
+}
+
+.margin-btw:not(:last-child) {
+    margin-right: .4rem;
+}
+
+/* radio button  styling */
+.form-radio-button {
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 5px solid #e87ab2;
+    margin-top: .5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.7rem;
+}
+
+.form-radio-button::after{
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .2s;
+}
+.form-radio:checked ~ .form-radio-label .form-radio-button::after {
+    opacity: 1;
+}
+ /* btn-submit  */
+.btn-submit {
+    text-transform: uppercase;
+    border-radius: 5rem;
+    width: 100%;
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    margin-top: 1.5rem;
+    background-image: linear-gradient(to right, rgba(228, 118, 175, 1), #e87ab2);
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.btn-submit:hover {
+    color: #e87ab2;
+    /* color: #fff; */
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+.btn-submit:focus {
+    outline: none;
+    animation: pulsate 1s;
+}
+
+.text-login {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: .6rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    display: block;
+    text-transform: capitalize;
+}
+#login-style {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.pass-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.sign-link{
+    text-decoration: none;
+    color: #fff;
+}
+.sign-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}

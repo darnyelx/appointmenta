@@ -1,0 +1,1210 @@
+/* media query for desktop first */
+@media only screen and (width: 1200px){
+    body {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    /* postpage image section*/
+    .postpage-gallery {
+        width: 757px;
+        height: 400px;
+    }
+
+    /* pagination section heading */
+    .pagin-image {
+        width: 360px;
+        height: 190px;
+    }
+}
+
+@media only screen and (width: 1100px){
+body{
+    font-size: 50%;
+}
+.form-radio-button {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.form-radio-label {
+    font-size: 1rem;
+    padding-left: 3rem;
+}
+.form-section {
+padding: .5rem;
+margin: 0;
+}
+
+/* form-input section*/
+.form-input {
+    width: 100%;
+}
+
+.book-form {
+    width: 100%;
+    padding: 3rem;
+    margin: none;
+}
+.radio-group {
+    width: 20%;
+}
+.form-radio-label {
+    font-size: 1.1rem;
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: -.5rem;
+}
+.form-radio-button {
+    height: 2rem;
+    width: 2rem;
+}
+.radio-label-1 {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+}
+.radio-label {
+    margin-bottom: 1.5rem;
+}
+
+/* advert section */
+.sales-section {
+    display: flex;
+    flex-direction: column;
+}
+.btn-cart {
+    font-size: 1rem;
+}
+/* postpage image section*/
+.postpage-gallery {
+    width: 690px;
+    height: 350px;
+}
+/* pagination section heading */
+.pagin-image {
+    width: 330px;
+    height: 180px;
+}
+.dataside-submit {
+    font-size: 1.3rem;
+}
+
+/* pagination images */
+.image-title {
+    font-size: .9rem;
+}
+
+.image-title-sub {
+    font-size: 1.2rem;
+}
+/* postpage section  heading*/
+.postpage-gallery {
+    width: 100%;
+    height: 100%;
+}
+.pagin-image {
+    width: 100%;
+    height: 100%;
+}
+.image-title {
+    width: 169px;
+    height: 100%;
+    padding: 0 .5rem;
+    font-size: .8rem;
+    /* letter-spacing: 0; */
+}
+.photo-section {
+    width: 150px;
+    height: 140px;
+}
+.advert-col-4 {
+    width: calc((100% - 30px) / 2);
+    height: 100%;
+    float: left;
+}
+.advert-col-4:not(:last-child) {
+    margin-right: 10px;
+}
+.sales-section {
+    display: flex;
+    flex-direction: row;
+}
+.btn-cart {
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    margin: 1rem .5rem;
+}
+.paragraph, .price {
+    font-size: 1.5rem;
+}
+.design-brand {
+    font-size: 1.4rem;
+}
+/* media section */
+.gallery-image {
+    padding: 1rem;
+    height: 450px;
+    width: 100%;
+}
+.sub-heading {
+    padding: .6rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+}
+
+@media only screen and (width: 970px) {
+    /* Ofashion Tv section */
+.advert-col-4:hover {
+    box-shadow: none;
+    border: none;
+}
+.btn-cart {
+    font-size: .7rem;
+}
+.paragraph, .product-name-para, .price {
+    font-size: 1rem;
+}
+.sales-section {
+    display: flex;
+    flex-direction: column;
+}
+.col-3-of-5, .col-2-of-5 {
+    width: 100%;
+    padding: 1rem;
+}
+.video-title {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.media-section {
+    display: flex;
+    flex-direction: column;
+}
+/* postpage image section*/
+.postpage-gallery {
+    width: 602px;
+    height: 300px;
+}
+
+.photo-section {
+    width: 150px;
+    height: 130px;
+}
+
+/* pagination section heading */
+.pagin-image {
+    width: 287px;
+    height: 160px;
+}
+.dataside-submit {
+    font-size: 1.3rem;
+}
+/* pagination images */
+.image-title {
+    font-size: .7rem;
+    display: flex;
+    width: 150px;
+    height: 100%;
+
+}
+.image-title-sub {
+    font-size: 1.2rem;
+}
+.video-message-content {
+    width: 100%;
+    height: 100%;
+}
+/* test thing out  */
+.pagination-images {
+    width: 200px;
+}
+
+}
+
+@media only screen and (width: 900px){
+.form-section{
+    padding: 0;
+}
+.book-form {
+    width: 70%;
+    padding: 4rem;
+    margin: 3rem auto;
+}
+.image-form {
+    background: none;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+    /* postpage section heading */
+
+    /* postpage image section*/
+.postpage-gallery {
+    width: 556px;
+    height: 300px;
+}
+
+.pagin-image {
+    width: 260px;
+    height: 160px;
+}
+.photo-section {
+    width: 150px;
+    height: 180px;
+}
+.image-title {
+    font-size: 1rem;
+    display: flex;
+    width: 150px;
+    height: 100%;
+}
+
+.advert-dataside {
+    height: 40vh;
+}
+/* End of postpage section  */
+}
+
+@media only screen and (width: 768px) {
+
+.book-form {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+    /* MEDIA SECTION PAGE */
+.image-section{
+    margin-right: 0;
+}
+.heading-text {
+    font-size: 1.5rem;
+}
+    /* postpage section */
+.col-2-of-3 {
+    width: 100%;
+}
+.postpage-gallery {
+    width: 100%;
+    height: 100%;
+}
+.col-1-of-3:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.col-2-of-3:not(:last-child) {
+    margin-right: 0;
+}
+
+.sales-section {
+    display: flex;
+    flex-direction: row;
+}
+.advert-dataside {
+    height: 30vh;
+    width: 720px;
+    margin: 0 0 2rem 0;
+}
+.pagin-image {
+    width: 720px;
+    height: 400px;
+}
+.photo-section {
+    width: 220px;
+    /* height: 180px; */
+}
+.image-title {
+    font-size: 1.3rem;
+    display: flex;
+    width: 400px;
+    padding: 0 2rem;
+}
+
+.image-title-heading {
+    padding: 0 2rem;
+}
+.image-title-sub {
+    font-size: 1.5rem;
+}
+
+.form-radio-label {
+    width: 30%;
+    margin-bottom: 3rem;
+}
+
+.radio-group {
+    width: 130px;
+}
+
+.form-radio-button {
+    margin-top: .5rem;
+}
+.radio-label {
+    margin-bottom: 1rem;
+}
+.advert-col-4 {
+    width: calc((100% - 30px) / 2);
+    height: 100%;
+    float: left;
+}
+.advert-col-4:not(:last-child) {
+    margin-right: 10px;
+}
+/* btn-cart section */
+.btn-cart {
+    font-size: .9rem;
+    padding: .5rem .8rem;
+    font-weight: 300;
+}
+
+.gallery-image {
+    width: 100%;
+    padding: 1rem .5rem;
+    height: 300px;
+}
+.designer-picture {
+    width: 350px;
+    height: 270px;
+    padding: 2rem 3rem;
+}
+.btn-cloth {
+    padding: .5rem .5rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+}
+
+@media only screen and (width: 750px) {
+    /* RENDING SECTION HEADING */
+    .media-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-section{
+        margin-right: 0;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+    .heading-stories {
+        display: block;
+        width: 100%;
+        padding: .5rem 0;
+        text-align: center;
+    }
+    .heading-text {
+        letter-spacing: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+    /* ENDS OF TRENDING SECTION */
+
+    .link-button {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-white{
+        padding: .5rem .5rem;
+        width: 50%;
+    }
+    .form-input {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    /* Ofashion Tv section heading*/
+    .stories-section {
+        margin: 0;
+    }
+    .heading-text {
+        letter-spacing: 0;
+    }
+    /* Ends Ofashion Tv section */
+
+    /* ADVERT SECTION HEADING */
+    .col-1-of-4, .col-1-of-3 {
+        width: 100%;
+    }
+    .sales-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .paragraph, .price {
+        font-size: 2rem;
+    }
+    .btn-cart {
+        font-size: 1rem;
+    }
+    .product-name-para {
+        font-size: 1.5rem;
+    }
+    .col-1-of-3:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    /* ENDS OF ADVERT SECTION */
+}
+
+@media only screen and (width: 580px) {
+    .book-form {
+        width: 100%;
+    }
+    /* postpage section heading */
+    .image-title {
+        font-size: 1.2rem;
+        width: 300px;
+    }
+    .pagin-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .advert-dataside {
+        height: 30vh;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    /* Ends postpage section */
+}
+
+@media only screen and (width: 470px){
+    .btn-white{
+        padding: .3rem .4rem;
+        width: 70%;
+    }
+    .video-title {
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding: 1rem .5rem;
+    }
+    /* postpage section */
+    .image-title {
+        font-size: 1.2rem;
+        width: 250px;
+    }
+}
+
+@media only screen and (width: 430px) {
+    .market-container {
+        padding: 0;
+    }
+    /* TRENDING SECTION HEADING */
+    .form-section {
+        width: 100%;
+    }
+    .book-form {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+    .text-section {
+        padding: 1rem;
+    }
+    /* menu title section */
+    .menu-title {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-title {
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: .5rem;
+        color: #000;
+    }
+    /* Ends of menu title section */
+    .trending-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading-stories {
+        display: block;
+        width: 100%;
+        padding: .5rem 0;
+        text-align: center;
+    }
+    /* ENDS OF TRENDING SECTION */
+
+    /* heading text */
+    .heading {
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+    .Tv-text {
+        font-size: 3rem;
+    }
+    .media-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading-text {
+        letter-spacing: 1px;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .stories-section {
+        display: block;
+        width: 100%;
+        margin: 0;
+
+    }
+    .image-section{
+        flex: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .col-1-of-4, .col-1-of-3, .col-3-of-5, .col-2-of-5 {
+        width: 100%;
+    }
+    .Tv-heading {
+        padding: 0;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .latest-video-section {
+        padding: .5rem;
+        margin: 2rem;
+    }
+    .paragrahp-video {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .video-row-tv {
+        width: 100%;
+    }
+    .video-title {
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 1rem;
+    }
+    .col-1-of-3:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .advert-col-4:not(:last-child) {
+        margin-right: 0;
+    }
+    /* EDITORS PICK */
+    .paragraph, .price, .product-name-para {
+        font-size: 1rem;
+    }
+    /* postpage section */
+    .post-head {
+        font-size: 1.3rem;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+    .image-title-heading {
+        padding: 0 0 1rem 0;
+    }
+    .pagination-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-section {
+        width: 100%;
+    }
+    .image-title {
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 0;
+    }
+    .advert-dataside {
+        height: 100%;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        padding: 1rem;
+    }
+    .form-radio-label {
+        font-size: 1.1rem;
+        padding-left: 2.5rem;
+        margin-bottom: .5rem;
+        width: 130px;
+    }
+    .radio-group {
+        width: 30%;
+        display: inline-block;
+    }
+    .radio-label-1 {
+        font-size: 1.5rem;
+        margin-top: -1.5rem;
+    }
+    .radio-label {
+        margin-bottom: 1rem;
+    }
+    .specilization {
+        display: flex;
+        flex-direction: column;
+    }
+    .radio-group-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .radio-group-container {
+        margin-bottom: 1rem;
+    }
+    .radio-group-gender {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    .label-special {
+        margin-bottom: 2rem;
+    }
+    .form-radio-button {
+        height: 2rem;
+        width: 2rem;
+        margin-top: .5rem;
+    }
+    .btn-1 {
+        width: 100%;
+        padding: .5rem .5rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    /* market section media query */
+    .default {
+        width: 100%;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        margin: 1rem 0;
+    }
+    .market-head {
+        font-size: 1.1rem;
+        padding: 1.5rem 0 0 2rem;
+        letter-spacing: 0;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .market-advert-content {
+        margin-bottom: 0;
+    }
+
+    .market-text {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1.5rem 0 0 2rem;
+    }
+    .market-advert-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .market-price {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .market-descri {
+        font-size: 2rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    .shop-main {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    /* sales section */
+    .sales-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-cart {
+        font-size: .8rem;
+    }
+
+    .shop-btn {
+        font-size: 1.2rem;
+    }
+    .pagination-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .oghas-pagination {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .item-pagination {
+        font-size: 1rem;
+    }
+    .separator-pagination {
+        line-height: 24px;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .pagination-page {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+    /* pagination label */
+    .pagination-label {
+        font-size: 1rem;
+        line-height: 35px;
+        margin: 0;
+    }
+    /* pagination input */
+    .pagination-input {
+        width: 50px;
+        height: 35px;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    /* pagination Go button styling */
+    .pagination-go-btn {
+        width: 50px;
+        height: 35px;
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .select-designer {
+        display: inline;
+        /* margin-top: 1rem; */
+    }
+    /* select by designer section */
+    .designer-label {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding: .5rem 0 0 1.5rem;
+    }
+    .designer-input {
+        width: 140px;
+        height: 30px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #000;
+        margin: .5rem;
+        padding: 1rem 0;
+    }
+}
+
+@media only screen and (width: 399px) {
+    .book-form {
+        width: 100%;
+        padding: 1rem;
+    }
+    /* HEADING SECTION HEADING */
+    .heading {
+        font-size: 2rem;
+    }
+    .heading-text {
+        font-size: 1.3rem;
+    }
+    .paragraph, .price {
+        font-size: 1rem;
+    }
+    .btn-cart {
+        font-size: 1rem;
+    }
+    .video-section {
+        font-size: 1.5rem;
+    }
+    .latest-video-section {
+        padding: .5rem;
+        margin: 1rem;
+    }
+    .video-title {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+    }
+    .col-1-of-4:not(:last-child) {
+        margin-right: 0;
+    }
+    .form-radio-label {
+        width: 120px;
+    }
+
+}
+
+@media only screen and (width: 375px) {
+    /* Ofashion section */
+    .video-tv {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .video-row-tv {
+        width: 100%;
+        padding: .5rem;
+        height: 100%;
+    }
+
+    .video-title {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: .5rem;
+    }
+
+    .paragraph, .price, .product-name-para {
+        font-size: 1rem;
+    }
+    .form-radio-label {
+        font-size: 1.1rem;
+        padding-left: 2.5rem;
+        margin-bottom: .5rem;
+        width: 115px;
+    }
+    .btn-cart {
+        font-size: 0.7rem;
+        padding: .5rem 1.3rem;
+        font-weight: 400;
+    }
+    /* pagination section */
+    .pagination-go-btn,
+    .pagination-input {
+        width: 45px;
+        height: 35px;
+    }
+    /* select by designer section */
+    .designer-input {
+        width: 130px;
+    }
+}
+
+@media only screen and (width: 364px) {
+
+    .book-form {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+    /* menu title section */
+    .menu-title {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-title {
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: .5rem;
+        color: #000;
+    }
+    /* Ends menu title section */
+    .text-section {
+        padding: 1rem;
+    }
+    /* heading stories heading */
+    .heading {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .heading-text {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        padding: .4rem;
+    }
+    .sub-heading {
+        font-size: 1.3rem;
+    }
+    /* media section */
+    .gallery-image {
+        width: 100%;
+        padding: .5rem 0;
+        height: 300px;
+    }
+    .sales-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .video-tv {
+        padding: 0;
+    }
+    .video-section {
+        margin: 0;
+        font-size: 1.6rem;
+        padding: 0;
+    }
+    .latest-video-section {
+        padding: .5rem;
+        margin: 1rem;
+    }
+    .col-3-of-5:not(:last-child) {
+        margin-right: 0;
+    }
+    .video-title {
+        font-size: 1.3rem;
+        margin: 0;
+        letter-spacing: 0;
+        padding: .1rem;
+    }
+    /* sales section */
+    .btn-cart {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+        margin: .5rem;
+    }
+    /* postpage section */
+    .advert-dataside {
+        height: 100%;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        padding: 1rem;
+    }
+
+    /* market heading section */
+    .market-container {
+        padding: 0;
+    }
+
+    .market-heading {
+        display: flex;
+        /* flex-direction: row; */
+    }
+    .default {
+        width: 100%;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    .market-price {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .market-head {
+        font-size: 1.1rem;
+        padding: 1.5rem 0 0 2rem;
+        letter-spacing: 0;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .market-advert-content {
+        margin-bottom: 0;
+    }
+
+    .market-text {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1.5rem 0 0 2rem;
+    }
+
+    .market-descri {
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+
+    .market-advert-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .shop-main {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .shop-btn {
+        font-size: 1.2rem;
+    }
+    /* pagination section  */
+    .pagination-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .oghas-pagination {
+        padding: 1rem;
+        margin: 0;
+    }
+    .item-pagination {
+        font-size: .7rem;
+    }
+    .separator-pagination {
+        line-height: 24px;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .pagination-page {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+    /* pagination label */
+    .pagination-label {
+        font-size: 1rem;
+        line-height: 35px;
+        margin: 0;
+    }
+    /* pagination input */
+    .pagination-input {
+        width: 50px;
+        height: 35px;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    /* pagination Go button styling */
+    .pagination-go-btn {
+        width: 50px;
+        height: 35px;
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .select-designer {
+        display: inline;
+    }
+    /* select by designer section */
+    .designer-label {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding: .5rem 0 0 1.5rem;
+    }
+    .designer-input {
+        width: 120px;
+        height: 30px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #000;
+        margin: .5rem;
+        padding: 1rem 0;
+    }
+    .facebook,
+    .tweet,
+    .gshare,
+    .embed {
+    padding: .3rem;
+    color: #fff;
+    font-size: 1rem;
+    margin: .5rem;
+    margin-right: 0;
+    text-transform: capitalize;
+    }
+
+    /* profile page section */
+    .wrapper-container {
+        padding: .5rem 0 1rem 0;
+    }
+
+    .designer-name {
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+    .shops-name {
+        font-size: 1.5rem
+    }
+    .designer-profile-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .designer-picture {
+        padding-right: 0;
+        width: 300px;
+        height: 240px;
+        padding: 2.5rem 4rem;
+        border-radius: 50%;
+    }
+    .designer-profile {
+        padding-left: 0;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .profile-image {
+        width: 160px;
+        height: 150px;
+        margin: 0;
+    }
+    .btn-cloth {
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        width: 90%;
+        margin: 0;
+    }
+    .post-heading {
+        text-align: center;
+    }
+}
+
+@media only screen and (width: 330px){
+    /* menu title section */
+    .menu-title {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-title {
+        padding: 0;
+        font-size: .8rem;
+        font-weight: 300;
+        margin: .5rem;
+        color: #000;
+    }
+    /* Ends of menu title section */
+    .heading {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .text-section {
+        padding: 1rem;
+    }
+    .btn-white{
+        padding: .3rem .4rem;
+        width: 80%;
+    }
+    .form-radio-label {
+        width: 80px;
+        margin-left: 1rem;
+        padding-left: 2.4rem;
+    }
+    .pagination-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .oghas-pagination {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    .item-pagination {
+        font-size: .7rem;
+    }
+    .separator-pagination {
+        font-size: .7rem;
+    }
+    .pagination-page {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+    /* pagination label */
+    .pagination-label {
+        line-height: 60px;
+    }
+    /* pagination input */
+    .pagination-input {
+        width: 45px;
+        height: 35px;
+    }
+    /* pagination Go button styling */
+    .pagination-go-btn {
+        width: 45px;
+        height: 35px;
+    }
+    .select-designer {
+        display: inline;
+    }
+    /* select by designer section */
+    .designer-label {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding: .5rem 0 0 1.5rem;
+    }
+    .designer-input {
+        width: 100px;
+        height: 30px;
+        padding: .5rem;
+    }
+}
