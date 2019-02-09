@@ -20,7 +20,7 @@ class Pages extends BaseController
    	$courseType			=	$request->input('courseType');
    	$pageHeaderTitle	=	$request->input('pageHeaderTitle');
    	$pageImage			=	$request->input('pageImage');
-   	$url 				=	$request->input('url');
+   	$url 				   =	$request->input('url');
 
    	$data 				=	array('learn'		=>	$input,
    								  'price' 		=> 	$price, 

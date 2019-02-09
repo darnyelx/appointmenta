@@ -1,5 +1,6 @@
 
 	@include('_includes.header');
+	
 	<!--	Main Content 	-->
 	<div class="main-content">
 		<!--	Banner	-->
