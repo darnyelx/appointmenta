@@ -5,12 +5,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>OAcademy | Front-End Web Developer</title>
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+	<link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url('assets/fonts/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,800,900">
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="overlaystyles.css">
+	<link rel="stylesheet" href="{{url('assets/css/styles.css')}}">
+	<link rel="stylesheet" href="{{url('overlaystyles.css')}}">
+
+    <!-- Include external CSS. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+ 
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.2/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.2/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 
 <body class="oghas-font" style="background: rgba(211, 211, 211, 0.11)">

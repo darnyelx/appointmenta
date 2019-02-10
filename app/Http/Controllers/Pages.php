@@ -6,29 +6,217 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\DB as DB;
+
 use Illuminate\Http\Request;
 
 
-class Pages extends BaseController
-{
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+class Pages extends BaseController{
+    
+   use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-   public function createDedicatedPage(Request $request){
+   public function _createSchool(Request $request){
    	
-   	$input 				=	$request->input('whatYouLearn');
-   	$price 				=	$request->input('price');
-   	$courseType			=	$request->input('courseType');
-   	$pageHeaderTitle	=	$request->input('pageHeaderTitle');
-   	$pageImage			=	$request->input('pageImage');
-   	$url 				   =	$request->input('url');
+   	$name 	    =	$request->input('schoolName');
+   	$title 		 =	$request->input('schoolTitle');
+   	
+      $validatedData = $request->validate([
+                                            'schoolName'                   => 'required',
+                                            'schoolTitle'                  => 'required|unique:schools,school_name',
+                                            'schoolBanner'                 => 'required|file|image'
+                                          ]);
 
-   	$data 				=	array('learn'		=>	$input,
-   								  'price' 		=> 	$price, 
-   								  'courseType'	=>	$courseType,
-   								  'pageTitle'	=>	$pageHeaderTitle,
-   								  'pageImage'	=>	$pageImage,
+      //try to save file 
+      try {      
+      	$path             =  $request->file('schoolBanner')->store('appImages');
 
-   								);
+      } catch (Exception $e) {
+         // TODO perform a better action here
+         return false;
+      }
+
+    
+   	$pageContent				=	array( 'name'		         =>	$name,
+   								             'title' 	         => $title, 
+   								             'schoolBanner'	   =>	$path,
+
+   								    );
+
+      $data                   = array( 'school_name'  => $name,
+                                       'page_content' => json_encode($pageContent),
+                                       'status'       => '1'
+                                    );
+
+      DB::table('schools')->insert($data);
+      return 'saved';
+
+   }
+
+   public function _createCourse(Request $request){
+      
+      $name        = $request->input('courseName');
+      $title       = $request->input('courseTitle');
+      $wywl        = $request->input('wywl');
+      $price       = $request->input('price');
+      $school      = $request->input('school');
+
+      $wywl        = str_replace('<p data-f-id="pbf" style="text-align: center; font-size: 14px; margin-top: 30px; opacity: 0.65; font-family: sans-serif;">Powered by <a href="https://www.froala.com/wysiwyg-editor?pb=1" title="Froala Editor">Froala Editor</a></p>', "", $wywl);
+
+      $validatedData = $request->validate([
+                                            'courseName'                   => 'required|unique:courses,course_name',
+                                            'courseTitle'                  => 'required',
+                                            'wywl'                         => 'required',
+                                            'price'                        => 'required',
+                                            'school'                       => 'required'
+                                          ]);
+
+    
+      $pageContent            =  array( 'name'              => $name,
+                                        'title'             => $title, 
+                                        'wywl'              => $wywl,
+                                        'price'             => $price,
+                               );
+
+      $data                   = array( 'course_name'  => $name,
+                                       'school'       => $school,
+                                       'page_content' => json_encode($pageContent),
+                                       'status'       => '1'
+                                    );
+
+      DB::table('courses')->insert($data);
+      return 'saved';
+
+   }
+
+   public function _editCourse(Request $request,$id){
+      
+      $name        = $request->input('courseName');
+      $title       = $request->input('courseTitle');
+      $wywl        = $request->input('wywl');
+      $price       = $request->input('price');
+      $school      = $request->input('school');
+
+      $wywl        = str_replace('<p data-f-id="pbf" style="text-align: center; font-size: 14px; margin-top: 30px; opacity: 0.65; font-family: sans-serif;">Powered by <a href="https://www.froala.com/wysiwyg-editor?pb=1" title="Froala Editor">Froala Editor</a></p>', "", $wywl);
+
+      $validatedData = $request->validate([
+                                            'courseName'                   => 'required|unique:courses,course_name',
+                                            'courseTitle'                  => 'required',
+                                            'wywl'                         => 'required',
+                                            'price'                        => 'required',
+                                            'school'                       => 'required'
+                                          ]);
+
+    
+      $pageContent            =  array( 'name'              => $name,
+                                        'title'             => $title, 
+                                        'wywl'              => $wywl,
+                                        'price'             => $price,
+                               );
+
+      $data                   = array( 'course_name'  => $name,
+                                       'school'       => $school,
+                                       'page_content' => json_encode($pageContent),
+                                       'status'       => '1'
+                                    );
+
+      DB::table('courses')
+            ->where('id', $id)
+            ->update($data);
+      return 'saved';
+
+   }
+
+   public function _editSchool(Request $request,$id){
+      
+      $name        = $request->input('schoolName');
+      $title       = $request->input('schoolTitle');
+      
+      $validatedData = $request->validate([
+                                            'schoolName'                   => 'required',
+                                            'schoolTitle'                  => 'required|unique:schools,school_name',
+                                          ]);
+
+
+      if ($request->file('schoolBanner') != Null) {
+        
+         //try to save file 
+         try {      
+            $path             =  $request->file('schoolBanner')->store('appImages');
+
+         } catch (Exception $e) {
+            // TODO perform a better action here
+            return false;
+         }
+        
+      }else{
+         $path = $request->input('editImage');
+      }
+
+    
+      $pageContent            =  array( 'name'              => $name,
+                                        'title'             => $title, 
+                                        'schoolBanner'      => $path,
+
+                               );
+
+      $data                   = array( 'school_name'  => $name,
+                                       'page_content' => json_encode($pageContent),
+                                    );
+
+      DB::table('schools')
+            ->where('id', $id)
+            ->update($data);
+      return 'edited';
+   }
+
+   public function editSchool($school){
+
+      $schoolDet  =   DB::table('schools')
+                                          ->where('id',$school)
+                                          ->get()
+                                          ->first();
+      if ($schoolDet == NULL) {
+        return 'false';
+      }
+
+      $data       =  array('schoolDet' =>$schoolDet);
+      return view('admin.createSchool',$data);
+
+   }
+
+   public function editCourse($id){
+
+      $courseDet  =   DB::table('courses')
+                                          ->where('id',$id)
+                                          ->get()
+                                          ->first();
+
+      $pageContent;
+      if ($courseDet != Null) {
+   
+         $pageContent  =  json_decode($courseDet->page_content);
+      }
+
+      $schools    =  DB::table('schools')->get();
+
+      $data       =  array('schools'   =>$schools,
+                           'courseDet' =>$courseDet,
+                           'pageContent'=>$pageContent
+                           );
+
+      return view('admin.createCourse',$data);
+   }
+
+   public function createSchool(){
+      return view('admin.createSchool');
+   }
+
+   public function createCourse(){
+      
+      $schools    =  DB::table('schools')->get();
+      $data       =  array('schools'=>$schools);
+
+      return view('admin.createCourse',$data);
    }
 
    public function getPage(){
