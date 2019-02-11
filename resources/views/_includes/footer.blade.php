@@ -45,8 +45,8 @@
 	</footer>
 	<!--	Footer	-->
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{{url('assets/js/jquery.min.js')}}"></script>
+	<script src="{{url('assets/bootstrap/js/bootstrap.min.js')}}"></script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('course/register/{id?}','Activities@saveCourse');
-Route::get('learn/{school?}/{courses?}','Pages@courses');
+Route::get('school/{school?}','Pages@getSchoolCourses');
 
 Route::prefix('admin')->group(function () {
     Route::get('school/create','Pages@createSchool');

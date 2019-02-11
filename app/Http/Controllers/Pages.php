@@ -73,7 +73,7 @@ class Pages extends BaseController{
     
       $pageContent            =  array( 'name'              => $name,
                                         'title'             => $title, 
-                                        'wywl'              => $wywl,
+                                        'wywl'              => htmlentities($wywl),
                                         'price'             => $price,
                                );
 
@@ -219,8 +219,33 @@ class Pages extends BaseController{
       return view('admin.createCourse',$data);
    }
 
-   public function getPage(){
-   	# code..
-   	return view('pages.dedicated');
+   public function getSchoolCourses($schoolId){
+
+      $filter  =   array('id'=>$schoolId);
+      
+      //get school
+      $school  =  	DB::table('schools')
+                        ->where($filter)
+                        ->get()
+                        ->first();
+
+      $filter  =     array('schools.id'          =>   $schoolId,
+                           'schools.status'      => 1,
+                           'courses.status'      => 1
+                           );
+
+      $courses =     DB::table('courses')
+                        ->join('schools', 'courses.school', '=', 'schools.id')
+                        ->where($filter)
+                        ->select('courses.*')
+                        ->get();
+
+      $data    =     array('school'    =>$school,
+                           'courses'   =>$courses
+                        );
+
+   	return view('pages.school-of',$data);
    }
+
+
 }
