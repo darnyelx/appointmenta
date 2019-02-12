@@ -11,18 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'Activities@home');
 Route::post('course/register/{id?}','Activities@saveCourse');
 Route::get('school/{school?}','Pages@getSchoolCourses');
+Route::get('course/{courseId?}','Activities@registercourse');
+Route::get('thanks','Activities@thanks');
 
-Route::prefix('admin')->group(function () {
+Route::middleware(['auth'])->prefix('admin')->group(function () {
+    
     Route::get('school/create','Pages@createSchool');
     Route::get('course/create','Pages@createCourse');
     Route::get('school/edit/{id?}','Pages@editSchool');
     Route::get('course/edit/{id?}','Pages@editCourse');
+    Route::get('schools','Pages@viewSchools');
+    Route::get('applicants/{courseId?}','Activities@getRegisteredUsers');
+    Route::get('school/courses/{id?}','Pages@adminSchoolCourses');
 
 
     Route::post('school/create/save','Pages@_createSchool');
@@ -33,3 +36,6 @@ Route::prefix('admin')->group(function () {
 
 
 });
+	Auth::routes();
+
+

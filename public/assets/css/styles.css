@@ -1,57 +1,84 @@
 /*Brand Consistency Rules Start*/
-body {
-	/*		background-color: rgb(250, 250, 250) !important;*/
+/*Smoot Scrolling*/
+html {
+	scroll-behavior: smooth;
 }
 
+/*Oghas Font*/
+body {
+	font-family: Exo, sans-serif;
+	font-weight: 600;
+}
+
+/*Add material Style*/
 .oghas-material {
 	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
-	/*	box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);*/
 }
 
+/*Add light material to box*/
+.shadow-light {
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*Add mild material on hover to box*/
+.shadow-light:hover {
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
+}
+
+/*Add heavy spread material to box*/
+.shadow-in {
+	box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*Add heavy spread - light spread material on hover to box*/
+shadow-in:hover {
+	box-shadow: 10px 10px 10px 0px rgba(80, 96, 80, 0.3);
+}
+
+/*Add Oghas font to element*/
 .oghas-font {
 	font-family: Exo, sans-serif;
 	font-weight: 600;
 	font-style: normal;
-	background-color: #fff;
 }
 
+/*Add Oghas input design*/
 .oghas-input {
 	background-color: #fff;
-	color: white !important;
+	color: grey !important;
 }
 
+/*Add Oghas input placeholder design*/
 .oghas-input::placeholder {
 	color: grey !important;
 }
 
+/*Add Oghas input on:focus design*/
 .oghas-input:focus {
-	border: rgba(0, 128, 0, 0.38) 2px solid;
+	background: white !important;
 }
 
+/*Add Oghas button design*/
 .oghas-btn {
 	background-color: #4caf50;
 	color: white;
 }
 
-a:hover {}
+a {}
 
-/*
-img,
-nav,
-footer,
-input,
-marquee,
-.newsletter-sub,
-.media-latest-news,
-.writer {
-	border-radius: 3px;
-}
-*/
+a:hover {}
 
 #middle-adverts {
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
+
+#side-adverts {}
+
 
 /*Brand Consistency Rules End*/
 
@@ -67,14 +94,14 @@ marquee,
 
 .oghas-nav {
 	background-color: rgb(103, 167, 255);
+	position: fixed;
 	top: 0;
-	position: static;
+	right: 0;
+	left: 0;
 	z-index: 999;
 	box-shadow: 0px 0px 20px 8px rgba(80, 96, 80, 0.31);
 	padding: 0px;
-	/*	width: 100%;*/
 	margin: 0 auto !important;
-	/*	margin-top: 7px;*/
 }
 
 @media (max-width: 991px) {
@@ -154,7 +181,7 @@ button.navbar-toggler {
 input#header-search {
 	width: 65px;
 	/*	-webkit-transition: width 0.4s ease-in-out;*/
-/*	transition: width 0.4s ease-in;*/
+	/*	transition: width 0.4s ease-in;*/
 }
 
 input#header-search:focus {
@@ -219,10 +246,6 @@ footer {
 	box-sizing: border-box;
 	text-align: left;
 	padding: 20px 20px;
-	/*	width: 96%;*/
-	/*	margin: 0 auto;*/
-	/*	margin-top: 50px;*/
-	/*	margin-bottom: 20px;*/
 	position: static;
 	bottom: 0px;
 	left: 0px;
@@ -342,6 +365,167 @@ div.social-links {
 /*Footer End*/
 
 /*OAcademy Index*/
+#banner {
+	background: url('../../assets/img/oacademy-4.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+	#banner .banner-head-1 {
+		display: none;
+	}
+}
+
+#banner .banner-head {
+	color: white;
+	margin-bottom: 70px;
+}
+
+.banner-schools-inner {
+	text-align: center;
+	display: inline-block;
+	border: 1px darkorange solid;
+	border-radius: 10px;
+	color: darkorange;
+	background: rgba(0, 0, 0, 0.62);
+	/*	box-shadow: 2px 2px 20px 5px white;*/
+	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.banner-schools-inner:hover {
+	background: black
+}
+
+.banner-schools span {
+	background: darkorange;
+	/*	border: 1px solid white;*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 2px 30px;
+	color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 20px;
+}
+
+.banner-schools span:hover {
+	color: white;
+	background: black;
+}
+
+.banner-schools-inner p {
+	margin-top: -10px;
+	text-shadow: 2px 2px black;
+	padding: 0px 5px;
+	font-size: 20px;
+}
+
+.banner-sub h3 {
+	color: white;
+	margin-top: 20px;
+}
+
+.banner-sub p {
+	color: white;
+}
+
+.why-visit {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+	.why-visit .col {
+
+		text-align: center;
+	}
+
+	.why-visit iframe {
+		width: 350px;
+	}
+}
+
+.why-visit .text {
+	padding-top: 20px;
+}
+
+.index-get-started {
+	text-align: right;
+}
+
+.index-get-started .btn {
+	background: grey;
+	color: white;
+	margin-top: 100px;
+}
+
+.redesign {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.redesign .row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.redesign .col-md-4 {
+	margin-bottom: 20px;
+}
+
+.courses {
+	text-align: center;
+	padding: 30px;
+	border-radius: 10px;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.courses:hover {
+	background: transparent;
+}
+
+.courses h3 {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.courses-1 {
+	background: url('../../assets/img/Pics4.jpg');
+}
+
+.courses-2 {
+	background: url('../../assets/img/Pics2.jpg');
+}
+
+.courses-3 {
+	background: url('../../assets/img/Pics3.jpg');
+}
+
+.courses-get-started {
+	color: white;
+	background: grey;
+	border: 2px white solid;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.courses-get-started:hover {
+	background: darkgrey;
+	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
+}
+
+
+/*OAcademy Index*/
+
+/*OAcademy School-of*/
 .oghas-nav .nav-link {
 	color: white !important;
 }
@@ -370,13 +554,13 @@ div.social-links {
 }
 
 .sub-header {
-/*	font-size: 28px;*/
+	/*	font-size: 28px;*/
 	color: #605f5f;
 }
 
 .section-content p {
 	color: white;
-/*	position: relative;*/
+	/*	position: relative;*/
 	z-index: 3;
 }
 
@@ -386,7 +570,7 @@ div.social-links {
 	padding: 6px 40px;
 	position: relative;
 	z-index: 3;
-/*	border: solid rgb(103, 167, 255);*/
+	/*	border: solid rgb(103, 167, 255);*/
 	background-color: rgb(103, 167, 255);
 }
 
@@ -405,6 +589,7 @@ div.social-links {
 	background-size: cover;
 	padding-left: 7%;
 	padding-right: 7%;
+	padding-top: 120px;
 	z-index: 3;
 }
 
@@ -415,12 +600,12 @@ div.social-links {
 
 .section-3-overlay {
 	background: rgba(103, 167, 255, 0.43);
-/*	height: 370px;*/
-/*	width: 100%;*/
+	/*	height: 370px;*/
+	/*	width: 100%;*/
 }
 
 .section-3-content {
-	background-image: url(../img/CustomerCareAgent-2.jpg);
+	background-image: url(../img/CustomerCareAgent-1.jpg);
 	background-size: cover;
 	background-position: center;
 	padding-left: 7%;
@@ -436,7 +621,7 @@ div.social-links {
 
 .section-3-content-text {
 	color: rgba(255, 255, 255, 0.95) !important;
-/*		text-shadow: black 2px 2px 8px;*/
+	/*		text-shadow: black 2px 2px 8px;*/
 }
 
 .section-3-btn {
@@ -454,7 +639,7 @@ div.social-links {
 }
 
 .section-content .col-8 {
-/*	z-index: 2;*/
+	/*	z-index: 2;*/
 }
 
 #discover .nav-link.active {
@@ -482,83 +667,18 @@ div.social-links {
 	/*	color: darkgrey;*/
 }
 
-.get-started {
-	text-align: right;
-}
-
-.get-started .btn {
-	background-color: rgba(103, 167, 255);
-	color: white;
-}
-
-.get-started .btn:hover {
-	background-color: white;
-	color: rgb(103, 167, 255);
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
-}
-
-/*OAcademy Index*/
-
-/*OAcademy Dedicated*/
-.dedicated-section-1-header {
-	color: rgba(255, 255, 255, 0.9);
-}
-
-.banner-content {
-	margin: 0;
-	padding: 1rem;
-	padding-right: 50px;
-	padding-left: 50px;
-	font-size: 30px;
-	border: solid 1px white;
-	border-radius: 20px;
-	display: inline-block;
-}
-
-.bounceIn {
-	animation: bounceIn 5s steps(25);
-}
-
-@keyframes bounceIn {
-	0% {
-		transform: scale(0.1);
-		opacity: 0;
-	}
-
-	60% {
-		transform: scale(1.2);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
-#apply-section {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.course-detail {
-	border-radius: 10px;
-	padding: 20px;
-	background: white;
-}
 
 .price {
 	font-size: 1.5rem;
 }
 
 .apply {
-	border-radius: 10px;
-	padding: 20px;
-	background: white;
+	margin-top: 20px;
 }
 
 @media (max-width: 575px) {
 	.apply {
-	margin-top: 2rem;
+		margin-top: 20px;
 	}
 }
 
@@ -572,4 +692,42 @@ select {
 	color: white;
 }
 
-/*OAcademy Dedicated*/
+/*OAcademy School-of*/
+
+/*OAcademy Backend - Create Pages */
+div.inputs {
+	margin-top: 120px;
+	margin-bottom: 30px;
+}
+
+/*OAcademy Backend - Create Pages */
+
+
+/*Thank You Page*/
+.thank-you {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+/*Thank You Page*/
+
+/*Admin Login Page*/
+.login {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+/*Admin Login Page*/
+
+/*Schools Stats*/
+.school-stats {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.school-stats .table {
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+/*Schools Stats*/

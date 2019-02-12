@@ -14,7 +14,8 @@ class Activities extends BaseController{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function saveCourse(Request $request,$courseId){
-    	$name 		= $request->input('fullname');
+    	
+      $name 		= $request->input('fullname');
     	$email 		=	$request->input('email');
     	$phoneNum =	$request->input('number');
     	
@@ -22,7 +23,7 @@ class Activities extends BaseController{
     										'email'				=>	$email,
     									  'phonenumber'	=>	$phoneNum,
     									  'course'			=>	$courseId
-	);
+	                 );
     	$validatedData = $request->validate([
 																		        'fullname' 			=> 'required',
 																		        'email' 				=> 'required|unique:course_reg,email',
@@ -32,6 +33,40 @@ class Activities extends BaseController{
     	// exit;
 
     	$saveCourse = DB::table('course_reg')->insert($data);
-    	// return redirect('/courses');
+    	return redirect('/thanks');
     }
+    public function home(){
+
+      $schools    =  DB::table('schools')->take(6)->get();
+      $data       =  array('schools'=>$schools);
+      return view('pages.index',$data);
+    }
+
+    public function registercourse($courseId){
+      
+      $course =   DB::table('courses')
+                        ->join('schools', 'courses.school', '=', 'schools.id')
+                        ->where('courses.id',$courseId)
+                        ->select('courses.*','schools.page_content as school_page_content')                        
+                        ->get()
+                        ->first();
+
+       $data   =   array('course'=>$course);
+
+      return view('pages.dedicated',$data);
+    
+    }
+
+    public function getRegisteredUsers($courseId){
+       $reg =   DB::table('course_reg')
+                        ->where('course_reg.course',$courseId)                    
+                        ->get();
+      $data = array('users'=>$reg);
+      return view('admin.regUsers',$data);
+    }
+
+    public function thanks(){
+      return view('pages.thanks');
+    }
+
 }

@@ -8,7 +8,6 @@
 				<div class="col-sm">
 					<h1 class="section-content-header">
 						<em>
-							<span class="sub-header">School of <br></span>
 						</em>{{$school->school_name}} &lt; &#92; &gt;
 					</h1>
 					<p>
@@ -56,7 +55,7 @@
 												<?php echo	html_entity_decode( json_decode($course->page_content)->wywl)?>
 											<br>
 											<div class=" get-started">
-												<a href="#">
+												<a href="{{url('course/'.$course->id)}}">
 													<button class="btn">Get Started</button>
 												</a>
 											</div>

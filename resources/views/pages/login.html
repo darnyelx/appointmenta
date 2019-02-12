@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>OghasTech | OAcademy</title>
-
+	<title>OghasTech | Backend</title>
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
@@ -19,9 +18,7 @@
 <body class="oghas-font">
 
 	<!--	Header	-->
-
-	<!--	Full Nav	-->
-	<nav class="navbar navbar-dark navbar-expand-md oghas-nav">
+	<nav class="navbar navbar-dark navbar-expand-md oghas-nav fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#" id="oghas-logo"></a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
@@ -75,28 +72,36 @@
 	</nav>
 	<!--	Header	-->
 
+	<div class="container login">
+		<div class="row">
+			<div class="col">
+				<form action="#">
+					<label for="userName">Username or Email</label>
+					<input class="form-control" type="text" placeholder="Username or email" id="userName">
+					<br>
+					<label for="password">Password</label>
+					<input class="form-control" type="password" placeholder="Password" id="password">
+					<br><br>
+					<button role="submit" class="btn">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
-
-
-
-	<!-- FOOTER -->
+	<!-- Footer -->
 	<footer class="">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 footer-navigation text-center"><a href="#"><img src="assets/img/Oagric_Transparent.png"></a>
 					<h3>...just technology</h3>
 					<p class="links">
-						<a href="#">Home</a>
+						<a href="/OghasTech/">Home</a>
 						<strong> · </strong>
-						<a href="#">Invest</a>
-						<strong> · </strong>
-						<a href="#">Become A Columnist</a>
-						<strong> · </strong>
-						<a href="#">Join Our Advisory Team</a>
+						<a href="/OghasTech/about-us.html#our-team">Our Team</a>
 						<strong> · </strong>
 						<a href="#">Faq</a>
 						<strong> · </strong>
-						<a href="#">Contact</a>
+						<a href="/OghasTech/about-us.html">About US</a>
 					</p>
 					<p class="company-name">Oghas Technology © 2015 </p>
 				</div>
@@ -123,10 +128,12 @@
 			</div>
 		</div>
 	</footer>
-	<!-- FOOTER ENDS -->
+	<!-- Footer Ends -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/js/bs-animation.js"></script>
+	<script src="../Assets/js/Paralax-Hero-Banner.js"></script>
 </body>
 
 </html>

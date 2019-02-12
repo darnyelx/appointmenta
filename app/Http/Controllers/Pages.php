@@ -219,6 +219,32 @@ class Pages extends BaseController{
       return view('admin.createCourse',$data);
    }
 
+   public function viewSchools(){
+          
+      $schools    =  DB::table('schools')
+                              ->get();
+      $data       =  array('schools'=>$schools);
+
+      return view('admin.school-stats',$data);
+   }
+
+   public function adminSchoolCourses($schoolId){
+      
+      $filter  =     array('schools.id'          =>   $schoolId,
+                           );
+
+
+      $courses =     DB::table('courses')
+                        ->join('schools', 'courses.school', '=', 'schools.id')
+                        ->where($filter)
+                        ->select('courses.*','courses.id as courseId','schools.*',DB::raw( "( SELECT count(*) FROM course_reg WHERE courses.id = course_reg.course  ) as registered")     )
+                        ->get();
+      
+      $data    =  array('courses'=>$courses);
+
+      return view('admin.schoolCourses',$data);
+   }
+
    public function getSchoolCourses($schoolId){
 
       $filter  =   array('id'=>$schoolId);
@@ -229,14 +255,10 @@ class Pages extends BaseController{
                         ->get()
                         ->first();
 
-      $filter  =     array('schools.id'          =>   $schoolId,
-                           'schools.status'      => 1,
-                           'courses.status'      => 1
-                           );
-
+     
       $courses =     DB::table('courses')
                         ->join('schools', 'courses.school', '=', 'schools.id')
-                        ->where($filter)
+                        ->where('courses.school',$schoolId)
                         ->select('courses.*')
                         ->get();
 
@@ -244,7 +266,7 @@ class Pages extends BaseController{
                            'courses'   =>$courses
                         );
 
-   	return view('pages.school-of',$data);
+   	return view('school-of',$data);
    }
 
 
