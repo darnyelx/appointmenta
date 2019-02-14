@@ -387,9 +387,8 @@ div.social-links {
 .banner-schools-inner {
 	text-align: center;
 	display: inline-block;
-	border: 1px darkorange solid;
-	border-radius: 10px;
-	color: darkorange;
+	border: 2px rgb(103, 167, 255) solid;
+	border-radius: 3px;
 	background: rgba(0, 0, 0, 0.62);
 	/*	box-shadow: 2px 2px 20px 5px white;*/
 	margin-bottom: 20px;
@@ -400,10 +399,11 @@ div.social-links {
 .banner-schools-inner:hover {
 	background: black
 }
+/*
 
 .banner-schools span {
 	background: darkorange;
-	/*	border: 1px solid white;*/
+		border: 1px solid white;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	padding: 2px 30px;
@@ -417,12 +417,14 @@ div.social-links {
 	color: white;
 	background: black;
 }
+*/
 
 .banner-schools-inner p {
-	margin-top: -10px;
+	margin-bottom: 0px;
 	text-shadow: 2px 2px black;
-	padding: 0px 5px;
-	font-size: 20px;
+	padding: 20px 10px;
+	font-size: 25px;
+	color: white;
 }
 
 .banner-sub h3 {
