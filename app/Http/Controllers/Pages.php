@@ -28,7 +28,7 @@ class Pages extends BaseController{
 
       //try to save file 
       try {      
-      	$path             =  $request->file('schoolBanner')->store('appImages');
+      	$path             =  $request->file('schoolBanner')->store('public/appImages');
 
       } catch (Exception $e) {
          // TODO perform a better action here
@@ -141,7 +141,8 @@ class Pages extends BaseController{
         
          //try to save file 
          try {      
-            $path             =  $request->file('schoolBanner')->store('appImages');
+            
+            $path             =  explode('public/',$request->file('schoolBanner')->store('public/appImages'))[1];
 
          } catch (Exception $e) {
             // TODO perform a better action here

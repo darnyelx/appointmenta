@@ -79,7 +79,7 @@
 						</p>
 					</td>
 					<td>
-						<img src="{{asset('storage/'.json_decode($school->page_content)->schoolBanner)}}" style="width: 50px;">
+						<img src="{{url('storage/'.json_decode($school->page_content)->schoolBanner)}}" style="width: 50px;">
 					</td>
 					<td>
 						<div class="d-flex flex-wrap justify-content-left ">
