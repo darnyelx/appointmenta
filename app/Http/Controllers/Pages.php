@@ -44,7 +44,7 @@ class Pages extends BaseController{
 
       $data                   = array( 'school_name'  => $name,
                                        'page_content' => json_encode($pageContent),
-                                       'status'       => '1'
+                                       'status'       => '1',
                                     );
 
       DB::table('schools')->insert($data);
@@ -209,7 +209,8 @@ class Pages extends BaseController{
    }
 
    public function createSchool(){
-      return view('admin.createSchool');
+      $data    =   array('schoolDet'    => null);
+      return view('admin.createSchool',$data);
    }
 
    public function createCourse(){
