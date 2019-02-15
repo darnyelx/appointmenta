@@ -1,4 +1,4 @@
-	@include('_includes.header');
+	@include('_includes.header-admin');
 	<div class="container inputs">
 		<div class="row">
 			<div class="col">
