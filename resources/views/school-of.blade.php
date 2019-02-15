@@ -4,11 +4,11 @@
 		<!--	Shool of?	-->
 		<div class="section section-1" id="">
 			<div class="section-overlay section-1-overlay"></div>
-			<div class="container-fluid section-content section-1-content">
+			<div class="container-fluid section-content section-1-content" style="background-image: url({{url('storage/'.json_decode($school->page_content)->schoolBanner)}});">
 				<div class="col-sm">
 					<h1 class="section-content-header">
 						<em>
-						</em>{{$school->school_name}} &lt; &#92; &gt;
+						</em>{{$school->school_name}}
 					</h1>
 					<p>
 						{{json_decode($school->page_content)->title}}
