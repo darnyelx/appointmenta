@@ -35,7 +35,7 @@
 							<?php $iteratedQ = 0;?>
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 								@foreach($courses as $course)
-									<a class="nav-link" id="course_{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
+									<a class="nav-link" id="v-pills-home-{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
 								<?php $iteratedQ++ ?>
 								@endforeach
 								
@@ -56,8 +56,9 @@
 											<h4 style="color: rgba(103, 167, 255);">What You'll learn</h4>
 
 												<?php echo	html_entity_decode( json_decode($course->page_content)->wywl)?>
-											<br>
-												<div class="apply oghas-material">
+																								<span class="price">#{{json_decode($course->page_content)->price}}</span>
+
+												<div class="apply">
 													<h5 style="color: rgba(103, 167, 255);">Become A Student Today... Help Design The Future</h5>
 													<form action="{{url('course/register/'.$course->id)}}" method="POST">
 														@csrf
@@ -69,11 +70,7 @@
 														</div>
 													</form>
 												</div>
-											<div class=" get-started">
-												<a href="{{url('course/'.$course->id)}}">
-													<button class="btn">Get Started</button>
-												</a>
-											</div>
+											
 										</div>
 									</div>
 									<?php $iterated++ ?>
