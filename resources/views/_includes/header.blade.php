@@ -39,7 +39,7 @@
 				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
 					<ul class="nav navbar-nav">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link active" href="#">OAGRIC</a>
+							<a class="nav-link" href="#">OAGRIC</a>
 						</li>
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="#" target="_blank">OFASHION</a>

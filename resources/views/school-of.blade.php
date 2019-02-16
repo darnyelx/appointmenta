@@ -35,7 +35,7 @@
 							<?php $iteratedQ = 0;?>
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 								@foreach($courses as $course)
-									<a class="nav-link active" id="course_{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
+									<a class="nav-link" id="course_{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
 								<?php $iteratedQ++ ?>
 								@endforeach
 								
@@ -73,7 +73,7 @@
 
 		<!--	Need Help?	-->
 		<div class="section section-3" id="">
-<!--			<div class="section-overlay section-3-overlay"></div>-->
+			<div class="section-overlay section-3-overlay"></div>
 			<div class="container-fluid section-content section-3-content">
 					<div class="row">
 						<div class="col-md-8 text-center">

@@ -9,11 +9,11 @@
 					<h4>LEARN - GROW - EXPLORE</h4>
 				</div>
 			</div>
-			<h2 class="text-center text-white">Our Schools:</h2>
 			<div class="row text-center">
 				<div class="col">
 					<div class="banner-schools">
 						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
 							<p class="text-center">Programming</p>
 						</div>
 					</div>
@@ -21,6 +21,7 @@
 				<div class="col">
 					<div class="banner-schools">
 						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
 							<p class="text-center">Design</p>
 						</div>
 					</div>
@@ -28,6 +29,7 @@
 				<div class="col">
 					<div class="banner-schools">
 						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
 							<p class="text-center">Business</p>
 						</div>
 					</div>
@@ -35,6 +37,7 @@
 				<div class="col">
 					<div class="banner-schools">
 						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
 							<p class="text-center">Entrepreneurship</p>
 						</div>
 					</div>
@@ -42,6 +45,7 @@
 				<div class="col">
 					<div class="banner-schools">
 						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
 							<p class="text-center">Cinematography</p>
 						</div>
 					</div>
@@ -80,6 +84,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!--	Redesign the future	-->
 	<div style="background: rgba(128, 128, 128, 0.13)">
 		<div class="container redesign">

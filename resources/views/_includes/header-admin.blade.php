@@ -29,7 +29,7 @@
 		<!--	Nav	-->
 		<nav class="navbar navbar-dark navbar-expand-md oghas-nav">
 			<div class="container">
-				<a class="navbar-brand" href="#" id="oghas-logo"></a>
+				<a class="navbar-brand" href="www.dev-oghas.com/public" id="oghas-logo"></a>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
 					<span class="sr-only">
 						Toggle navigation
@@ -39,7 +39,7 @@
 				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
 					<ul class="nav navbar-nav">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link active" href="#">OAGRIC</a>
+							<a class="nav-link" href="#">OAGRIC</a>
 						</li>
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="#" target="_blank">OFASHION</a>
@@ -93,26 +93,26 @@
 				<div class="collapse navbar-collapse" id="navcol-1">
 					<ul class="nav navbar-nav m-auto">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link active" href="courses-stats.html">Course Stats</a>
+							<a class="nav-link" href="course">Course Stats</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="school-stats.html" target="_blank">School Stats</a>
+							<a class="nav-link" href="schools" target="schools">School Stats</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="events.html" target="_blank">Create School</a>
+							<a class="nav-link" href="/create" target="">Create School</a>
 						</li>
 						<li class="dropdown menu-mobile-more">
 							<a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
 							<div class="dropdown-menu" role="menu">
-								<a class="dropdown-item" role="presentation" href="create-course.html" target="_blank">Create Course</a>
-								<a class="dropdown-item" role="presentation" href="reg-users.html" target="_blank">Reg Users</a>
+								<a class="dropdown-item" role="presentation" href="course/create" target="">Create Course</a>
+								<a class="dropdown-item" role="presentation" href="applicants" target="_blank">Reg Users</a>
 							</div>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
-							<a class="nav-link" href="create-course.html" target="_blank">Create Courses</a>
+							<a class="nav-link" href="course/create" target="">Create Courses</a>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
-							<a class="nav-link" href="reg-users.html" target="_blank">Reg Users</a>
+							<a class="nav-link" href="applicants" target="_blank">Reg Users</a>
 						</li>
 					</ul>
 				</div>

@@ -3,7 +3,7 @@
 	<footer class="">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 footer-navigation text-center"><a href="#"><img src="assets/img/Oagric_Transparent.png"></a>
+				<div class="col-sm-6 col-md-4 footer-navigation text-center"><a href="#"><img src="../../../oghastech/public/assets/img/Oagric_Transparent.png"></a>
 					<h3>...just technology</h3>
 					<p class="links">
 						<a href="#">Home</a>

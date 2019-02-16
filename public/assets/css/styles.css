@@ -217,6 +217,12 @@ input#header-search:focus {
 
 nav#inner-nav {
 	width: 100%;
+	margin-top: 75px;
+}
+
+.nav-link.active {
+	color: rgba(0, 94, 128, 0.76) !important;
+	border-bottom: solid 3px rgba(0, 30, 128, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -387,8 +393,9 @@ div.social-links {
 .banner-schools-inner {
 	text-align: center;
 	display: inline-block;
-	border: 2px rgb(103, 167, 255) solid;
-	border-radius: 3px;
+	border: 1px #006cff solid;
+	border-radius: 10px;
+	color: darkorange;
 	background: rgba(0, 0, 0, 0.62);
 	/*	box-shadow: 2px 2px 20px 5px white;*/
 	margin-bottom: 20px;
@@ -399,11 +406,10 @@ div.social-links {
 .banner-schools-inner:hover {
 	background: black
 }
-/*
 
 .banner-schools span {
 	background: darkorange;
-		border: 1px solid white;
+	/*	border: 1px solid white;*/
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	padding: 2px 30px;
@@ -417,14 +423,12 @@ div.social-links {
 	color: white;
 	background: black;
 }
-*/
 
 .banner-schools-inner p {
-	margin-bottom: 0px;
+	margin-top: -10px;
 	text-shadow: 2px 2px black;
-	padding: 20px 10px;
-	font-size: 25px;
-	color: white;
+	padding: 0px 5px;
+	font-size: 20px;
 }
 
 .banner-sub h3 {
@@ -523,7 +527,6 @@ div.social-links {
 	background: darkgrey;
 	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
 }
-
 
 /*OAcademy Index*/
 
@@ -646,7 +649,9 @@ div.social-links {
 
 #discover .nav-link.active {
 	background: transparent;
-	color: black;
+/*	color: black;*/
+	color: rgba(0, 94, 128, 0.76) !important;
+	border-bottom: solid 3px rgba(0, 30, 128, 0.3);
 }
 
 #discover .nav-link {
@@ -668,7 +673,6 @@ div.social-links {
 #discover .tab-content .course-detail {
 	/*	color: darkgrey;*/
 }
-
 
 .price {
 	font-size: 1.5rem;
@@ -698,8 +702,8 @@ select {
 
 /*OAcademy Backend - Create Pages */
 div.inputs {
-	margin-top: 120px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /*OAcademy Backend - Create Pages */
@@ -723,8 +727,8 @@ div.inputs {
 
 /*Schools Stats*/
 .school-stats {
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .school-stats .table {

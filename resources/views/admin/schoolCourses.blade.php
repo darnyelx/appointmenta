@@ -1,4 +1,4 @@
-	@include('_includes.header');
+	@include('_includes.header-admin');
 
 
 	<!--	Header	-->
