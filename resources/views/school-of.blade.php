@@ -52,8 +52,23 @@
 												
 												{{json_decode($course->page_content)->title}}
 											</p>
+
+											<h4 style="color: rgba(103, 167, 255);">What You'll learn</h4>
+
 												<?php echo	html_entity_decode( json_decode($course->page_content)->wywl)?>
 											<br>
+												<div class="apply oghas-material">
+													<h5 style="color: rgba(103, 167, 255);">Become A Student Today... Help Design The Future</h5>
+													<form action="{{url('course/register/'.$course->id)}}" method="POST">
+														@csrf
+														<input type="text" name="fullname" class="form-control oghas-input oghas-material" placeholder="Fullname">
+														<input type="email" name="email" class="form-control oghas-input oghas-material" placeholder="Email Address">
+														<input type="number" name="number" class="form-control oghas-input oghas-material" placeholder="Phone number">
+														<div class="apply-submit">
+															<button class="btn btn-block">submit</button>
+														</div>
+													</form>
+												</div>
 											<div class=" get-started">
 												<a href="{{url('course/'.$course->id)}}">
 													<button class="btn">Get Started</button>

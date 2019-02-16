@@ -1,71 +1,71 @@
 /*Brand Consistency Rules Start*/
 /*Smoot Scrolling*/
 html {
-	scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
 /*Oghas Font*/
 body {
-	font-family: Exo, sans-serif;
-	font-weight: 600;
+ font-family: Exo, sans-serif;
+ font-weight: 600;
 }
 
 /*Add material Style*/
 .oghas-material {
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
+ box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 /*Add light material to box*/
 .shadow-light {
-	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /*Add mild material on hover to box*/
 .shadow-light:hover {
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
+ box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
 }
 
 /*Add heavy spread material to box*/
 .shadow-in {
-	box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
-	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /*Add heavy spread - light spread material on hover to box*/
 shadow-in:hover {
-	box-shadow: 10px 10px 10px 0px rgba(80, 96, 80, 0.3);
+ box-shadow: 10px 10px 10px 0px rgba(80, 96, 80, 0.3);
 }
 
 /*Add Oghas font to element*/
 .oghas-font {
-	font-family: Exo, sans-serif;
-	font-weight: 600;
-	font-style: normal;
+ font-family: Exo, sans-serif;
+ font-weight: 600;
+ font-style: normal;
 }
 
 /*Add Oghas input design*/
 .oghas-input {
-	background-color: #fff;
-	color: grey !important;
+ background-color: #fff;
+ color: grey !important;
 }
 
 /*Add Oghas input placeholder design*/
 .oghas-input::placeholder {
-	color: grey !important;
+ color: grey !important;
 }
 
 /*Add Oghas input on:focus design*/
 .oghas-input:focus {
-	background: white !important;
+ background: white !important;
 }
 
 /*Add Oghas button design*/
 .oghas-btn {
-	background-color: #4caf50;
-	color: white;
+ background-color: #4caf50;
+ color: white;
 }
 
 a {}
@@ -73,8 +73,8 @@ a {}
 a:hover {}
 
 #middle-adverts {
-	margin-bottom: 20px;
-	margin-top: 20px;
+ margin-bottom: 20px;
+ margin-top: 20px;
 }
 
 #side-adverts {}
@@ -85,625 +85,629 @@ a:hover {}
 
 /*Header Start*/
 #oghas-logo {
-	background-image: url("../../assets/img/Oagric_Transparent.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 35px;
+ background-image: url("../../assets/img/Oagric_Transparent.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ padding: 35px;
 }
 
 .oghas-nav {
-	background-color: rgb(103, 167, 255);
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 999;
-	box-shadow: 0px 0px 20px 8px rgba(80, 96, 80, 0.31);
-	padding: 0px;
-	margin: 0 auto !important;
+ background-color: rgb(103, 167, 255);
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 999;
+ box-shadow: 0px 0px 20px 8px rgba(80, 96, 80, 0.31);
+ padding: 0px;
+ margin: 0 auto !important;
 }
 
 @media (max-width: 991px) {
-	.oghas-nav .container {
-		width: 100%;
-		padding-right: 15px;
-		padding-left: 15px;
-		max-width: 960px;
-	}
+ .oghas-nav .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 960px;
+ }
 }
 
 @media (max-width: 892px) {
-	#header-subscribe {
-		width: 19%;
-		padding-right: 15px;
-		padding-left: 15px;
-		max-width: 960px;
-	}
+ #header-subscribe {
+  width: 19%;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 960px;
+ }
 
-	.navbar-nav {
-		font-size: 12px;
-	}
+ .navbar-nav {
+  font-size: 12px;
+ }
 
-	.navbar-nav a:hover {
-		color: grey !important;
-	}
+ .navbar-nav a:hover {
+  color: grey !important;
+ }
 }
 
 @media (max-width: 767px) {
-	#header-subscribe {
-		width: 30%;
-		padding: 0px;
-	}
+ #header-subscribe {
+  width: 30%;
+  padding: 0px;
+ }
 
-	.navbar-nav {
-		font-size: 12px;
-	}
+ .navbar-nav {
+  font-size: 12px;
+ }
 
-	.navbar-nav a:hover {
-		color: grey !important;
-	}
+ .navbar-nav a:hover {
+  color: grey !important;
+ }
 
-	#header-search {
-		width: 30% !important;
-	}
+ #header-search {
+  width: 30% !important;
+ }
 }
 
 button.navbar-toggler {
-	color: white;
-	border: white solid 1px !important;
-	background-image:
+ color: white;
+ border: white solid 1px !important;
+ background-image:
 }
 
 #header-subscribe .btn {
-	border: solid 1px white;
-	border-radius: 5px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	color: grey !important;
-	border-left: 1px green solid;
+ border: solid 1px white;
+ border-radius: 5px;
+ border-top-left-radius: 0px;
+ border-bottom-left-radius: 0px;
+ color: grey !important;
+ border-left: 1px green solid;
 }
 
 #header-subscribe .btn:hover {
-	background: white !important;
+ background: white !important;
 }
 
 .header-social i {
-	font-size: 30px;
-	color: #fff !important;
-	margin-right: 10px !important;
+ font-size: 30px;
+ color: #fff !important;
+ margin-right: 10px !important;
 }
 
 .header-social a:hover {
-	text-decoration: none !important;
+ text-decoration: none !important;
 }
 
 input#header-search {
-	width: 65px;
-	/*	-webkit-transition: width 0.4s ease-in-out;*/
-	/*	transition: width 0.4s ease-in;*/
+ width: 65px;
+ /*	-webkit-transition: width 0.4s ease-in-out;*/
+ /*	transition: width 0.4s ease-in;*/
 }
 
 input#header-search:focus {
-	width: 65px;
-	color: white;
+ width: 65px;
+ color: white;
 }
 
 @media (max-width: 768px) {
 
-	input#header-search {
-		width: 65px;
-		-webkit-transition: width 0s ease-in-out;
-		transition: width 0s ease-in-out;
-	}
+ input#header-search {
+  width: 65px;
+  -webkit-transition: width 0s ease-in-out;
+  transition: width 0s ease-in-out;
+ }
 
-	input#header-search:focus {
-		width: 65px;
-	}
+ input#header-search:focus {
+  width: 65px;
+ }
 }
 
 @media (max-width: 575px) {
 
-	input#header-search {
-		width: 65px;
-		-webkit-transition: width 0.4s ease-in-out;
-		transition: width 0.4s ease-in-out;
-	}
+ input#header-search {
+  width: 65px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+ }
 
-	input#header-search:focus {
-		width: 65px;
-	}
+ input#header-search:focus {
+  width: 65px;
+ }
 }
 
 nav#inner-nav {
-	width: 100%;
-	margin-top: 75px;
+
+ width: 100%;
+ margin-top: 75px;
 }
 
 .nav-link.active {
-	color: rgba(0, 94, 128, 0.76) !important;
-	border-bottom: solid 3px rgba(0, 30, 128, 0.3);
+ color: rgba(0, 94, 128, 0.76) !important;
+ border-bottom: solid 3px rgba(0, 30, 128, 0.3);
 }
 
 @media (max-width: 768px) {
-	.menu-mobile {
-		display: none;
-	}
+ .menu-mobile {
+  display: none;
+ }
 }
 
 @media (min-width: 768px) {
-	.menu-mobile-more {
-		display: none;
-	}
+ .menu-mobile-more {
+  display: none;
+ }
 }
 
 @media (max-width: 575.98px) {
-	.navbar-expand-sm > .container {
-		padding: 0 15px;
-	}
+ .navbar-expand-sm > .container {
+  padding: 0 15px;
+ }
 }
 
 /*Header End*/
 
 /*Footer Start*/
 footer {
-	background-color: rgb(103, 167, 255);
-	box-shadow: -1px 5px 20px 7px rgb(154, 154, 154);
-	box-sizing: border-box;
-	text-align: left;
-	padding: 20px 20px;
-	position: static;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	color: #fff;
+ background-color: rgb(103, 167, 255);
+ box-shadow: -1px 5px 20px 7px rgb(154, 154, 154);
+ box-sizing: border-box;
+ text-align: left;
+ padding: 20px 20px;
+ position: static;
+ bottom: 0px;
+ left: 0px;
+ right: 0px;
+ color: #fff;
 }
 
 .footer-navigation h3 {
-	margin: 0;
-	font: normal 36px Cookie, cursive;
-	margin-bottom: 20px;
-	color: #fff;
+ margin: 0;
+ font: normal 36px Cookie, cursive;
+ margin-bottom: 20px;
+ color: #fff;
 }
 
 .footer-navigation h3 a {
-	text-decoration: none;
-	color: #fff;
+ text-decoration: none;
+ color: #fff;
 }
 
 .footer-navigation h3 span {
-	color: #5383d3;
+ color: #5383d3;
 }
 
 .footer-navigation p.links a {
-	color: #fff !important;
-	text-decoration: none;
+ color: #fff !important;
+ text-decoration: none;
 }
 
 .footer-navigation p.company-name {
-	color: rgba(255, 255, 255, 0.71);
-	font-size: 14px;
-	font-weight: normal;
-	margin-top: 20px;
+ color: rgba(255, 255, 255, 0.71);
+ font-size: 14px;
+ font-weight: normal;
+ margin-top: 20px;
 }
 
 @media (max-width:767px) {
-	.footer-contacts {
-		margin: 30px 0;
-	}
+ .footer-contacts {
+  margin: 30px 0;
+ }
 }
 
 .footer-contacts p {
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
+ display: inline-block;
+ color: #ffffff;
+ vertical-align: middle;
 }
 
 .footer-contacts p a {
-	color: #5383d3;
-	text-decoration: none;
+ color: #5383d3;
+ text-decoration: none;
 }
 
 .fa.footer-contacts-icon {
-	color: #fff !important;
-	font-size: 18px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 38px;
-	margin: 10px 15px 10px 0;
+ color: #fff !important;
+ font-size: 18px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 38px;
+ margin: 10px 15px 10px 0;
 }
 
 span.new-line-span {
-	display: block;
-	font-weight: normal;
-	display: block;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 2;
+ display: block;
+ font-weight: normal;
+ display: block;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 2;
 }
 
 .footer-about h4 {
-	display: block;
-	color: #fff;
-	margin-bottom: 20px;
+ display: block;
+ color: #fff;
+ margin-bottom: 20px;
 }
 
 .footer-about p {
-	line-height: 20px;
-	color: #ffffff;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+ line-height: 20px;
+ color: #ffffff;
+ font-size: 13px;
+ font-weight: normal;
+ margin: 0;
 }
 
 div.social-links {
-	margin-top: 20px;
-	color: #fff;
+ margin-top: 20px;
+ color: #fff;
 }
 
 .social-links a {
-	display: inline-block;
-	/*width:35px;*/
-	height: 35px;
-	cursor: pointer;
-	background-color: #33383b;
-	border-radius: 2px;
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-	margin-right: 5px;
-	margin-bottom: 5px;
+ display: inline-block;
+ /*width:35px;*/
+ height: 35px;
+ cursor: pointer;
+ background-color: #33383b;
+ border-radius: 2px;
+ font-size: 20px;
+ color: #ffffff;
+ text-align: center;
+ line-height: 35px;
+ margin-right: 5px;
+ margin-bottom: 5px;
 }
 
 .footer-social {
-	margin-top: 20px;
-	font-size: 30px;
+ margin-top: 20px;
+ font-size: 30px;
 }
 
 .footer-social i {
-	color: white;
-	margin-right: 10px;
+ color: white;
+ margin-right: 10px;
 }
 
 /*Footer End*/
 
 /*OAcademy Index*/
 #banner {
-	background: url('../../assets/img/oacademy-4.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	padding-bottom: 60px;
+ background: url('../../assets/img/oacademy-4.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ padding-top: 100px;
+ padding-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-	#banner .banner-head-1 {
-		display: none;
-	}
+ #banner .banner-head-1 {
+  display: none;
+ }
 }
 
 #banner .banner-head {
-	color: white;
-	margin-bottom: 70px;
+ color: white;
+ margin-bottom: 70px;
 }
 
 .banner-schools-inner {
-	text-align: center;
-	display: inline-block;
-	border: 1px #006cff solid;
-	border-radius: 10px;
-	color: darkorange;
-	background: rgba(0, 0, 0, 0.62);
-	/*	box-shadow: 2px 2px 20px 5px white;*/
-	margin-bottom: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
+
+ text-align: center;
+ display: inline-block;
+ border: 1px darkorange solid;
+ border-radius: 10px;
+ color: darkorange;
+ background: rgba(0, 0, 0, 0.62);
+ /*	box-shadow: 2px 2px 20px 5px white;*/
+ margin-bottom: 20px;
+ margin-left: 5px;
+ margin-right: 5px;
 }
 
 .banner-schools-inner:hover {
-	background: black
+ background: black
 }
 
 .banner-schools span {
-	background: darkorange;
-	/*	border: 1px solid white;*/
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	padding: 2px 30px;
-	color: white;
-	display: flex;
-	flex-wrap: nowrap;
-	font-size: 20px;
+ background: darkorange;
+ /*	border: 1px solid white;*/
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ padding: 2px 30px;
+ color: white;
+ display: flex;
+ flex-wrap: nowrap;
+ font-size: 20px;
 }
 
 .banner-schools span:hover {
-	color: white;
-	background: black;
+ color: white;
+ background: black;
 }
 
 .banner-schools-inner p {
-	margin-top: -10px;
-	text-shadow: 2px 2px black;
-	padding: 0px 5px;
-	font-size: 20px;
+ margin-top: -10px;
+ text-shadow: 2px 2px black;
+ padding: 0px 5px;
+ font-size: 20px;
 }
 
 .banner-sub h3 {
-	color: white;
-	margin-top: 20px;
+ color: white;
+ margin-top: 20px;
 }
 
 .banner-sub p {
-	color: white;
+ color: white;
 }
 
 .why-visit {
-	margin-top: 30px;
-	margin-bottom: 30px;
+ margin-top: 30px;
+ margin-bottom: 30px;
 }
 
 @media (max-width: 500px) {
-	.why-visit .col {
+ .why-visit .col {
 
-		text-align: center;
-	}
+  text-align: center;
+ }
 
-	.why-visit iframe {
-		width: 350px;
-	}
+ .why-visit iframe {
+  width: 350px;
+ }
 }
 
 .why-visit .text {
-	padding-top: 20px;
+ padding-top: 20px;
 }
 
 .index-get-started {
-	text-align: right;
+ text-align: right;
 }
 
 .index-get-started .btn {
-	background: grey;
-	color: white;
-	margin-top: 100px;
+ background: grey;
+ color: white;
+ margin-top: 100px;
 }
 
 .redesign {
-	padding-top: 20px;
-	padding-bottom: 20px;
+ padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .redesign .row {
-	margin-top: 20px;
-	margin-bottom: 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
 
 .redesign .col-md-4 {
-	margin-bottom: 20px;
+ margin-bottom: 20px;
 }
 
 .courses {
-	text-align: center;
-	padding: 30px;
-	border-radius: 10px;
-	height: 200px;
-	background-position: center;
-	background-size: cover;
+ text-align: center;
+ padding: 30px;
+ border-radius: 10px;
+ height: 200px;
+ background-position: center;
+ background-size: cover;
 }
 
 .courses:hover {
-	background: transparent;
+ background: transparent;
 }
 
 .courses h3 {
-	color: white;
-	text-shadow: 1px 1px black;
+ color: white;
+ text-shadow: 1px 1px black;
 }
 
 .courses-1 {
-	background: url('../../assets/img/Pics4.jpg');
+ background: url('../../assets/img/Pics4.jpg');
 }
 
 .courses-2 {
-	background: url('../../assets/img/Pics2.jpg');
+ background: url('../../assets/img/Pics2.jpg');
 }
 
 .courses-3 {
-	background: url('../../assets/img/Pics3.jpg');
+ background: url('../../assets/img/Pics3.jpg');
 }
 
 .courses-get-started {
-	color: white;
-	background: grey;
-	border: 2px white solid;
-	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ color: white;
+ background: grey;
+ border: 2px white solid;
+ box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .courses-get-started:hover {
-	background: darkgrey;
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
+ background: darkgrey;
+ box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.3);
 }
 
 /*OAcademy Index*/
 
 /*OAcademy School-of*/
 .oghas-nav .nav-link {
-	color: white !important;
+ color: white !important;
 }
 
 .section {
-	width: 100%;
-	height: 450px;
+ width: 100%;
+ height: 450px;
 }
 
 .section-overlay {
-	height: 450px;
-	width: 100%;
-	position: absolute;
+ height: 450px;
+ width: 100%;
+ position: absolute;
 }
 
 .section-content {
-	background-repeat: no-repeat;
-	background-position: top;
-	height: 450px;
+ background-repeat: no-repeat;
+ background-position: top;
+ height: 450px;
 }
 
 .section-content-header {
-	color: ghostwhite;
-	position: relative;
-	z-index: 3;
+ color: ghostwhite;
+ position: relative;
+ z-index: 3;
 }
 
 .sub-header {
-	/*	font-size: 28px;*/
-	color: #605f5f;
+ /*	font-size: 28px;*/
+ color: #605f5f;
 }
 
 .section-content p {
-	color: white;
-	/*	position: relative;*/
-	z-index: 3;
+ color: white;
+ /*	position: relative;*/
+ z-index: 3;
 }
 
 .oghastech-btn-1 {
-	margin-top: 30px;
-	color: white;
-	padding: 6px 40px;
-	position: relative;
-	z-index: 3;
-	/*	border: solid rgb(103, 167, 255);*/
-	background-color: rgb(103, 167, 255);
+ margin-top: 30px;
+ color: white;
+ padding: 6px 40px;
+ position: relative;
+ z-index: 3;
+ /*	border: solid rgb(103, 167, 255);*/
+ background-color: rgb(103, 167, 255);
 }
 
 .oghastech-btn-1:hover {
-	background-color: white;
-	color: rgb(103, 167, 255);
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
+ background-color: white;
+ color: rgb(103, 167, 255);
+ box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 .section-1-overlay {
-	background: rgba(0, 0, 0, 0.08);
+ background: rgba(0, 0, 0, 0.08);
 }
 
 .section-1-content {
-	background-image: url(../img/oacademy-5.png);
-	background-size: cover;
-	padding-left: 7%;
-	padding-right: 7%;
-	padding-top: 120px;
-	z-index: 3;
+ background-image: url(../img/oacademy-5.png);
+ background-size: cover;
+ padding-left: 7%;
+ padding-right: 7%;
+ padding-top: 120px;
+ z-index: 3;
 }
 
 #discover {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+ margin-top: 3rem;
+ margin-bottom: 3rem;
 }
 
 .section-3-overlay {
-	background: rgba(103, 167, 255, 0.43);
-	/*	height: 370px;*/
-	/*	width: 100%;*/
+ background: rgba(103, 167, 255, 0.43);
+ /*	height: 370px;*/
+ /*	width: 100%;*/
 }
 
 .section-3-content {
-	background-image: url(../img/CustomerCareAgent-1.jpg);
-	background-size: cover;
-	background-position: center;
-	padding-left: 7%;
-	padding-right: 7%;
-	padding-top: 40px;
-	width: 100%;
+ background-image: url(../img/CustomerCareAgent-1.jpg);
+ background-size: cover;
+ background-position: center;
+ padding-left: 7%;
+ padding-right: 7%;
+ padding-top: 40px;
+ width: 100%;
 }
 
 .section-3-content-header {
-	color: white;
-	text-shadow: black 2px 2px 8px;
+ color: white;
+ text-shadow: black 2px 2px 8px;
 }
 
 .section-3-content-text {
-	color: rgba(255, 255, 255, 0.95) !important;
-	/*		text-shadow: black 2px 2px 8px;*/
+ color: rgba(255, 255, 255, 0.95) !important;
+ /*	text-shadow: black 2px 2px 8px;*/
 }
 
 .section-3-btn {
-	margin-top: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background: rgba(103, 167, 255);
-	color: white;
+ margin-top: 10px;
+ padding-left: 40px;
+ padding-right: 40px;
+ background: rgba(103, 167, 255);
+ color: white;
 }
 
 .section-3-btn:hover {
-	background-color: white;
-	color: rgb(103, 167, 255);
-	box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
+ background-color: white;
+ color: rgb(103, 167, 255);
+ box-shadow: 0px 5px 14px 0px rgba(80, 96, 80, 0.31);
 }
 
 .section-content .col-8 {
-	/*	z-index: 2;*/
+ /*	z-index: 2;*/
 }
 
 #discover .nav-link.active {
-	background: transparent;
+
+ background: transparent;
 /*	color: black;*/
-	color: rgba(0, 94, 128, 0.76) !important;
-	border-bottom: solid 3px rgba(0, 30, 128, 0.3);
+ color: rgba(0, 94, 128, 0.76) !important;
+ border-bottom: solid 3px rgba(0, 30, 128, 0.3);
 }
 
 #discover .nav-link {
-	background: transparent;
-	color: grey;
+ background: transparent;
+ color: grey;
 }
 
 #discover .nav-link:hover {
-	background: transparent;
-	color: rgba(128, 128, 128, 0.51);
+ background: transparent;
+ color: rgba(128, 128, 128, 0.51);
 }
 
 #discover .tab-content {
-	border-radius: 10px;
-	padding: 20px;
-	background: white;
+ border-radius: 10px;
+ padding: 20px;
+ background: white;
 }
 
 #discover .tab-content .course-detail {
-	/*	color: darkgrey;*/
+ /*	color: darkgrey;*/
 }
 
 .price {
-	font-size: 1.5rem;
+ font-size: 1.5rem;
 }
 
 .apply {
-	margin-top: 20px;
+ margin-top: 20px;
 }
 
 @media (max-width: 575px) {
-	.apply {
-		margin-top: 20px;
-	}
+ .apply {
+  margin-top: 20px;
+ }
 }
 
 .apply input,
 select {
-	margin-bottom: 1rem;
+ margin-bottom: 1rem;
 }
 
 .apply-submit .btn {
-	background-color: rgba(103, 167, 255);
-	color: white;
+ background-color: rgba(103, 167, 255);
+ color: white;
 }
 
 /*OAcademy School-of*/
 
 /*OAcademy Backend - Create Pages */
 div.inputs {
-	margin-top: 50px;
-	margin-bottom: 50px;
+
+ margin-top: 50px;
+ margin-bottom: 50px;
 }
 
 /*OAcademy Backend - Create Pages */
@@ -711,29 +715,30 @@ div.inputs {
 
 /*Thank You Page*/
 .thank-you {
-	margin-top: 150px;
-	margin-bottom: 150px;
+ margin-top: 150px;
+ margin-bottom: 150px;
 }
 
 /*Thank You Page*/
 
 /*Admin Login Page*/
 .login {
-	margin-top: 150px;
-	margin-bottom: 150px;
+ margin-top: 150px;
+ margin-bottom: 150px;
 }
 
 /*Admin Login Page*/
 
 /*Schools Stats*/
 .school-stats {
-	margin-top: 50px;
-	margin-bottom: 50px;
+
+ margin-top: 50px;
+ margin-bottom: 50px;
 }
 
 .school-stats .table {
-	overflow-x: scroll;
-	overflow-y: scroll;
+ overflow-x: scroll;
+ overflow-y: scroll;
 }
 
 /*Schools Stats*/
