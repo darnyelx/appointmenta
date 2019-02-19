@@ -35,7 +35,7 @@
 							<?php $iteratedQ = 0;?>
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 								@foreach($courses as $course)
-									<a class="nav-link" id="course_{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
+									<a class="nav-link" id="v-pills-home-{{$course->id}}" data-toggle="pill" href="#course_{{$course->id}}" role="tab" aria-controls="course_{{$course->id}}" aria-selected="@if($iteratedQ == 0){{'true'}}@else{{'false'}}@endif">{{$course->course_name}}</a>
 								<?php $iteratedQ++ ?>
 								@endforeach
 								
@@ -52,13 +52,25 @@
 												
 												{{json_decode($course->page_content)->title}}
 											</p>
+
+											<h4 style="color: rgba(103, 167, 255);">What You'll learn</h4>
+
 												<?php echo	html_entity_decode( json_decode($course->page_content)->wywl)?>
-											<br>
-											<div class=" get-started">
-												<a href="{{url('course/'.$course->id)}}">
-													<button class="btn">Get Started</button>
-												</a>
-											</div>
+																								<span class="price">#{{json_decode($course->page_content)->price}}</span>
+
+												<div class="apply">
+													<h5 style="color: rgba(103, 167, 255);">Become A Student Today... Help Design The Future</h5>
+													<form action="{{url('course/register/'.$course->id)}}" method="POST">
+														@csrf
+														<input type="text" name="fullname" class="form-control oghas-input oghas-material" placeholder="Fullname">
+														<input type="email" name="email" class="form-control oghas-input oghas-material" placeholder="Email Address">
+														<input type="number" name="number" class="form-control oghas-input oghas-material" placeholder="Phone number">
+														<div class="apply-submit">
+															<button class="btn btn-block">submit</button>
+														</div>
+													</form>
+												</div>
+
 										</div>
 									</div>
 									<?php $iterated++ ?>
