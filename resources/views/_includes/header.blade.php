@@ -36,7 +36,7 @@
 					</span>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
+				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1">
 					<ul class="nav navbar-nav">
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="#">OAGRIC</a>

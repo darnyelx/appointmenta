@@ -131,6 +131,11 @@ a:hover {}
 }
 
 @media (max-width: 767px) {
+
+	#navcol-1 {
+		margin-bottom: 10px;
+	}
+
 	#header-subscribe {
 		width: 30%;
 		padding: 0px;
@@ -393,11 +398,11 @@ div.social-links {
 .banner-schools-inner {
 	text-align: center;
 	display: inline-block;
-	border: 1px #006cff solid;
-	border-radius: 10px;
-	color: darkorange;
+	border: 1px solid rgb(103, 167, 255);
+	border-radius: 5px;
+	color: white;
 	background: rgba(0, 0, 0, 0.62);
-	/*	box-shadow: 2px 2px 20px 5px white;*/
+	box-shadow: 2px 2px 20px 5px white;
 	margin-bottom: 20px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -408,11 +413,10 @@ div.social-links {
 }
 
 .banner-schools span {
-	background: darkorange;
-	/*	border: 1px solid white;*/
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	padding: 2px 30px;
+	background: rgb(103, 167, 255);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 2px 20px;
 	color: white;
 	display: flex;
 	flex-wrap: nowrap;
