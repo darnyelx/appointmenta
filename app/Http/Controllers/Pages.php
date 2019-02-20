@@ -122,7 +122,7 @@ class Pages extends BaseController{
       DB::table('courses')
             ->where('id', $id)
             ->update($data);
-      return 'saved';
+      return back()->withMessage('completed');
 
    }
 
@@ -169,6 +169,18 @@ class Pages extends BaseController{
             ->update($data);
       return 'edited';
    }
+	
+		public function allCourses(){
+			
+			$courses		=	 DB::table('courses')
+											->join('schools','schools.id','=','courses.school')
+											->orderBy('schools.school_name')
+											->select('*','schools.id as school_id','courses.id as courseId')
+											->get();
+			$data 			=	array('courses'=>$courses);
+			return view('admin.allCourses',$data);
+
+		}
 
    public function editSchool($school){
 

@@ -85,7 +85,7 @@ a:hover {}
 
 /*Header Start*/
 #oghas-logo {
-	background-image: url("../../assets/img/Oagric_Transparent.png");
+	background-image: url("../../assets/img/Academytrans.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -263,6 +263,10 @@ footer {
 	left: 0px;
 	right: 0px;
 	color: #fff;
+}
+
+.footer-navigation .footer-logo {
+	width: 40%;
 }
 
 .footer-navigation h3 {
