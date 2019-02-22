@@ -265,7 +265,7 @@ footer {
 	color: #fff;
 }
 
-.footer-navigation .footer-logo {
+.footer-logo > a > img {
 	width: 40%;
 }
 
@@ -403,14 +403,16 @@ div.social-links {
 .banner-schools-inner {
 	text-align: center;
 	display: inline-block;
-	border: 2px solid rgb(103, 167, 255);
-	border-radius: 10px;
+	border: 5px solid rgb(103, 167, 255);
+	border-radius: 15px;
 	color: white;
 	background: rgba(0, 0, 0, 0.62);
-	/*	box-shadow: 2px 2px 20px 5px white;*/
+	box-shadow: 2px 2px 20px 5px rgba(255, 255, 255, 0.55);
 	margin-bottom: 20px;
+/*
 	margin-left: 5px;
 	margin-right: 5px;
+*/
 }
 
 .banner-schools-inner:hover {
@@ -418,20 +420,14 @@ div.social-links {
 
 }
 
-.banner-schools span {
+.banner-schools-inner .banner-schools-header {
 	background: rgb(103, 167, 255);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding: 2px 20px;
 	color: white;
-	display: flex;
 	flex-wrap: nowrap;
 	font-size: 20px;
-}
-
-.banner-schools span:hover {
-	color: white;
-/*	background: black;*/
 }
 
 .banner-schools-inner p {

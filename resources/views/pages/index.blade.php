@@ -12,42 +12,53 @@
 			<div class="row text-center">
 				<div class="col">
 					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">Programming</p>
-						</div>
+						<a href="">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header text-center">School of</div>
+								<br>
+								<p class="text-center">Programming</p>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">Design</p>
-						</div>
+						<a href="">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header">School of</div><br>
+								<p class="text-center">Design</p>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">Business</p>
-						</div>
+						<a href="">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header">School of</div><br>
+								<p class="text-center">Business</p>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">Entrepreneurship</p>
-						</div>
+						<a href="">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header">School of</div><br>
+								<p class="text-center">Entrepreneurship</p>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col">
 					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">Cinematography</p>
-						</div>
+						<a href="">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header">School of</div><br>
+								<p class="text-center">Cinematography</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

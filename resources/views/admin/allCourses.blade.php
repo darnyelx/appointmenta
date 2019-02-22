@@ -81,7 +81,7 @@
 							@elseif($course->status == 2)
 								<a href="{{url('admin/school/activate/'.$course->courseId)}}" class="btn btn-success btn-sm" style="border-radius: 0px;">Activate</a >
 							@endif
-							<a href="{{url('admin/school/edit/'.$course->courseId)}}" class="btn btn-info btn-sm" style="margin-left: 5px;border-radius: 0px;">Edit</a >
+							<a href="{{url('admin/course/edit/'.$course->courseId)}}" class="btn btn-info btn-sm" style="margin-left: 5px;border-radius: 0px;">Edit</a >
 							<a href="{{url('course/'.$course->courseId)}}" class="btn btn-info btn-sm" style="margin-left: 5px;border-radius: 0px;">view</a >
 							<a href="{{url('admin/applicants/'.$course->courseId)}}" class="btn btn-info btn-sm" style="margin-left: 5px;border-radius: 0px;">Applicants</a>
 							
