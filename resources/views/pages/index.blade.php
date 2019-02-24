@@ -12,7 +12,7 @@
 			<div class="row text-center">
 				@foreach($schools as $school)
 				<div class="col">
-					<a href="#">
+					<a href="{{url('school/'.$school->id)}}">
 						<div class="banner-schools">
 							<div class="banner-schools-inner shadow-light">
 								<div class="banner-schools-header">School of</div><br>
