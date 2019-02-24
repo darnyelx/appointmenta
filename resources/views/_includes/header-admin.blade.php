@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OAcademy | Front-End Web Developer</title>
+	<title>OAcademy</title>
 	<link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{url('assets/fonts/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
@@ -93,26 +93,26 @@
 				<div class="collapse navbar-collapse" id="navcol-1">
 					<ul class="nav navbar-nav m-auto">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="course">Course Stats</a>
+							<a class="nav-link" href="{{url('admin/courses')}}">Course Stats</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="schools" target="schools">School Stats</a>
+							<a class="nav-link" href="{{url('admin/schools')}}" target="schools">School Stats</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="/create" target="">Create School</a>
+							<a class="nav-link" href="{{url('admin/school/create')}}" target="">Create School</a>
 						</li>
 						<li class="dropdown menu-mobile-more">
 							<a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
 							<div class="dropdown-menu" role="menu">
-								<a class="dropdown-item" role="presentation" href="course/create" target="">Create Course</a>
+								<a class="dropdown-item" role="presentation" href="{{url('admin/course/create')}}" target="">Create Course</a>
 								<a class="dropdown-item" role="presentation" href="applicants" target="_blank">Reg Users</a>
 							</div>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
-							<a class="nav-link" href="course/create" target="">Create Courses</a>
+							<a class="nav-link" href="{{url('admin/course/create')}}" target="">Create Course</a>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
-							<a class="nav-link" href="applicants" target="_blank">Reg Users</a>
+							<a class="nav-link" href="{{url('admin/course/applicants/')}}" target="_blank">Applicants</a>
 						</li>
 					</ul>
 				</div>

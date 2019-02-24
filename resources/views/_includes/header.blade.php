@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OAcademy | Front-End Web Developer</title>
+	<title>OAcademy</title>
 	<link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{url('assets/fonts/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
@@ -36,7 +36,7 @@
 					</span>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
+				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1">
 					<ul class="nav navbar-nav">
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="#">OAGRIC</a>

@@ -20,6 +20,7 @@ Route::get('thanks','Activities@thanks');
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     
     Route::get('school/create','Pages@createSchool');
+	  Route::get('/courses','Pages@allCourses');
     Route::get('course/create','Pages@createCourse');
     Route::get('school/edit/{id?}','Pages@editSchool');
     Route::get('course/edit/{id?}','Pages@editCourse');
