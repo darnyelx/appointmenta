@@ -37,8 +37,17 @@ class Activities extends BaseController{
     }
     public function home(){
 
-      $schools    =  DB::table('schools')->take(6)->get();
-      $data       =  array('schools'=>$schools);
+      $schools    =  DB::table('schools')->where('promote',1)->get();
+      $courses    =  DB::table('courses')
+                        ->where('courses.promote',1)
+                        ->join('schools','schools.id','=','courses.school')
+                        ->select('schools.*','courses.*','schools.page_content as school_page_content')
+                        ->get();
+     
+      $data       =  array('schools'  =>$schools,
+                            'courses' =>$courses
+                          );
+
       return view('pages.index',$data);
     }
 

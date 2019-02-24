@@ -175,7 +175,7 @@ class Pages extends BaseController{
 			$courses		=	 DB::table('courses')
 											->join('schools','schools.id','=','courses.school')
 											->orderBy('schools.school_name')
-											->select('*','schools.id as school_id','courses.id as courseId')
+											->select('*','schools.id as school_id','courses.id as courseId','courses.promote as promote')
 											->get();
 			$data 			=	array('courses'=>$courses);
 			return view('admin.allCourses',$data);

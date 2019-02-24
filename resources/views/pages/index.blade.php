@@ -10,57 +10,18 @@
 				</div>
 			</div>
 			<div class="row text-center">
+				@foreach($schools as $school)
 				<div class="col">
 					<div class="banner-schools">
-						<a href="">
-							<div class="banner-schools-inner shadow-light">
-								<div class="banner-schools-header text-center">School of</div>
-								<br>
-								<p class="text-center">Programming</p>
-							</div>
-						</a>
+						<div class="banner-schools-inner shadow-light">
+							<span>School of</span><br>
+							<p class="text-center">{{$school->school_name}}</p>
+						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="banner-schools">
-						<a href="">
-							<div class="banner-schools-inner shadow-light">
-								<div class="banner-schools-header">School of</div><br>
-								<p class="text-center">Design</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col">
-					<div class="banner-schools">
-						<a href="">
-							<div class="banner-schools-inner shadow-light">
-								<div class="banner-schools-header">School of</div><br>
-								<p class="text-center">Business</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col">
-					<div class="banner-schools">
-						<a href="">
-							<div class="banner-schools-inner shadow-light">
-								<div class="banner-schools-header">School of</div><br>
-								<p class="text-center">Entrepreneurship</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col">
-					<div class="banner-schools">
-						<a href="">
-							<div class="banner-schools-inner shadow-light">
-								<div class="banner-schools-header">School of</div><br>
-								<p class="text-center">Cinematography</p>
-							</div>
-						</a>
-					</div>
-				</div>
+				@endforeach
+
+				
 			</div>
 			<div class="row text-center">
 				<div class="col">
@@ -102,12 +63,12 @@
 			<h1 class="text-center">Redesign the future</h1>
 			<h5 class="text-center">Learn a new skill today</h5>
 			<div class="row">
-				@foreach($schools as $school)
+				@foreach($courses as $course)
 				<div class="col-md-4 ">
-					<div class="courses courses-1 shadow-light" style="background-image: url({{asset('storage/'.json_decode($school->page_content)->schoolBanner)}})">
-						<h3>{{$school->school_name}}</h3>
+					<div class="courses courses-1 shadow-light" style="background-image: url({{asset('storage/'.json_decode($course->school_page_content)->schoolBanner)}})">
+						<h3>{{$course->course_name}}</h3>
 						<a href="#">
-							<a href="{{url('school/'.$school->id)}}" class="btn courses-get-started courses-get-started-1">
+							<a href="{{url('school/courses/'.$course->id)}}" class="btn courses-get-started courses-get-started-1">
 								Get Started
 							</a>
 						</a>
