@@ -88,6 +88,12 @@
 							@elseif($school->status == 2)
 								<a href="{{url('admin/school/activate/'.$school->id)}}" class="btn btn-success btn-sm" style="border-radius: 0px;">Activate</a href="">
 							@endif
+
+							@if($school->promote == 1)
+								<a href="{{url('admin/unpromote/schools/'.$school->id)}}" class="btn btn-success btn-sm" style="margin-left: 5px;border-radius: 0px;">Unpromote</a href="">
+							@elseif($school->promote == 2)
+								<a href="{{url('admin/promote/schools/'.$school->id)}}" class="btn btn-success btn-sm" style="margin-left: 5px;border-radius: 0px;">Promote</a href="">
+							@endif
 							<a href="{{url('admin/school/edit/'.$school->id)}}" class="btn btn-info btn-sm" style="margin-left: 5px;border-radius: 0px;">Edit</a href="">
 							<a href="{{url('admin/school/courses/'.$school->id)}}" class="btn btn-dark btn-sm" style="margin-left: 5px;border-radius: 0px;">View Courses</a href="">
 							<a href="{{url('admin/course/create')}}" class="btn btn-dark btn-sm" style="margin-left: 5px;border-radius: 0px;">Add Course</a href="">

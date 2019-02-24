@@ -239,7 +239,7 @@ class Pages extends BaseController{
       $courses =     DB::table('courses')
                         ->join('schools', 'courses.school', '=', 'schools.id')
                         ->where($filter)
-                        ->select('courses.*','courses.id as courseId','schools.*',DB::raw( "( SELECT count(*) FROM course_reg WHERE courses.id = course_reg.course  ) as registered")     )
+                        ->select('courses.*','courses.id as courseId','schools.*',DB::raw( "( SELECT count(*) FROM course_reg WHERE courses.id = course_reg.course  ) as registered"))
                         ->get();
       
       $data    =  array('courses'=>$courses);

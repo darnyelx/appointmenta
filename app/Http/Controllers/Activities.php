@@ -69,4 +69,22 @@ class Activities extends BaseController{
       return view('pages.thanks');
     }
 
+    public function promote($table,$id){
+      $update = array('promote'=> 1);
+      DB::table($table)->where('id',$id)
+                      ->update($update);
+
+      return back();
+      
+    }
+
+    public function unpromote($table,$id){
+      $update = array('promote'=> 2);
+      DB::table($table)->where('id',$id)
+                       ->update($update);
+
+      return back();
+      
+    }
+
 }

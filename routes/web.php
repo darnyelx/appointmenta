@@ -26,7 +26,8 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('schools','Pages@viewSchools');
     Route::get('applicants/{courseId?}','Activities@getRegisteredUsers');
     Route::get('school/courses/{id?}','Pages@adminSchoolCourses');
-
+    Route::get('promote/{table?}/{id?}','Activities@promote');
+    Route::get('unpromote/{table?}/{id?}','Activities@promote');
 
     Route::post('school/create/save','Pages@_createSchool');
     Route::post('course/create/save','Pages@_createCourse');
