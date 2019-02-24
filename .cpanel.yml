@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/academy
-    - /bin/cp * $DEPLOYPATH
+    - export DEPLOYPATH=/home/oghascom/public_html/academy
+    - /bin/cp -r * $DEPLOYPATH
