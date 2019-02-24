@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/academy
-    - /bin/cp -R academy $DEPLOYPATH/
+    - /bin/cp -R * $DEPLOYPATH
