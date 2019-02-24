@@ -12,12 +12,14 @@
 			<div class="row text-center">
 				@foreach($schools as $school)
 				<div class="col">
-					<div class="banner-schools">
-						<div class="banner-schools-inner shadow-light">
-							<span>School of</span><br>
-							<p class="text-center">{{$school->school_name}}</p>
+					<a href="#">
+						<div class="banner-schools">
+							<div class="banner-schools-inner shadow-light">
+								<div class="banner-schools-header">School of</div><br>
+								<p class="text-center">{{$school->school_name}}</p>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				@endforeach
 
