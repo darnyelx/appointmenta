@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/oghascom/
     - /bin/cp -r public/* $DEPLOYPATH/public_html/academy
-    - /bin/cp -r !(public) $DEPLOYPATH/oacademyLive
+    - /bin/cp -r !(public) * $DEPLOYPATH/oacademyLive
