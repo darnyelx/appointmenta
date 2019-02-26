@@ -1,5 +1,5 @@
 /node_modules
-public/index.php
+/public/index.php
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
