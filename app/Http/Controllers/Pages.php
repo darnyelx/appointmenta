@@ -142,6 +142,9 @@ class Pages extends BaseController{
          //try to save file 
          try {      
             
+            var_dump($request->file('schoolBanner'),'file');
+            exit;
+            
             $path             =  explode('public/',$request->file('schoolBanner')->store('public/appImages'))[1];
 
          } catch (Exception $e) {
