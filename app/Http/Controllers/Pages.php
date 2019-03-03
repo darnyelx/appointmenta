@@ -144,7 +144,7 @@ class Pages extends BaseController{
             
            
 
-            $path             =  explode('public/',$request->file('schoolBanner')->store('public/appImages'))[1];
+            $path    =        $request->file('schoolBanner')->store('appImages');
 
          } catch (Exception $e) {
             // TODO perform a better action here
