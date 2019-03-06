@@ -28,7 +28,7 @@ class Pages extends BaseController{
 
       //try to save file 
       try {      
-      	$path             =  $request->file('schoolBanner')->store('public/appImages');
+      	$path             =  $request->file('schoolBanner')->store('appImages');
 
       } catch (Exception $e) {
          // TODO perform a better action here
