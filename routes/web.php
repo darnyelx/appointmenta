@@ -38,6 +38,6 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
 
 
 });
-	Auth::routes();
+	Auth::routes(['register' => false]);
 
 
