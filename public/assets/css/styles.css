@@ -72,6 +72,14 @@ a {}
 
 a:hover {}
 
+img,
+nav,
+footer,
+input,
+.newsletter-sub {
+	border-radius: 5px;
+}
+
 #middle-adverts {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -101,7 +109,9 @@ a:hover {}
 	z-index: 999;
 	box-shadow: 0px 0px 20px 8px rgba(80, 96, 80, 0.31);
 	padding: 0px;
-	margin: 0 auto !important;
+	margin: 0 auto;
+	margin-top: 7px;
+	width: 97%;
 }
 
 @media (max-width: 991px) {
@@ -263,10 +273,10 @@ footer {
 	left: 0px;
 	right: 0px;
 	color: #fff;
-}
-
-.footer-logo > a > img {
-	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 96%;
 }
 
 .footer-navigation h3 {
@@ -385,7 +395,7 @@ div.social-links {
 	background: url('../../assets/img/oacademy-4.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 100px;
+	padding-top: 130px;
 	padding-bottom: 60px;
 }
 
@@ -409,7 +419,7 @@ div.social-links {
 	background: rgba(0, 0, 0, 0.62);
 	box-shadow: 2px 2px 20px 5px rgba(255, 255, 255, 0.55);
 	margin-bottom: 20px;
-/*
+	/*
 	margin-left: 5px;
 	margin-right: 5px;
 */
@@ -562,6 +572,7 @@ div.social-links {
 	color: ghostwhite;
 	position: relative;
 	z-index: 3;
+	text-shadow: black 2px 2px;
 }
 
 .sub-header {
@@ -573,6 +584,7 @@ div.social-links {
 	color: white;
 	/*	position: relative;*/
 	z-index: 3;
+	text-shadow: black 1.5px 1.5px;
 }
 
 .oghastech-btn-1 {
@@ -668,7 +680,7 @@ div.social-links {
 
 #discover .nav-link:hover {
 	background: transparent;
-	color: rgba(128, 128, 128, 0.51);
+	color: rgba(0, 0, 0, 0.51);
 }
 
 #discover .tab-content {
@@ -743,6 +755,11 @@ div.inputs {
 .school-stats .table {
 	overflow-x: scroll;
 	overflow-y: scroll;
+}
+
+.school-stats .btn {
+	border-radius: 5px !important;
+	margin-bottom: 5px !important;
 }
 
 /*Schools Stats*/
