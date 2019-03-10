@@ -29,7 +29,7 @@
 		<!--	Nav	-->
 		<nav class="navbar navbar-dark navbar-expand-md oghas-nav">
 			<div class="container">
-				<a class="navbar-brand" href="www.dev-oghas.com/public" id="oghas-logo"></a>
+				<a class="navbar-brand" href="#" id="oghas-logo"></a>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
 					<span class="sr-only">
 						Toggle navigation
@@ -38,6 +38,9 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
 					<ul class="nav navbar-nav">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="http://oghas.com/" target="">OGHAS</a>
+						</li>
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="http://oghas.com/agric">OAGRIC</a>
 						</li>
@@ -50,7 +53,7 @@
 							<a class="nav-link" href="http://oghas.com/academy" target="_blank">OACADEMY</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="http://oghas.com/about-us" target="_blank">ABOUT US</a>
+							<a class="nav-link" href="http://oghas.com/about-us.php" target="_blank">ABOUT US</a>
 						</li>
 
 					</ul>
