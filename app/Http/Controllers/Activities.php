@@ -41,7 +41,7 @@ class Activities extends BaseController{
       $courses    =  DB::table('courses')
                         ->where('courses.promote',1)
                         ->join('schools','schools.id','=','courses.school')
-                        ->select('schools.*','courses.*','schools.page_content as school_page_content')
+                        ->select('schools.*','courses.*','schools.page_content as school_page_content','schools.id as school_id')
                         ->get();
      
       $data       =  array('schools'  =>$schools,

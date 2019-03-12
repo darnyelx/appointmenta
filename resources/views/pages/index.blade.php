@@ -70,7 +70,7 @@
 					<div class="courses courses-1 shadow-light" style="background-image: url({{asset('storage/'.json_decode($course->school_page_content)->schoolBanner)}})">
 						<h3>{{$course->course_name}}</h3>
 						<a href="#">
-							<a href="{{url('school/courses/'.$course->id)}}" class="btn courses-get-started courses-get-started-1">
+							<a href="{{url('school/'.$course->school_id.'#'.str_replace(' ','',$course->course_name))}}" class="btn courses-get-started courses-get-started-1">
 								Get Started
 							</a>
 						</a>
