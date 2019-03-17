@@ -39,16 +39,18 @@
 				<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
 					<ul class="nav navbar-nav">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="#">OAGRIC</a>
+							<a class="nav-link" href="http://oghas.com/agric">OAGRIC</a>
 						</li>
+<!--
 						<li class="nav-item" role="presentation">
 							<a class="nav-link" href="#" target="_blank">OFASHION</a>
 						</li>
+-->
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="#" target="_blank">OACADEMY</a>
+							<a class="nav-link" href="http://oghas.com/academy" target="_blank">OACADEMY</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a class="nav-link" href="#" target="_blank">ABOUT US</a>
+							<a class="nav-link" href="http://oghas.com/about-us" target="_blank">ABOUT US</a>
 						</li>
 
 					</ul>
@@ -105,14 +107,14 @@
 							<a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">More</a>
 							<div class="dropdown-menu" role="menu">
 								<a class="dropdown-item" role="presentation" href="{{url('admin/course/create')}}" target="">Create Course</a>
-								<a class="dropdown-item" role="presentation" href="applicants" target="_blank">Reg Users</a>
+								<a class="dropdown-item" role="presentation" href="applicants" target="">Reg Users</a>
 							</div>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
 							<a class="nav-link" href="{{url('admin/course/create')}}" target="">Create Course</a>
 						</li>
 						<li class="nav-item menu-mobile" role="presentation">
-							<a class="nav-link" href="{{url('admin/course/applicants/')}}" target="_blank">Applicants</a>
+							<a class="nav-link" href="{{url('admin/course/applicants/')}}" target="">Applicants</a>
 						</li>
 					</ul>
 				</div>

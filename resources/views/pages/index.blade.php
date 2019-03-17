@@ -1,4 +1,4 @@
-	@include('_includes.header');
+	@include('_includes.header')
 
 	<!--	Banner	-->
 	<div data-bs-parallax-bg="true" id="banner">
@@ -49,7 +49,7 @@
 					<p>First-Class Trainers, Interactive Content and Measurable Progress</p>
 					<div class="row">
 						<div class="col index-get-started">
-							<a href="#" class="">
+							<a href="#redesign" class="">
 								<button class="btn shadow-light">Get Started</button>
 							</a>
 						</div>
@@ -60,7 +60,7 @@
 	</div>
 
 	<!--	Redesign the future	-->
-	<div style="background: rgba(128, 128, 128, 0.13)">
+	<div style="background: rgba(128, 128, 128, 0.13)" id="redesign">
 		<div class="container redesign">
 			<h1 class="text-center">Redesign the future</h1>
 			<h5 class="text-center">Learn a new skill today</h5>
@@ -83,5 +83,4 @@
 		</div>
 	</div>
 
-		@include('_includes.footer');
-
+		@include('_includes.footer')
