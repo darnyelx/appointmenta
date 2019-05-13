@@ -56,7 +56,7 @@ class Activities extends BaseController{
 
       $data = ['userName'    =>$userName];
 
-      return view('user.createAppointment');
+      return view('user.createAppointment',$data);
     }
 
     // Controller to create an appointment
