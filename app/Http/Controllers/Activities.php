@@ -7,93 +7,171 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
+use App\Http\Controllers\ApisController ;
 use Illuminate\Support\Facades\DB as DB;
+use Illuminate\Support\Facades\Input;
+
 
 
 class Activities extends BaseController{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function saveCourse(Request $request,$courseId){
-    	
-      $name 		= $request->input('fullname');
-    	$email 		=	$request->input('email');
-    	$phoneNum =	$request->input('number');
-    	
-    	$data 		=	array('name'				=>	$name,
-    										'email'				=>	$email,
-    									  'phonenumber'	=>	$phoneNum,
-    									  'course'			=>	$courseId
-	                 );
-    	$validatedData = $request->validate([
-																		        'fullname' 			=> 'required',
-																		        'email' 				=> 'required|unique:course_reg,email',
-																		        'number'				=> 'required'
-    																				]);
-    	// var_dump($validatedData);
-    	// exit;
+    // View Users Appointments
+    public function appointments(){
 
-    	$saveCourse = DB::table('course_reg')->insert($data);
-    	return redirect('/thanks');
+      $userId = '1';
+
+
+
+      $appointments = DB::table('appointments')
+                        ->where('appointments.user_id','=',$userId);
+      //Search Logic
+      if (Input::get('appFrom') !== null) {
+       $appointments = $appointments->where('appointments.date','>=',Input::get('appFrom'));
+      }elseif (Input::get('appOn') !== null) {
+       $appointments = $appointments->where('appointments.date','=',Input::get('appOn'));
+      }
+
+      if (Input::get('appTitle')  !== null) {
+       $appointments = $appointments->where('appointments.title','LIKE','%'.Input::get('appTitle').'%');
+      }
+      //End of search Logic
+              
+      $appointments = $appointments->paginate(12);
+
+      $data         = ['appointments'=>$appointments];
+
+      return view('user.myAppointments',$data);
     }
-    public function home(){
 
-      $schools    =  DB::table('schools')->where('promote',1)->get();
-      $courses    =  DB::table('courses')
-                        ->where('courses.promote',1)
-                        ->join('schools','schools.id','=','courses.school')
-                        ->select('schools.*','courses.*','schools.page_content as school_page_content','schools.id as school_id')
-                        ->get();
+    //View to create an appointment
+    public function _createAppointment(){
+
+      return view('user.createAppointment');
+    }
+
+    // Controller to create an appointment
+    public function createAppointment(Request $request){
+
+      //Validate the user's data and make sure all details are available
+       $validatedData = $request->validate([
+                                            'title'                  => 'required',
+                                            'venue'                  => 'required',
+                                            'date'                   => 'required'
+                                          ]);
+
+      $data = [ 'title'       =>  $request->title,
+                'venue'       =>  $request->venue,
+                'date'        =>  $request->date,
+                'user_id'     =>  Auth::user()->id,
+                'description' =>  json_encode($request->description)
+              ];
+
+      //Save Data
+     $save = DB::table('appointments')
+                ->insert($data);
+     if($save){
+      return back()->with('success','Appointment saved Successfully');
+     }
+      return back()->with('error','Appointment not created');
+    }
+
+    public function _editAppointment($appointmentId){
      
-      $data       =  array('schools'  =>$schools,
-                            'courses' =>$courses
-                          );
+     $userId = Auth::user()->id;
 
-      return view('pages.index',$data);
+     $appointment = DB::table('appointments')
+                      ->where('appointments.id','=',$appointmentId)
+                      //Make sure the user can only edit its own appointment
+                      ->where('appointments.user_id','=',$userId)
+                      ->select('*','appointments.id as id')
+                      ->get()
+                      ->first();
+
+     //Check if the appointment user can edit exists                  
+    if( !is_null($appointment)){
+
+      $data = ['appointmentDet' => $appointment];
+
+      return view('user.createAppointment',$data);
+     }
+     //return an error if it can not be edited
+
+      return back()->with('error','Appointment can not be edited');
+
     }
 
-    public function registercourse($courseId){
+    public function editAppointment(Request $request,$appointmentId){
+
+      $userId = Auth::user()->id;
+
+
+      //Validate the user's data and make sure all details are available
+       $validatedData = $request->validate([
+                                            'title'                  => 'required',
+                                            'venue'                  => 'required',
+                                            'date'                   => 'required'
+                                          ]);
+
+      $data = [ 'title'       =>  $request->title,
+                'venue'       =>  $request->venue,
+                'date'        =>  $request->date,
+                'user_id'     =>  '1',
+                'description' =>  json_encode($request->description)
+              ];
+
+      //Save Data
+     $save = DB::table('appointments')
+                ->where('appointments.id','=',$appointmentId)
+                //Make sure the user can only edit its own appointment
+                ->where('appointments.user_id','=',$userId)
+                ->update($data);
+
+     if($save){
+      return back()->with('success','Appointment editted Successfully');
+     }
+      return back()->with('error','Appointment not editted');
+    }
+
+    public function getGoogleCalendarEvents(){
+      $google = new ApisController();
+      $google->init();
+      $events = $google->getEvents('en.ng#holiday@group.v.calendar.google.com');
+
+      $data   = [ 'events'    => $events['result']['items'],
+                  'nextPage'  => $events['nextToken']
+                ];
+
+      return view ('user.googleCalendar',$data);
+    }
+
+    public function adoptGoogleCalendar(Request $request){
       
-      $course =   DB::table('courses')
-                        ->join('schools', 'courses.school', '=', 'schools.id')
-                        ->where('courses.id',$courseId)
-                        ->select('courses.*','schools.page_content as school_page_content')                        
-                        ->get()
-                        ->first();
+      $events = $request->event;
 
-       $data   =   array('course'=>$course);
+      foreach ($events as $event ) {
+        $google = new ApisController();
+        $google->init();
 
-      return view('pages.dedicated',$data);
-    
-    }
+       $getEventDetails = $google->getSingleEvent('en.ng#holiday@group.v.calendar.google.com',$event);
 
-    public function getRegisteredUsers($courseId){
-       $reg =   DB::table('course_reg')
-                        ->where('course_reg.course',$courseId)                    
-                        ->get();
-      $data = array('users'=>$reg);
-      return view('admin.regUsers',$data);
-    }
+        $data = ['title'       => $getEventDetails['summary'],
+                 'date'        => $getEventDetails['start']['date'],
+                 'user_id'     => Auth::user()->id,
+                 'description' => $getEventDetails['description']
+                ];
 
-    public function thanks(){
-      return view('pages.thanks');
-    }
+        if ( $getEventDetails['location'] == null) {
+          $data['venue'] = 'uknown';
+        }
 
-    public function promote($table,$id){
-      $update = array('promote'=> 1);
-      DB::table($table)->where('id',$id)
-                      ->update($update);
+        $save = DB::table('appointments')
+                ->insert($data);
+      }
 
-      return back();
-      
-    }
+      return back()->with('success','Appointment Imported Successfully');
 
-    public function unpromote($table,$id){
-      $update = array('promote'=> 2);
-      DB::table($table)->where('id',$id)
-                       ->update($update);
 
-      return back();
-      
     }
 
 }

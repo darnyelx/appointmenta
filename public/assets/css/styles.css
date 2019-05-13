@@ -93,16 +93,27 @@ input,
 
 /*Header Start*/
 #oghas-logo {
-	background-image: url("../../assets/img/Academytrans.png");
+	background-image: url("https://cyberaware.com/wp-content/uploads/2018/07/toolkit-check.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 35px;
 }
 
+.sort-bar{
+
+	background: #cecaca;
+    color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sort-bar  label{
+	margin:0px 5px;
+}
+
 .oghas-nav {
 	background-color: rgb(103, 167, 255);
-	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;

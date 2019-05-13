@@ -17,24 +17,22 @@ Route::get('school/{school?}','Pages@getSchoolCourses');
 Route::get('course/{courseId?}','Activities@registercourse');
 Route::get('thanks','Activities@thanks');
 
-Route::middleware(['auth'])->prefix('admin')->group(function () {
+Route::middleware('auth')->prefix('client')->group(function () {
     
-    Route::get('school/create','Pages@createSchool');
-	 Route::get('courses','Pages@allCourses');
-    Route::get('course/create','Pages@createCourse');
-    Route::get('school/edit/{id?}','Pages@editSchool');
-    Route::get('course/edit/{id?}','Pages@editCourse');
-    Route::get('schools','Pages@viewSchools');
-    Route::get('applicants/{courseId?}','Activities@getRegisteredUsers');
-    Route::get('school/courses/{id?}','Pages@adminSchoolCourses');
-    Route::get('promote/{table?}/{id?}','Activities@promote');
-    Route::get('unpromote/{table?}/{id?}','Activities@unpromote');
+    //Create Appointment
+    Route::get('appointment/create','Activities@_createAppointment');
+    Route::post('appointment/create/save','Activities@createAppointment');
 
-    Route::post('school/create/save','Pages@_createSchool');
-    Route::post('course/create/save','Pages@_createCourse');
-    Route::post('school/edit/save/{id?}','Pages@_editSchool');
-    Route::post('course/edit/save/{id?}','Pages@_editCourse');
+    //edit Appointment
+    Route::get('appointment/edit/{id}','Activities@_editAppointment');
+    Route::post('appointment/edit/save/{id}','Activities@editAppointment');
 
+    //view appointment
+    Route::get('appointments','Activities@appointments');
+
+    Route::get('google/appointments','Activities@getGoogleCalendarEvents');
+
+    Route::post('google-calendar/adopt','Activities@adoptGoogleCalendar');
 
 
 });
