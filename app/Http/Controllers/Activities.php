@@ -7,6 +7,8 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\ApisController ;
 use Illuminate\Support\Facades\DB as DB;
 use Illuminate\Support\Facades\Input;
@@ -19,8 +21,9 @@ class Activities extends BaseController{
     // View Users Appointments
     public function appointments(){
 
-      $userId = '1';
+      $userId   = Auth::user()->id;
 
+      $userName = Auth::user()->name; 
 
 
       $appointments = DB::table('appointments')
@@ -39,7 +42,9 @@ class Activities extends BaseController{
               
       $appointments = $appointments->paginate(12);
 
-      $data         = ['appointments'=>$appointments];
+      $data         = ['appointments'=>$appointments,
+                       'userName'    =>$userName
+                      ];
 
       return view('user.myAppointments',$data);
     }
@@ -47,11 +52,16 @@ class Activities extends BaseController{
     //View to create an appointment
     public function _createAppointment(){
 
+      $userName = Auth::user()->name; 
+
+      $data = ['userName'    =>$userName];
+
       return view('user.createAppointment');
     }
 
     // Controller to create an appointment
     public function createAppointment(Request $request){
+
 
       //Validate the user's data and make sure all details are available
        $validatedData = $request->validate([
@@ -64,6 +74,7 @@ class Activities extends BaseController{
                 'venue'       =>  $request->venue,
                 'date'        =>  $request->date,
                 'user_id'     =>  Auth::user()->id,
+                'userName'    =>  $userName,
                 'description' =>  json_encode($request->description)
               ];
 
@@ -79,6 +90,8 @@ class Activities extends BaseController{
     public function _editAppointment($appointmentId){
      
      $userId = Auth::user()->id;
+     $userName = Auth::user()->name; 
+
 
      $appointment = DB::table('appointments')
                       ->where('appointments.id','=',$appointmentId)
@@ -91,7 +104,10 @@ class Activities extends BaseController{
      //Check if the appointment user can edit exists                  
     if( !is_null($appointment)){
 
-      $data = ['appointmentDet' => $appointment];
+      $data = ['appointmentDet' => $appointment,
+               'userName'    =>$userName
+
+              ];
 
       return view('user.createAppointment',$data);
      }
@@ -134,12 +150,17 @@ class Activities extends BaseController{
     }
 
     public function getGoogleCalendarEvents(){
+
+      $userName = Auth::user()->name; 
+
       $google = new ApisController();
       $google->init();
       $events = $google->getEvents('en.ng#holiday@group.v.calendar.google.com');
 
       $data   = [ 'events'    => $events['result']['items'],
-                  'nextPage'  => $events['nextToken']
+                  'nextPage'  => $events['nextToken'],
+                  'userName'    =>$userName
+
                 ];
 
       return view ('user.googleCalendar',$data);
@@ -171,6 +192,20 @@ class Activities extends BaseController{
 
       return back()->with('success','Appointment Imported Successfully');
 
+    }
+
+    public function deleteAppointment($appointmentId){
+
+      $userId = Auth::user()->id;
+
+      //delete Data
+     $save = DB::table('appointments')
+                ->where('appointments.id','=',$appointmentId)
+                //Make sure the user can only edit its own appointment
+                ->where('appointments.user_id','=',$userId)
+                ->delete();
+
+      return back()->with('success','Appointment Deleted Successfully');
 
     }
 

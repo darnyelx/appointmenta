@@ -18,6 +18,10 @@
 	 
 	  <button type="submit" class="btn btn-info">Submit</button>
 	</form>
+
+	@if(sizeof($appointments) < 1 )
+			No appointments 
+	@else
 	<table class="table table-bordered table-striped" style="overflow:auto;">
 		<thead>
 			<tr class="thead-dark">
@@ -30,6 +34,7 @@
 			</tr>
 		</thead>
 		<tbody>
+
 			@foreach($appointments as $appointment)
 			<tr>
 				<td>{{$sn++}}</td>
@@ -50,3 +55,11 @@
 			@endforeach
 
 		</tbody>
+	</table>
+  @endif
+<!-- 	pagination stuffs
+ -->			
+ {{$appointments->links()}}
+</div>
+
+@include('_includes.footer')

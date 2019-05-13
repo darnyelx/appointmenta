@@ -29,13 +29,35 @@
 		<!--	Nav	-->
 		<nav class="navbar navbar-dark navbar-expand-md oghas-nav">
 			<div class="container">
-				<a class="navbar-brand" href="https://cyberaware.com/wp-content/uploads/2018/07/toolkit-check.png" id="oghas-logo"></a>
+				<a class="navbar-brand" href="" id="oghas-logo"></a>
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
 					<span class="sr-only">
 						Toggle navigation
 					</span>
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
+			<!--	Oghas Family Links -->
+			<div class="collapse navbar-collapse justify-content-around navcol1-mobile" id="navcol-1" style="margin-bottom: 5px;">
+				<ul class="nav navbar-nav">
+					
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{{url('client/appointments')}}" >My Appointment</a>
+					</li>
+
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{{url('client/appointment/create')}}" >Create Appointment</a>
+					</li>
+					
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{{url('client/google/appointment/import')}}" >Import Appointment</a>
+					</li>
+
+					<li class="nav-item" role="presentation">
+						<button class="btn btn-danger">Howdy, {{$userName}}</button>
+					</li>
+				</ul>
+			</div>
 
 			</div>
 		</nav>

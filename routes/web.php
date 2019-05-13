@@ -30,10 +30,13 @@ Route::middleware('auth')->prefix('client')->group(function () {
     //view appointment
     Route::get('appointments','Activities@appointments');
 
-    Route::get('google/appointments','Activities@getGoogleCalendarEvents');
+    //google import urls
+    Route::get('google/appointment/import','Activities@getGoogleCalendarEvents');
 
     Route::post('google-calendar/adopt','Activities@adoptGoogleCalendar');
 
+    //delete appointment
+     Route::get('appointment/delete/{id}','Activities@deleteAppointment');
 
 });
 	Auth::routes();
