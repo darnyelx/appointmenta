@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'Activities@appointments');
+Route::get('/', 'Activities@appointments')->middleware('auth');
 
 
 Route::middleware('auth')->prefix('client')->group(function () {
