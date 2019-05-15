@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', 'Activities@home');
-Route::post('course/register/{id?}','Activities@saveCourse');
-Route::get('school/{school?}','Pages@getSchoolCourses');
-Route::get('course/{courseId?}','Activities@registercourse');
-Route::get('thanks','Activities@thanks');
+Route::get('/', 'Activities@appointments');
+
 
 Route::middleware('auth')->prefix('client')->group(function () {
     
